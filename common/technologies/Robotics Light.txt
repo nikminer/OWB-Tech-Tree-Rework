@@ -1,0 +1,620 @@
+#-------------------------------
+# Robotics Light
+#-------------------------------
+technologies = {
+
+	@Col_3 = 14
+	@Col_4 = 17
+	@Col_5 = 20
+	@Col_6 = 23
+	@Col_7 = 26
+	@Col_8 = 29
+	@Col_9 = 32
+
+	@Row_1 = 0
+	@Row_2 = 2
+	@Row_3 = 4
+
+# Level 1
+	robot_protectron_equipment_tech_1 = {
+
+		enable_equipments = {
+			support_robot_two_legs_equipment_1
+		}
+
+		path = {
+			leads_to_tech = robot_armour_hardening_tech
+			research_cost_coeff = 1
+		}
+
+		xor = {
+			robot_handy_equipment_tech_1
+		}
+
+		research_cost = 1.6
+		start_year = 2278
+
+		dependencies = {
+			robotics_tech_level_settler = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_1 y = @Col_3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2278.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2279.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_tech = robot_handy_equipment_tech_1
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			bipedal_support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_handy_equipment_tech_1 = {
+
+		enable_equipments = {
+			support_robot_thruster_equipment_1
+		}
+
+		path = {
+			leads_to_tech = robot_armour_hardening_tech
+			research_cost_coeff = 1
+		}
+
+		xor = {
+			robot_protectron_equipment_tech_1
+		}
+
+		research_cost = 1.6
+		start_year = 2278
+
+		dependencies = {
+			robotics_tech_level_settler = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_3 y = @Col_3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2278.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2279.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_tech = robot_protectron_equipment_tech_1
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			handy_support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_armour_hardening_tech = {
+
+		category_robots = {
+			armor_value = 0.05
+			suppression_factor = 0.25
+		}
+
+		path = {
+			leads_to_tech = robot_handy_equipment_tech_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = robot_protectron_equipment_tech_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = robot_lifter_equipment_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.6
+		start_year = 2279
+
+		dependencies = {
+			robotics_tech_level_settler = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_2 y = @Col_4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2279.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2280.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+# Level 2
+	robot_protectron_equipment_tech_2 = {
+
+		enable_equipments = {
+			support_robot_two_legs_equipment_2
+		}
+
+		path = {
+			leads_to_tech = robot_precision_motor_tech
+			research_cost_coeff = 1
+		}
+
+		xor = {
+			robot_handy_equipment_tech_2
+		}
+
+		research_cost = 1.6
+		start_year = 2280
+
+		dependencies = {
+			robotics_tech_level_settler = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_1 y = @Col_5 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2280.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2281.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_tech = robot_handy_equipment_tech_2
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			bipedal_support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_handy_equipment_tech_2 = {
+
+		enable_equipments = {
+			support_robot_thruster_equipment_2
+		}
+
+		path = {
+			leads_to_tech = robot_precision_motor_tech
+			research_cost_coeff = 1
+		}
+
+		xor = {
+			robot_protectron_equipment_tech_2
+		}
+
+		research_cost = 1.6
+		start_year = 2280
+
+		dependencies = {
+			robotics_tech_level_settler = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_3 y = @Col_5 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2280.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2281.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_tech = robot_protectron_equipment_tech_2
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			handy_support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_precision_motor_tech = {
+
+		category_robots = {
+			breakthrough = 0.08
+		}
+
+		path = {
+			leads_to_tech = robot_handy_equipment_tech_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = robot_assaultron_equipment_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.6
+		start_year = 2281
+
+		dependencies = {
+			robotics_tech_level_scientific = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_2 y = @Col_6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2281.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2282.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+# Level 3
+	robot_assaultron_equipment_tech_1 = {
+
+		enable_equipments = {
+			support_robot_two_legs_equipment_3
+		}
+
+		path = {
+			leads_to_tech = robot_advanced_power_systems_tech
+			research_cost_coeff = 1
+		}
+
+		xor = {
+			robot_handy_equipment_tech_3
+		}
+
+		research_cost = 1.6
+		start_year = 2282
+
+		dependencies = {
+			robotics_tech_level_scientific = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_1 y = @Col_7 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2282.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_tech = robot_handy_equipment_tech_3
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			bipedal_support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_handy_equipment_tech_3 = {
+
+		enable_equipments = {
+			support_robot_thruster_equipment_3
+		}
+
+		path = {
+			leads_to_tech = robot_advanced_power_systems_tech
+			research_cost_coeff = 1
+		}
+
+		xor = {
+			robot_assaultron_equipment_tech_1
+		}
+
+		research_cost = 1.6
+		start_year = 2282
+
+		dependencies = {
+			robotics_tech_level_scientific = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_3 y = @Col_7 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2282.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_tech = robot_assaultron_equipment_tech_1
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			handy_support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_advanced_power_systems_tech = {
+
+		category_robots = {
+			fuel_consumption_factor = -0.10
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = robot_handy_equipment_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = robot_assaultron_equipment_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.6
+		start_year = 2283
+
+		dependencies = {
+			robotics_tech_level_scientific = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_2 y = @Col_8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2284.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+# Level 4
+	robot_assaultron_equipment_tech_2 = {
+
+		enable_equipments = {
+			support_robot_two_legs_equipment_4
+		}
+
+		xor = {
+			robot_handy_equipment_tech_4
+		}
+
+		research_cost = 1.6
+		start_year = 2285
+
+		dependencies = {
+			robotics_tech_level_scientific = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_1 y = @Col_9 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2285.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2286.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_tech = robot_handy_equipment_tech_4
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			bipedal_support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_handy_equipment_tech_4 = {
+
+		enable_equipments = {
+			support_robot_thruster_equipment_4
+		}
+
+		xor = {
+			robot_assaultron_equipment_tech_2
+		}
+
+		research_cost = 1.6
+		start_year = 2285
+
+		dependencies = {
+			robotics_tech_level_scientific = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_3 y = @Col_9 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2285.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2286.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_tech = robot_assaultron_equipment_tech_2
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			handy_support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+}

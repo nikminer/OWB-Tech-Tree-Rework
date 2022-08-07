@@ -1,0 +1,328 @@
+#-------------------------
+# Schematics 				
+#-------------------------
+technologies = {
+
+	@Col_1 = 4
+	@Col_2 = 6
+	@Col_3 = 8
+	@Col_4 = 10
+	@Col_5 = 12
+	@Col_6 = 14
+	@Col_7 = 16
+	@Col_8 = 18
+	@Col_9 = 20
+	
+	@Row_SchematicsEq = 10
+	@Row_SchematicsPreWar = 12
+
+#Equipment
+	gauss_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsEq y = @Col_1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_weapon_tt
+	}
+
+	plasma_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsEq y = @Col_2 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_weapon_tt
+	}
+
+	enclave_pa_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsEq y = @Col_3 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_weapon_tt
+	}
+
+	high_fighter_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsEq y = @Col_4 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_weapon_tt
+	}
+
+	vertibird_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsEq y = @Col_5 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_weapon_tt
+	}
+
+#Pre-war
+	general_atomics_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsPreWar y = @Col_1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_business_tt
+	}
+
+	stent_security_solutions_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsPreWar y = @Col_2 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_business_tt
+	}
+
+	wattz_company_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsPreWar y = @Col_3 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_business_tt
+	}
+
+	handhtools_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsPreWar y = @Col_4 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_business_tt
+	}
+
+	poseidon_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsPreWar y = @Col_5 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_business_tt
+	}
+
+	lockreed_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsPreWar y = @Col_6 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_business_tt
+	}
+
+	arcjetsystems_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsPreWar y = @Col_7 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_business_tt
+	}
+
+	westtek_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsPreWar y = @Col_8 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_business_tt
+	}
+
+	robco_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_SchematicsPreWar y = @Col_9 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_business_tt
+	}
+}

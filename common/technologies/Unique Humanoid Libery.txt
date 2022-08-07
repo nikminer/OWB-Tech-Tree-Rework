@@ -1,0 +1,45 @@
+#-------------------------------
+# Unique Humanoid Libery
+#-------------------------------
+technologies = {
+	@Row_2 = 2
+
+	@Col_11 = 39
+
+	robot_humanoid_tech = {
+
+		enable_equipments = {
+			support_robot_humanoid_equipment
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = support_robot_tech
+		}
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		research_cost = 2.2
+		start_year = 2275
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_2 y = @Col_11 }
+		}
+
+		categories = {
+			robotics_tech_category
+			combat_robot_tech_category
+			armor_tech_category
+			scientific_tech_category
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

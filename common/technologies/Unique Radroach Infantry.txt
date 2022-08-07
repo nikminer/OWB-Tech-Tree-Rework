@@ -1,0 +1,42 @@
+#-------------------------
+# Unique Radroach Infantry
+#-------------------------
+technologies = {
+	# Column Position is relative to the tree position in countrytechtree.gui
+	@Col_12 = 52
+
+	@Row_heavyinf = 2
+
+	radroach_infantry_unlock_tech = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_heavyinf y = @Col_12 }
+		}
+
+		enable_equipments = {
+			radroach_equipment_1
+		}
+
+		enable_subunits = {
+			radroach_infantry
+		}
+
+		categories = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

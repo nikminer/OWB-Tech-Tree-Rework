@@ -1,0 +1,387 @@
+#-------------------------
+# Legion buffs 				
+#-------------------------
+technologies = {
+
+	@Col_1 = 4
+	@Col_2 = 6
+	@Col_3 = 8
+	@Col_4 = 10
+	@Col_5 = 12
+	@Col_6 = 14
+	@Col_7 = 16
+	@Col_8 = 18
+	@Col_9 = 20
+	@Col_10 = 22
+	@Col_11 = 24
+
+	@Row_LegionBuffs = 20
+	@Row_LegionBuffs2 = 22
+	
+	CES_mercenary_training_tech = {
+
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_1 }
+		}
+
+		allow = {
+			always = no
+		}
+		
+		infantry = {
+			hills = {
+				movement = 0.02
+				defence = 0.02
+			}
+			mountain = {
+				movement = 0.02
+				defence = 0.02
+			}
+			desert = {
+				movement = 0.02
+				defence = 0.02
+			}
+
+		}
+	}
+
+	CES_horns_moroni_tech = {
+
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_2 }
+		}
+
+		allow = {
+			always = no
+		}
+
+		medical_chem_company = {
+			casualty_trickleback = 0.1
+		}
+	}
+
+	legion_centurions_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_3 }
+		}
+
+		allow = { always = no }
+
+		category_infantry = {
+			max_organisation = 3
+		}
+	}
+
+	legion_warriors_of_mars_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_4 }
+		}
+
+		allow = { always = no }
+
+		category_power_armour = {
+			soft_attack = 0.1
+			breakthrough = 0.25
+		}
+	}
+
+	armored_chariots_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_5 }
+		}
+
+		allow = { always = no }
+
+		tank = {
+			breakthrough = 0.15
+			reliability_factor = 0.05
+		}
+	}
+
+	legion_frumentarii_officers_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_6 }
+		}
+
+		allow = { always = no }
+
+		category_infantry = {
+			soft_attack = 0.03
+			breakthrough = 0.25
+		}
+	}
+
+	legion_frumentarii_commandoes_tech = {
+
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_7 }
+		}
+
+		allow = {
+			always = no
+		}
+
+		category_special_forces = {
+			max_organisation = 10
+		}
+	}
+
+	phoenix_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_8 }
+		}
+
+		allow = { always = no }
+
+		category_infantry = {
+			max_organisation = 10
+		}
+	}
+
+	legion_vexillarius_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_9 }
+		}
+
+		allow = { always = no }
+
+		category_infantry = {
+			initiative = 0.07
+		}
+	}
+
+	legion_training_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_10 }
+		}
+
+		allow = { always = no }
+
+		infantry = {
+			combat_width = -0.25
+		}
+	}
+
+	ces_aurelius_mercenaries_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs y = @Col_11 }
+		}
+
+		allow = {
+			always = no
+		}
+
+		infantry = {
+			mountain = {
+				attack = 0.1
+				movement = -0.1
+			}
+			hills = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		militia = {
+			mountain = {
+				attack = 0.1
+				movement = -0.1
+			}
+			hills = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		spec_ops = {
+			mountain = {
+				attack = 0.1
+				movement = -0.1
+			}
+			hills = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		power_armour = {
+			mountain = {
+				attack = 0.1
+				movement = -0.1
+			}
+			hills = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		motorized = {
+			mountain = {
+				attack = 0.1
+				movement = -0.1
+			}
+			hills = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+	}
+
+	ces_at_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs2 y = @Col_1 }
+		}
+
+		allow = { always = no }
+
+		category_army = {
+			ap_attack = 0.3
+		}
+	}
+
+	ces_navajo_scouts_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs2 y = @Col_2 }
+		}
+
+		allow = { always = no }
+
+		category_light_special_forces = {
+			max_organisation = 10
+			default_morale = 0.10
+		}
+	}
+
+	ces_navajo_skin_walkers_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs2 y = @Col_3 }
+		}
+
+		allow = { always = no }
+
+		category_light_special_forces = {
+			river = {
+				movement = 0.05
+				attack = 0.10
+			}
+			hard_attack = 0.15
+		}
+	}
+
+	ces_two_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_LegionBuffs2 y = @Col_4 }
+		}
+
+		allow = { always = no }
+
+		category_vehicles = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+			breakthrough = 0.1
+			max_organisation = 5
+		}
+	}
+
+}

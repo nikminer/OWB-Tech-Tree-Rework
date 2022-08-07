@@ -1,0 +1,61 @@
+#-------------------------
+# Coffee Tech 				
+#-------------------------
+technologies = {
+
+	@Col_5 = 12
+	@Col_7 = 16
+	
+	@Row_CoffeeBufs = 24
+
+	drug_technology_coffee = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_equipments = {
+			drug_equipment_coffee_1
+		}
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_CoffeeBufs y = @Col_5 }
+		}
+
+		path = {
+			leads_to_tech = drug_technology_coffee_2
+			research_cost_coeff = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		infantry = {
+			max_strength = 0.1
+		}
+	}
+
+	drug_technology_coffee_2 = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_equipments = {
+			drug_equipment_coffee_2
+		}
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_CoffeeBufs y = @Col_7 }
+		}
+
+		allow = {
+			always = no
+		}
+
+		infantry = {
+			max_strength = 0.1
+		}
+	}	
+}

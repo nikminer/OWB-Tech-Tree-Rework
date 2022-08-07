@@ -1,0 +1,32 @@
+#-------------------------
+# Origins 				
+#-------------------------
+technologies = {
+
+	@Col_1 = 4
+	@Row_origins = 0
+	
+	#Military origin
+	military_heritage_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_origins y = @Col_1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		custom_modifier_tooltip = scav_unlock_weapon_tt
+	}
+}

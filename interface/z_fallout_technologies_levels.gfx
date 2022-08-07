@@ -1,0 +1,223 @@
+spriteTypes = {
+
+#------------------------------------------
+# Infantry
+#------------------------------------------
+	spriteType = {
+		name = "GFX_infantry_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/infantry_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_infantry_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/infantry_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_infantry_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/infantry_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+
+#------------------------------------------
+# Special Forces
+#------------------------------------------
+	spriteType = {
+		name = "GFX_special_forces_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/special_forces_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_special_forces_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/special_forces_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_special_forces_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/special_forces_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+
+#------------------------------------------
+# Power Armor
+#------------------------------------------
+	spriteType = {
+		name = "GFX_power_armour_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/power_armour_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_power_armour_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/power_armour_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_power_armour_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/power_armour_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+
+#------------------------------------------
+# Support
+#------------------------------------------
+	spriteType = {
+		name = "GFX_support_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/support_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_support_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/support_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_support_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/support_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+	
+#------------------------------------------
+# Vehicles
+#------------------------------------------
+	spriteType = {
+		name = "GFX_vehicles_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/vehicles_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vehicles_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/vehicles_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vehicles_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/vehicles_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+#------------------------------------------
+# Robots
+#------------------------------------------
+	spriteType = {
+		name = "GFX_robotics_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/robotics_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_robotics_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/robotics_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_robotics_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/robotics_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+#------------------------------------------
+# Air
+#------------------------------------------
+	spriteType = {
+		name = "GFX_air_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/air_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_air_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/air_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_air_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/air_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+#------------------------------------------
+# Naval
+#------------------------------------------
+	spriteType = {
+		name = "GFX_naval_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/naval_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_naval_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/naval_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_naval_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/naval_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+#------------------------------------------
+# Tools
+#------------------------------------------
+	spriteType = {
+		name = "GFX_tools_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/tools_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tools_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/tools_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tools_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/tools_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+#------------------------------------------
+# Electronics
+#------------------------------------------
+	spriteType = {
+		name = "GFX_electronics_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_electronics_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_electronics_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+#------------------------------------------
+# Habitation
+#------------------------------------------
+	spriteType = {
+		name = "GFX_habitation_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/habitation_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_habitation_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/habitation_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_habitation_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/habitation_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+#------------------------------------------
+# Exploitation
+#------------------------------------------
+	spriteType = {
+		name = "GFX_exploitation_tech_level_tribal_medium"
+		texturefile = "gfx/interface/technologies/exploitation_tech_level_tribal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_exploitation_tech_level_settler_medium"
+		texturefile = "gfx/interface/technologies/exploitation_tech_level_settler.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_exploitation_tech_level_scientific_medium"
+		texturefile = "gfx/interface/technologies/exploitation_tech_level_scientific.dds"
+		alwaystransparent = yes
+	}
+}

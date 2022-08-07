@@ -1,0 +1,48 @@
+#-------------------------
+# Unique Molerat Infantry
+#-------------------------
+technologies = {
+	# Column Position is relative to the tree position in countrytechtree.gui
+	@Col_12 = 52
+
+	@Row_specops = 10
+
+	molerat_infantry_unlock_tech = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_12 }
+		}
+
+		enable_equipments = {
+			molerat_equipment_1
+		}
+
+		enable_subunits = {
+			molerat_infantry
+		}
+
+		sub_technologies = {
+			molerat_upgrade_tech_1
+			molerat_upgrade_tech_2
+			molerat_upgrade_tech_3
+		}
+
+		categories = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

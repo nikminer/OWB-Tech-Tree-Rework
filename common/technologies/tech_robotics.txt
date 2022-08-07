@@ -1,0 +1,147 @@
+#Technology trees are divided into separate files
+technologies = {
+	#-------------------------------------																			#-------------------------------------------------------------------------
+	#-------------------------------------																			# Unique Securitron  -> Unique Securitron.txt
+	#-------------------------------------		#-------------------------------------								#-------------------------------------------------------------------------
+	# Robotics Basic -> Robotics Basic.txt	---	# Robotics Basic -> Robotics Basic.txt								#-------------------------						#-------------------------					
+	#-------------------------------------		#-------------------------------------								# Unique Scurry  	 ->  Unique Scurry.txt		# Unique Humanoid Libery  ->  Unique Humanoid Libery.txt
+	#-------------------------------------		|			|														#-------------------------						#-------------------------					
+	#-------------------------------------		|			|		#-------------------------------------					
+	#-------------------------------------		|			|-------# Robotics Combat -> Robotics Combat.txt				
+	#-------------------------------------		|					#-------------------------------------					
+	#-------------------------------------		|																						
+	#-------------------------------------		|																						
+	#-------------------------------------		#-------------------------------------								#-------------------------------------------------------------------------		
+	#-------------------------------------		# Robotics CnC -> Robotics CnC.txt									# Unique Super Heavy  -> Unique Super Heavy.txt	
+	#-------------------------------------		#-------------------------------------								#-------------------------------------------------------------------------
+
+
+#-------------------------------
+# Robotics
+#-------------------------------
+#	robot_synth_tech_1 = {
+#
+#		enable_equipments = {
+#			synth_equipment_1
+#		}
+#		enable_subunits = {
+#			synth_unit
+#		}
+#
+#		on_research_complete_limit = {
+#			NOT = {
+#				has_template_containing_unit = synth_unit
+#			}
+#		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = "unlock_synth_unit"
+#			}
+#			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+#			custom_effect_tooltip = security_robot_tech
+#		}
+#
+#		allow = {
+#			always = no
+#		}
+#
+#		path = {
+#			leads_to_tech = robot_synth_tech_2
+#			research_cost_coeff = 1
+#		}
+#
+#		dependencies = {
+#			robotics_tech_level_scientific = 1
+#		}
+#
+#		research_cost = 2.2
+#		start_year = 2275
+#		folder = {
+#			name = fallout_robotics_folder
+#			position = { x = @Row_support_robot y = @Col_10 }
+#		}
+#
+#		categories = {
+#			robotics_tech_category
+#			combat_robot_tech_category
+#			armor_tech_category
+#			scientific_tech_category
+#		}
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#	}
+#
+#	robot_synth_tech_2 = {
+#
+#		enable_equipments = {
+#			synth_equipment_2
+#		}
+#
+#		allow = {
+#			always = no
+#		}
+#
+#		path = {
+#			leads_to_tech = robot_synth_tech_3
+#			research_cost_coeff = 1
+#		}
+#
+#		dependencies = {
+#			robotics_tech_level_scientific = 1
+#		}
+#
+#		research_cost = 2.2
+#		start_year = 2275
+#		folder = {
+#			name = fallout_robotics_folder
+#			position = { x = @Row_thruster y = @Col_10 }
+#		}
+#
+#		categories = {
+#			robotics_tech_category
+#			combat_robot_tech_category
+#			armor_tech_category
+#			scientific_tech_category
+#		}
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#	}
+#
+#	robot_synth_tech_3 = {
+#
+#		enable_equipments = {
+#			synth_equipment_3
+#		}
+#
+#		allow = {
+#			always = no
+#		}
+#
+#		dependencies = {
+#			robotics_tech_level_scientific = 1
+#		}
+#
+#		research_cost = 2.2
+#		start_year = 2275
+#		folder = {
+#			name = fallout_robotics_folder
+#			position = { x = @Row_thruster y = @Col_11 }
+#		}
+#
+#		categories = {
+#			robotics_tech_category
+#			combat_robot_tech_category
+#			armor_tech_category
+#			scientific_tech_category
+#		}
+#
+#		ai_will_do = {
+#			factor = 100
+#		}
+#	}
+#
+}

@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_weight_support_frame_pa_tech_1_medium"
+		textureFile = "gfx/interface/technologies/weight_support_frame_pa_tech_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_weight_support_frame_pa_tech_2_medium"
+		textureFile = "gfx/interface/technologies/weight_support_frame_pa_tech_2.dds"
+	}	
+}

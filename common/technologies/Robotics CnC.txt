@@ -1,0 +1,307 @@
+#-------------------------------
+# Robotics CnC
+#-------------------------------
+technologies = {
+	@Col_3 = 14
+	@Col_4 = 17
+	@Col_5 = 20
+	@Col_6 = 23
+	@Col_7 = 26
+	@Col_8 = 29
+	@Col_9 = 32
+
+	@Row_cnc = 8
+
+# Level 1
+	robot_command_equipment_tech_1 = {
+
+		enable_subunits = {
+			cnc_robot
+		}
+
+		enable_equipments = {
+			cnc_robot_equipment_1
+		}
+
+		path = {
+			leads_to_tech = robot_miniature_thruster_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.6
+		start_year = 2277
+
+		dependencies = {
+			robotics_tech_level_settler = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_cnc y = @Col_3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2277.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2278.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			cnc_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_miniature_thruster_tech = {
+
+		category_robots = {
+			maximum_speed = 0.05
+			default_morale = 0.02
+		}
+
+		research_cost = 1.6
+		start_year = 2279
+
+		path = {
+			leads_to_tech = robot_command_equipment_tech_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			robotics_tech_level_settler = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_cnc y = @Col_4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2279.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2280.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			cnc_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+# Level 2
+	robot_command_equipment_tech_2 = {
+
+		enable_equipments = {
+			cnc_robot_equipment_2
+		}
+
+		path = {
+			leads_to_tech = robot_high_power_optics_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.6
+		start_year = 2280
+
+		dependencies = {
+			robotics_tech_level_settler = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_cnc y = @Col_5 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2280.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2281.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			cnc_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_high_power_optics_tech = {
+
+		category_robots = {
+			ap_attack = 0.06
+			hard_attack = 0.02
+		}
+
+		path = {
+			leads_to_tech = robot_impact_resistant_chassi_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.6
+		start_year = 2281
+
+		dependencies = {
+			robotics_tech_level_scientific = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_cnc y = @Col_6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2281.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2282.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			cnc_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_impact_resistant_chassi_tech = {
+
+		category_robots = {
+			defense = 0.05
+			max_strength = 0.20
+		}
+
+		path = {
+			leads_to_tech = robot_command_equipment_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.6
+		start_year = 2283
+
+		dependencies = {
+			robotics_tech_level_scientific = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_cnc y = @Col_8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2284.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			cnc_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+# Level 3
+	robot_command_equipment_tech_3 = {
+
+		enable_equipments = {
+			cnc_robot_equipment_3
+		}
+
+		research_cost = 1.6
+		start_year = 2285
+
+		dependencies = {
+			robotics_tech_level_scientific = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_cnc y = @Col_9 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2285.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2286.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			cnc_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+}

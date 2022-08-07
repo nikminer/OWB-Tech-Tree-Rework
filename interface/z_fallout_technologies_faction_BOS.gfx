@@ -1,0 +1,18 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_BOS_t51b_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/pa/t_51_icon_bos.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BOS_t45d_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/pa/t_45_bos_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_BOS_wasteland_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/cosmetic/pa/stripped_power_armour_icon_moj.dds"
+		alwaystransparent = yes
+	}
+}

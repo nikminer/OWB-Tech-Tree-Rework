@@ -1,0 +1,132 @@
+#-------------------------
+# Unique Mirelurk Infantry
+#-------------------------
+technologies = {
+	# Column Position is relative to the tree position in countrytechtree.gui
+	@Col_11 = 48
+
+	@Row_specops = 10
+
+	mirelurk_infantry_unlock_tech = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_11 }
+		}
+
+		enable_equipments = {
+			mirelurk_equipment_1
+		}
+
+		enable_subunits = {
+			mirelurk_infantry
+		}
+
+		sub_technologies = {
+			mirelurk_upgrade_tech_1
+			mirelurk_upgrade_tech_2
+			mirelurk_upgrade_tech_3
+		}
+
+		categories = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mirelurk_upgrade_tech_1 = {
+
+		mirelurk_infantry = {
+			soft_attack = 0.2
+			hard_attack = 0.2
+			breakthrough = 0.1
+			defense = 0.1
+		}
+
+		research_cost = 2
+		start_year = 2277
+
+		categories = {
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 20
+				date > "2277.1.1"
+			}
+			modifier = {
+				factor = 0
+				NOT = { tag = MLT}
+			}
+		}
+	}
+
+	mirelurk_upgrade_tech_2 = {
+
+		mirelurk_infantry = {
+			soft_attack = 0.2
+			hard_attack = 0.2
+			breakthrough = 0.12
+			defense = 0.12
+		}
+
+		research_cost = 2
+		start_year = 2281
+
+		categories = {
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 20
+				date > "2281.1.1"
+			}
+			modifier = {
+				factor = 0
+				NOT = { tag = MLT}
+			}
+		}
+	}
+
+	mirelurk_upgrade_tech_3 = {
+
+		mirelurk_infantry = {
+			soft_attack = 0.2
+			hard_attack = 0.2
+			breakthrough = 0.15
+			defense = 0.15
+		}
+
+		research_cost = 2
+		start_year = 2283
+
+		categories = {
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 20
+				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 0
+				NOT = { tag = MLT}
+			}
+		}
+	}
+	
+}

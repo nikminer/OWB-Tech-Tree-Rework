@@ -1,0 +1,13 @@
+﻿l_english:
+  fallout_power_armor_folder:0 "Power Armor"
+  fallout_power_armor_folder_desc:0 ""
+#----------------------------
+# Header
+#----------------------------
+  HEADER_ARMOR:0 "Armor"
+  HEADER_CHASSIS:0 "Chassis"
+  HEADER_SERVOS:0 "Servos"
+  HEADER_POWER:0 "Power Plant"
+  HEADER_SPECIAL_HELMET:0 "Special Modules (Helmet)"
+  HEADER_SPECIAL_TORSO:0 "Special Modules (Torso)"
+  HEADER_SPECIAL_LEGS:0 "Special Modules (Legs)"

@@ -1,0 +1,76 @@
+#-------------------------
+# Ghouls 				
+#-------------------------
+technologies = {
+
+	@Col_1 = 4
+	@Col_2 = 6
+	
+	@Row_Ghoul = 6
+
+
+	ghoul_civilization = {
+		research_cost = 1.0
+		start_year = 2275
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_Ghoul y = @Col_1 }
+		}
+
+		enable_subunits = {
+			ghoul_infantry
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+		# Applied via history only
+		allow = {
+			always = no
+		}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = ghoul_infantry
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_ghoul_infantry"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		categories = {
+			civilization_tech_category
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ghoul_paratrooper_tech = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_Ghoul y = @Col_2 }
+		}
+
+		enable_subunits = {
+			ghoul_paratrooper
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

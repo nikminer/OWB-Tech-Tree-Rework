@@ -1,0 +1,78 @@
+#-------------------------
+# Support Weaponry
+#-------------------------
+technologies = {
+	# Column Position is relative to the tree position in countrytechtree.gui
+	@Col_1 = 8
+
+	@Row_1 = 0
+	
+	support_weaponry = {
+		enable_equipments = {
+			support_equipment_1
+		}
+
+		path = {
+			leads_to_tech = fireteam_weaponry_tech
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = demolitions_weaponry_tech
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = dog_equipment_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = anti_tank_equipment_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = med_company_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = recon_company_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = logistics_company_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = maintenance_company_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 30
+		xp_research_bonus = 0.3
+		start_year = 2275
+		folder = {
+			name = fallout_support_folder
+			position = { x = @Row_1 y = @Col_1 }
+		}
+
+		dependencies = {
+			support_tech_level_tribal = 1
+		}
+
+		categories = {
+			support_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}

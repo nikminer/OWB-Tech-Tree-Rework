@@ -1,0 +1,118 @@
+#-------------------------
+# Unique Military Heritage
+#-------------------------
+technologies = {
+	# Column Position is relative to the tree position in countrytechtree.gui
+	@Col_11 = 48
+	@Col_11m = 50
+	@Col_12 = 52
+
+	@Row_train = 0
+
+	military_heritage_tech_1 = {
+
+		army_org_Factor = 0.03
+		land_reinforce_rate = 0.05
+
+		path = {
+			leads_to_tech = military_heritage_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 2275
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_train y = @Col_11 }
+		}
+
+		dependencies = {
+			military_heritage_unlock_tech = 1
+		}
+
+		categories = {
+			infantry_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 3
+				date > "2276.1.1"
+			}
+		}
+	}
+
+	military_heritage_tech_2 = {
+
+		army_org_Factor = 0.03
+		army_morale_factor = 0.05
+
+		path = {
+			leads_to_tech = military_heritage_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+
+		start_year = 2275
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_train y = @Col_11m }
+		}
+
+		dependencies = {
+			military_heritage_unlock_tech = 1
+		}
+
+		categories = {
+			infantry_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 3
+				date > "2276.1.1"
+			}
+		}
+	}
+
+	military_heritage_tech_3 = {
+
+		army_org_Factor = 0.03
+		category_army = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+			ap_attack = 0.02
+		}
+
+		research_cost = 4
+
+		start_year = 2275
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_train y = @Col_12 }
+		}
+
+		dependencies = {
+			military_heritage_unlock_tech = 1
+		}
+
+		categories = {
+			infantry_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 3
+				date > "2276.1.1"
+			}
+		}
+	}
+}

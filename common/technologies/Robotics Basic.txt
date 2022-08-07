@@ -1,0 +1,374 @@
+#-------------------------------
+# Robotics Basic
+#-------------------------------
+technologies = {
+
+	@Col_1 = 8
+	@Col_2 = 11
+
+	@Row_1 = 0
+	@Row_2 = 2
+	@Row_3 = 4
+	@Row_4 = 6
+	@Row_5 = 8
+
+	robot_automation_tech = {
+		production_factory_max_efficiency_factor = 0.04
+		support_robot = {
+			reliability = 0.01
+		}
+
+		research_cost = 1
+		start_year = 2276
+
+		dependencies = {
+			robotics_tech_level_tribal = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_1 y = @Col_1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2276.1.1"
+			}
+			modifier = {
+				factor = 4
+				date > "2277.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_makeshift_automatons_tech = {
+
+		enable_subunits = {
+			support_robot
+		}
+
+		enable_equipments = {
+			support_robot_scrap_equipment
+		}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = support_robot
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_support_robot"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			custom_effect_tooltip = support_robot_tech
+		}
+
+		path = {
+			leads_to_tech = robot_fission_batteries_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = robot_automation_tech
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = robot_build_efficiency_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.6
+		start_year = 2275
+
+		dependencies = {
+			robotics_tech_level_tribal = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_2 y = @Col_1 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_manpower < 2000
+					num_of_military_factories > 20
+				}
+			}
+			modifier = {
+				factor = 1.5
+				date > "2276.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2277.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2278.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_idea = national_spirit_rejection_of_automation
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_build_efficiency_tech_1 = {
+
+		conscription_factor = -0.25
+		Infantry = {
+			max_organisation = -3
+		}
+		fireteam_infantry = {
+			max_organisation = -3
+		}
+		demolitions_infantry = {
+			max_organisation = -3
+		}
+		on_research_complete = {
+			hidden_effect = {
+				add_ideas = robot_manufacturing_buff_1
+			}
+			custom_effect_tooltip = robot_manufacturing_buff_tt
+		}
+
+		research_cost = 1.6
+		start_year = 2276
+
+		path = {
+			leads_to_tech = robot_build_efficiency_tech_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			robotics_tech_level_tribal = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_3 y = @Col_1 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				date > "2276.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2277.1.1"
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = robot_doctrine_ai }
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_build_efficiency_tech_2 = {
+
+		conscription_factor = -0.25
+		Infantry = {
+			max_organisation = -3
+		}
+		fireteam_infantry = {
+			max_organisation = -3
+		}
+		demolitions_infantry = {
+			max_organisation = -3
+		}
+		on_research_complete = {
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = robot_manufacturing_buff_2
+					remove_idea = robot_manufacturing_buff_1
+				}
+			}
+			custom_effect_tooltip = robot_manufacturing_buff_tt
+		}
+
+		research_cost = 1.6
+		start_year = 2277
+
+		path = {
+			leads_to_tech = robot_build_efficiency_tech_3
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			robotics_tech_level_tribal = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_4 y = @Col_1 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				date > "2277.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2278.1.1"
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = robot_doctrine_ai }
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_build_efficiency_tech_3 = {
+
+		conscription_factor = -0.25
+		Infantry = {
+			max_organisation = -3
+		}
+		fireteam_infantry = {
+			max_organisation = -3
+		}
+		demolitions_infantry = {
+			max_organisation = -3
+		}
+		on_research_complete = {
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = robot_manufacturing_buff_3
+					remove_idea = robot_manufacturing_buff_2
+				}
+			}
+			custom_effect_tooltip = robot_manufacturing_buff_tt
+		}
+
+		research_cost = 1.6
+		start_year = 2278
+
+		dependencies = {
+			robotics_tech_level_tribal = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_5 y = @Col_1 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				date > "2278.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2279.1.1"
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = robot_doctrine_ai }
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			civilized_tech_category
+		}
+	}
+
+	robot_fission_batteries_tech = {
+		category_robots = {
+			fuel_consumption_factor = -0.10
+			supply_consumption = -0.01
+		}
+
+		path = {
+			leads_to_tech = robot_protectron_equipment_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = robot_handy_equipment_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = robot_command_equipment_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.6
+		start_year = 2276
+
+		dependencies = {
+			robotics_tech_level_settler = 1
+		}
+
+		folder = {
+			name = fallout_robotics_folder
+			position = { x = @Row_2 y = @Col_2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_country_flag = robot_doctrine_ai
+			}
+			modifier = {
+				factor = 1.5
+				date > "2276.1.1"
+			}
+			modifier = {
+				factor = 2
+				date > "2277.1.1"
+			}
+		}
+
+		categories = {
+			robotics_tech_category
+			support_robot_tech_category
+			armor_tech_category
+			civilized_tech_category
+		}
+	}
+
+}

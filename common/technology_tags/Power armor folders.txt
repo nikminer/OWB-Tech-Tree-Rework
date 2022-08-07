@@ -1,0 +1,17 @@
+technology_folders = {
+	fallout_power_armor_par_folder = {
+		ledger = army
+		available = { 
+			has_global_flag = PowerArmorReworked 
+		}
+	}
+	
+	fallout_power_armor_folder = {
+		ledger = army
+		available = {
+			not = {
+				has_global_flag = PowerArmorReworked 
+			}
+		}
+	}
+}

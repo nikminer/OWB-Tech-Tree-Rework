@@ -1,0 +1,83 @@
+#-------------------------
+# Unique Skater Equipment
+#-------------------------
+technologies = {
+	# Column Position is relative to the tree position in countrytechtree.gui
+	@Col_11 = 48
+	@Col_12 = 52
+
+	@Row_melee = 8
+
+	skater_tech = {
+		enable_subunits = {
+			skate_infantry
+		}
+
+		enable_equipments = {
+			skate_equipment_1
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = skate_infantry
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_skater"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		research_cost = 2
+		start_year = 2275
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_melee y = @Col_11 }
+		}
+
+		path = {
+			leads_to_tech = rocket_skater_tech
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			infantry_tech_category
+			civilized_tech_category
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	rocket_skater_tech = {
+		enable_equipments = {
+			skate_equipment_2
+		}
+
+		dependencies = {
+			skater_tech = 1
+		}
+
+		research_cost = 2
+		start_year = 2280
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_melee y = @Col_12 }
+		}
+
+		categories = {
+			infantry_tech_category
+			civilized_tech_category
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

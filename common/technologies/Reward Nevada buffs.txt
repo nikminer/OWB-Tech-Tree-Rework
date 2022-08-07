@@ -1,0 +1,29 @@
+#-------------------------
+# Nevada buffs 				
+#-------------------------
+technologies = {
+
+	@Col_1 = 4
+	
+	@Row_NevadaBufs = 32
+
+	exoskin_armoured_special_forces = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_NevadaBufs y = @Col_1 }
+		}
+
+		allow = { always = no }
+
+		category_special_forces = {
+			default_morale = 0.05
+		}
+	}
+
+}

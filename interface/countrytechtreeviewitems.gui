@@ -1,0 +1,2332 @@
+guiTypes = {
+#------------------------------------------
+# Infantry
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_infantry_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+	
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "techtree_fallout_infantry_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 283 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=30 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=73 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=115 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+#------------------------------------------
+# Support
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_support_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+	
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_support_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=141 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_rocket"
+				alwaystransparent = yes
+			}
+		}
+	
+	}
+	
+#------------------------------------------
+# Power armor
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_power_armor_folder_small_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_power_armor_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=30 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=73 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=115 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_power_armor_par_folder_small_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_power_armor_par_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=30 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=73 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=115 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+	
+#------------------------------------------
+# Vehicle
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_vehicle_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+			centerposition = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_vehicle_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=141 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_rocket"
+				alwaystransparent = yes
+			}
+		}
+	
+	}
+	
+#------------------------------------------
+# Robotics
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_robotics_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+	
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_robotics_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+	
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=30 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=73 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=115 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+#------------------------------------------
+# Air
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_air_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_air_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=30 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=73 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=115 y=80 }
+			size = { width = 26 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+	}
+	
+#------------------------------------------
+# Naval
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_naval_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_naval_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=141 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_rocket"
+				alwaystransparent = yes
+			}
+		}
+	
+	}
+	
+#------------------------------------------
+# Naval Modules
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_naval_modules_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+	
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_naval_modules_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=141 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_rocket"
+				alwaystransparent = yes
+			}
+		}
+	
+	}
+	
+#------------------------------------------
+# Naval non mtg
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_naval_non_mtg_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_naval_non_mtg_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=141 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_rocket"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+#------------------------------------------
+# Land Doctrine Items
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_land_doctrine_folder_item"
+		position = { x=0 y=0 }
+		size = { width = 70 height = 70 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=35 y=35 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+#------------------------------------------
+# Industry Items
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_industry_folder_item"
+		position = { x=0 y=0 }
+		size = { width = 70 height = 70 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=35 y=35 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+#------------------------------------------
+# Engineering
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_engineering_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=35 y=35 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_engineering_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+#------------------------------------------
+# Focus Tree
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_focus_tree_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_focus_tree_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=50 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=100 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+#------------------------------------------
+# tech Level
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_tech_level_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_tech_level_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=50 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=100 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+#------------------------------------------
+# Tribal Tech
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_tech_tribal_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=50 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=100 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+#------------------------------------------
+# Beast Tree
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_tech_beast_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_tech_beast_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=50 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=100 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+#------------------------------------------
+# Horse Tree
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_horse_tech_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_horse_tech_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=50 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=100 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+	
+#------------------------------------------
+# Implant Tech
+#------------------------------------------
+	containerWindowType = {
+		name = "techtree_fallout_tech_implant_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 70 height = 70 }
+		clipping = no
+	
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=36 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+	
+	containerWindowType = {
+		name = "techtree_fallout_tech_implant_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+		
+			font = "hoi_20bs"
+			borderSize = { x = 4 y = 4 }
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+	
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+		
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=50 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=100 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+		
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+		
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_icon"
+				alwaystransparent = yes
+			}
+		}
+	}
+
+}

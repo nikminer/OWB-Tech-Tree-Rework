@@ -1,0 +1,22 @@
+﻿l_english:
+  # Headers
+  Header_Origins: "Origins"
+  Header_Equipments: "Equipments"
+  Header_Bos: "Brotherhood \nof Steel"
+  Header_Ghouls: "Ghouls"
+  Header_Mutants: "Mutants"
+  Header_Schematics: "Schematics"
+  Header_Tribal: "Tribal"
+  Header_NCR: "NCR"
+  Header_Legion: "Legion"
+  Header_Mexico: "Mexico"
+  Header_Oregon: "Oregon"
+  Header_Settler: "Settler"
+  Header_Raiders: "Raiders"
+  Header_Nevada: "Nevada"
+  Header_TexBos: "Texas \nBrotherhood"
+
+
+  # Origins
+  military_heritage_unlock_tech: "Military origin"
+  military_heritage_unlock_tech_desc: "This faction has a military origin, which is why the entire internal hierarchy is strictly regulated, which gives more advantages in battle."

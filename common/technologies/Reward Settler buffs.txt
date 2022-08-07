@@ -1,0 +1,85 @@
+#-------------------------
+# Settler 				
+#-------------------------
+technologies = {
+
+	@Col_1 = 4
+	@Col_2 = 6
+	@Col_3 = 8
+	
+	@Row_settlerBufs = 28
+
+	settler_caravanmilitia = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_settlerBufs y = @Col_1 }
+		}
+
+		allow = { always = no }
+
+		militia = {
+			soft_attack = 0.05
+			defense = 0.05
+		}
+	}
+
+	#Dogs
+	dog_infantry_tech = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_settlerBufs y = @Col_2 }
+		}
+
+		enable_subunits = {
+			dog_infantry
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	#Lawkeepers
+	police_infantry_tech = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_settlerBufs y = @Col_3 }
+		}
+
+		enable_subunits = {
+			police_infantry
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+}

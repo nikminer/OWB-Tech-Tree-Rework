@@ -1,0 +1,35 @@
+#Technology trees are divided into separate files
+technologies = {
+
+	#-------------------------													#-------------------------
+	# Infantry Training  		-> Infantry Training.txt						# Unique Military Heritage  -> Unique Military Heritage.txt
+	#-------------------------													#-------------------------
+	
+	#-------------------------													#-------------------------
+	# Heavy Infantry     		-> Infantry Heavy Infantry.txt					# Unique Radroach Infantry  -> Unique Radroach Infantry.txt				
+	#-------------------------													#-------------------------
+	
+	#-------------------------													#-------------------------											
+	# Ranged Weaponry    		-> Infantry Weaponry.txt						# Unique Plasma Equipment   -> Unique Plasma Equipment.txt				
+	#-------------------------													#-------------------------											
+	#-------------------------													#-------------------------		
+	#-------------------------													# Unique Gauss Equipment    -> Unique Gauss Equipment.txt	
+	#-------------------------													#-------------------------		
+	
+	#-------------------------													#-------------------------
+	# Melee Weaponry     		-> Infantry Weaponry.txt						# Unique Skater Equipment   -> Unique Skater Equipment.txt
+	#-------------------------													#-------------------------
+	
+	
+	#-------------------------													#-------------------------										#-------------------------
+	# Special Forces    		-> Infantry Special Forces.txt					# Unique Mirelurk Infantry  -> Unique Mirelurk Infantry.txt		# Unique Molerat Infantry -> Special Molerat Infantry.txt
+	#-------------------------													#-------------------------										#-------------------------
+	#-------------------------
+	#-------------------------
+	#-------------------------
+	
+	#-------------------------													#-------------------------
+	# Power Armor       		-> Power Armor.txt								# Unique Power Armor 		-> Unique Power Armor.txt
+	#-------------------------													#-------------------------
+	
+}

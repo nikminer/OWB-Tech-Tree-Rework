@@ -1,0 +1,31 @@
+#-------------------------
+# Raiders buffs 				
+#-------------------------
+technologies = {
+
+	@Col_1 = 4
+	
+	@Row_RaidersBufs = 30	
+
+	raider_reckless_aggression = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_RaidersBufs y = @Col_1 }
+		}
+
+		allow = { always = no }
+
+		category_infantry = {
+			soft_attack = 0.1
+			defense = -0.1
+			breakthrough = 0.05
+		}
+	}
+
+}

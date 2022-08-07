@@ -1,0 +1,57 @@
+#-------------------------
+# Unique Fireteam Equipment
+#-------------------------
+technologies = {
+	@Col_9 = 39
+
+	@Row_4 = 3
+
+	fireteam_elite_weaponry_tech = {
+
+		enable_equipments = {
+			fireteam_equipment_5
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 30
+		xp_research_bonus = 0.3
+		start_year = 2283
+		folder = {
+			name = fallout_support_folder
+			position = { x = @Row_4 y = @Col_9 }
+		}
+
+		categories = {
+			support_tech_category
+			support_fireteam_tech_category
+			support_fireteam_ballistic_tech_category
+			scientific_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2284.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2285.1.1"
+			}
+		}
+	}
+}

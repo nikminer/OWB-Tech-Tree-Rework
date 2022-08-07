@@ -1,0 +1,7 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_generic_blueprint_background"
+		texturefile = "gfx/interface/equipmentdesigner/generic_blueprint_background.dds"
+	}
+}

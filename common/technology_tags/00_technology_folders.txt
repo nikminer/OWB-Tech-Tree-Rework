@@ -1,0 +1,77 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+technology_folders = {
+	fallout_infantry_folder = {
+		ledger = army
+	}
+	fallout_support_folder = {
+		ledger = army
+	}
+	fallout_vehicle_folder = {
+		ledger = army
+	}
+	fallout_robotics_folder = {
+		ledger = army
+	}
+	fallout_air_folder = {
+		ledger = air
+	}
+	fallout_industry_folder = {
+		ledger = civilian
+	}
+	fallout_land_doctrine_folder = {
+		ledger = army
+	}
+	fallout_engineering_folder = {
+		ledger = civilian
+	}
+	fallout_naval_folder = {
+		available = { has_dlc = "Man the Guns" }
+		ledger = navy
+	}
+	fallout_naval_non_mtg_folder = {
+		available = {
+			NOT = { has_dlc = "Man the Guns" }
+		}
+		ledger = navy
+	}
+	fallout_naval_modules_folder = {
+		available = { has_dlc = "Man the Guns" }
+		ledger = navy
+	}
+	fallout_focus_tree_folder = {
+		ledger = civilian
+	}
+	fallout_tech_level_folder = {
+		ledger = civilian
+	}
+	fallout_tech_tribal_folder = {
+		available = { has_tech = tribal_tech_visibility_tech }
+		ledger = army
+	}
+	fallout_tech_beast_folder = {
+		available = { has_tech = beast_tech_visibility_tech }
+		ledger = army
+	}
+	fallout_tech_implant_folder = {
+		available = { has_tech = implant_tech_visibility_tech }
+		ledger = army
+	}
+	fallout_horse_tech_folder = {
+		available = { tag = MLP }
+		ledger = army
+	}
+	land_doctrine_folder = {
+		ledger = army
+		doctrine = yes
+	}
+	naval_doctrine_folder = {
+		ledger = navy
+		doctrine = yes
+	}
+	air_doctrine_folder = {
+		ledger = air
+		doctrine = yes
+	}
+
+}

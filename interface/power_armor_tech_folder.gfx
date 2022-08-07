@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_fallout_power_armor_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_tab_power_armor.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_power_armor_tech_bg"
+		textureFile = "gfx/interface/techtree/techtree_bg_power_armor.dds"
+	}
+
+}

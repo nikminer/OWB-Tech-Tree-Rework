@@ -1,0 +1,259 @@
+#-------------------------
+# Anti-Tank Weaponry
+#-------------------------
+technologies = {
+	# Column Position is relative to the tree position in countrytechtree.gui
+	@Col_2 = 12
+	@Col_3 = 16
+	@Col_4 = 20
+	@Col_5 = 24
+	@Col_6 = 28
+	@Col_7 = 32
+
+	@Row_at = 7
+	
+	anti_tank_equipment_tech_1 = {
+
+		enable_subunits = {
+			anti_tank_company
+		}
+
+		enable_equipments = {
+			anti_tank_equipment_1
+		}
+
+		path = {
+			leads_to_tech = anti_tank_tech_1
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			support_tech_level_tribal = 1
+		}
+
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 30
+		xp_research_bonus = 0.3
+		start_year = 2276
+		folder = {
+			name = fallout_support_folder
+			position = { x = @Row_at y = @Col_2 }
+		}
+
+		categories = {
+			support_tech_category
+			support_anti_tank_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 3
+				date > "2276.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2277.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2278.1.1"
+			}
+		}
+	}
+
+	anti_tank_tech_1 = {
+		anti_tank_company = {
+			ap_attack = 0.10
+			hard_attack = 0.10
+		}
+		path = {
+			leads_to_tech = anti_tank_equipment_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 30
+		xp_research_bonus = 0.3
+		start_year = 2278
+		folder = {
+			name = fallout_support_folder
+			position = { x = @Row_at y = @Col_3 }
+		}
+
+		dependencies = {
+			support_tech_level_tribal = 1
+		}
+
+		categories = {
+			support_tech_category
+			support_anti_tank_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 3
+				date > "2278.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2279.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2280.1.1"
+			}
+		}
+	}
+
+	anti_tank_equipment_tech_2 = {
+
+		enable_equipments = {
+			anti_tank_equipment_2
+		}
+
+		path = {
+			leads_to_tech = anti_tank_tech_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			support_tech_level_settler = 1
+		}
+
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 30
+		xp_research_bonus = 0.3
+		start_year = 2281
+		folder = {
+			name = fallout_support_folder
+			position = { x = @Row_at y = @Col_5 }
+		}
+
+		categories = {
+			support_tech_category
+			support_anti_tank_tech_category
+			civilized_tech_category
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 3
+				date > "2281.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2282.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2283.1.1"
+			}
+		}
+	}
+
+	anti_tank_tech_2 = {
+
+		anti_tank_company = {
+			ap_attack = 0.10
+			hard_attack = 0.10
+		}
+
+		path = {
+			leads_to_tech = anti_tank_equipment_tech_3
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			support_tech_level_settler = 1
+		}
+
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 30
+		xp_research_bonus = 0.3
+		start_year = 2282
+		folder = {
+			name = fallout_support_folder
+			position = { x = @Row_at y = @Col_6 }
+		}
+
+		categories = {
+			support_tech_category
+			support_anti_tank_tech_category
+			civilized_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				date > "2282.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2284.1.1"
+			}
+		}
+	}
+
+	anti_tank_equipment_tech_3 = {
+
+		enable_equipments = {
+			anti_tank_equipment_3
+		}
+
+		dependencies = {
+			support_tech_level_scientific = 1
+		}
+
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 30
+		xp_research_bonus = 0.3
+		start_year = 2283
+		folder = {
+			name = fallout_support_folder
+			position = { x = @Row_at y = @Col_7 }
+		}
+
+		categories = {
+			support_tech_category
+			support_anti_tank_tech_category
+			scientific_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2284.1.1"
+			}
+			modifier = {
+				factor = 3
+				date > "2285.1.1"
+			}
+		}
+	}
+
+}

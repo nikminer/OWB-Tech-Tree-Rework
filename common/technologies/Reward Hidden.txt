@@ -1,0 +1,296 @@
+#-------------------------
+# Hidden 				
+#-------------------------
+technologies = {
+
+	platinum_os_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	nuke_unlock_tech = {
+		research_cost = 1.0
+
+		nuclear_production = 1
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	alamo_defenders_unlock_tech = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		enable_subunits = {
+			alamo_defenders
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	crusader_unit_tech_1 = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = crusader_unit
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_crusaders"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		enable_subunits = {
+			crusader_unit
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	crusader_unit_tech_2 = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		crusader_unit = {
+			max_organisation = 0.1
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	crusader_unit_tech_3 = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		crusader_unit = {
+			max_organisation = 0.1
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hea_infantry_footman_tech_1 = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		conscription = 0.02
+
+		infantry = {
+			max_organisation = 0.1
+			max_strength = 0.1
+			soft_attack = 0.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hea_infantry_footman_tech_2 = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		conscription = 0.02
+
+		infantry = {
+			max_organisation = 0.1
+			max_strength = -0.1
+			soft_attack = 0.05
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	hea_infantry_footman_tech_3 = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		conscription = 0.02
+
+		infantry = {
+			max_organisation = 0.1
+			max_strength = -0.1
+			soft_attack = 0.05
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+#NCR
+	ncr_railway_construction = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+		production_speed_infrastructure_factor = 0.10
+		industry_repair_factor = 0.05
+	}
+
+# Defunct
+	tribal_civilization = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		categories = {
+			civilization_tech_category
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	settled_civilization = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		categories = {
+			civilization_tech_category
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	scientific_civilization = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		categories = {
+			civilization_tech_category
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	railways_construction = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		enable_building = {
+			building = rail_way
+			level = 3
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,656 @@
+#-------------------------
+# Special Forces
+#-------------------------
+technologies = {
+	# Column Position is relative to the tree position in countrytechtree.gui
+	@Col_1 = 8
+	@Col_2 = 12
+	@Col_3 = 16
+	@Col_4 = 20
+	@Col_5 = 24
+	@Col_6 = 28
+	@Col_7 = 32
+	@Col_9 = 24
+
+	@Row_specops = 10
+	@Row_specopsmiddle = 12
+
+# Spec ops Equipment
+	spec_ops_equipment_tech_1 = {
+
+		enable_subunits = {
+			spec_ops
+		}
+
+		enable_equipments = {
+			spec_ops_equipment_1
+		}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = spec_ops
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_special_forces"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = unit_logger_rule
+						option = ENABLED
+					}
+				}
+				add_to_array = {
+					researched_techs = 201
+				}
+			}
+		}
+
+		path = {
+			leads_to_tech = spec_ops_equipment_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2275
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_1 }
+		}
+
+		dependencies = {
+			special_forces_tech_level_tribal = 1
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2276.1.1"
+			}
+		}
+	}
+
+	spec_ops_equipment_tech_2 = {
+
+		enable_equipments = {
+			spec_ops_equipment_2
+		}
+
+		path = {
+			leads_to_tech = hardening_armour_tech
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = unit_logger_rule
+						option = ENABLED
+					}
+				}
+				add_to_array = {
+					researched_techs = 202
+				}
+			}
+		}
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2277
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_2 }
+		}
+
+		dependencies = {
+			special_forces_tech_level_tribal = 1
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2278.1.1"
+			}
+		}
+	}
+
+	hardening_armour_tech = {
+
+		spec_ops = {
+			armor_value = 0.05
+		}
+
+		path = {
+			leads_to_tech = spec_ops_equipment_tech_3
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			special_forces_tech_level_tribal = 1
+		}
+
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2278
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_3 }
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2280.1.1"
+			}
+		}
+	}
+
+	spec_ops_equipment_tech_3 = {
+
+		enable_equipments = {
+			spec_ops_equipment_3
+		}
+
+		path = {
+			leads_to_tech = ballistic_fibre_tech
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = unit_logger_rule
+						option = ENABLED
+					}
+				}
+				add_to_array = {
+					researched_techs = 203
+				}
+			}
+		}
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2279
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_4 }
+		}
+
+		dependencies = {
+			special_forces_tech_level_settler = 1
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			civilized_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2281.1.1"
+			}
+		}
+	}
+
+	ballistic_fibre_tech = {
+
+		spec_ops = {
+			hardness = 0.05
+		}
+
+		path = {
+			leads_to_tech = spec_ops_equipment_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2280
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_5 }
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			civilized_tech_category
+		}
+
+		dependencies = {
+			special_forces_tech_level_settler = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2282.1.1"
+			}
+		}
+	}
+
+	spec_ops_equipment_tech_4 = {
+
+		enable_equipments = {
+			spec_ops_equipment_4
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = unit_logger_rule
+						option = ENABLED
+					}
+				}
+				add_to_array = {
+					researched_techs = 204
+				}
+			}
+		}
+		path = {
+			leads_to_tech = spec_ops_equipment_tech_5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = night_vision_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2281
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_6 }
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			civilized_tech_category
+		}
+
+		dependencies = {
+			special_forces_tech_level_settler = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2283.1.1"
+			}
+		}
+	}	
+
+	night_vision_tech = {
+		land_night_attack = 0.1
+
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2281
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specopsmiddle y = @Col_6 }
+		}
+
+		path = {
+			leads_to_tech = thermal_vision_tech
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			special_forces_tech_level_settler = 1
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			civilized_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 5
+				has_country_flag = power_armor_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2283.1.1"
+			}
+		}
+	}
+
+	thermal_vision_tech = {
+		land_night_attack = 0.1
+
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2282
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specopsmiddle y = @Col_7 }
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			scientific_tech_category
+		}
+
+		dependencies = {
+			special_forces_tech_level_scientific = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 5
+				has_country_flag = power_armor_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2284.1.1"
+			}
+		}
+	}
+
+	spec_ops_equipment_tech_5 = {
+
+		enable_equipments = {
+			spec_ops_equipment_5
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = unit_logger_rule
+						option = ENABLED
+					}
+				}
+				add_to_array = {
+					researched_techs = 205
+				}
+			}
+		}
+		path = {
+			leads_to_tech = stealth_boy_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2282
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_7 }
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			scientific_tech_category
+		}
+
+		dependencies = {
+			special_forces_tech_level_scientific = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2284.1.1"
+			}
+		}
+	}
+
+	stealth_boy_tech = {
+
+		spec_ops = {
+			recon = 0.2
+			soft_attack = 0.02
+		}
+
+		research_cost = 2
+		xp_research_type = army
+		xp_boost_cost = 35
+		xp_research_bonus = 0.3
+
+		start_year = 2284
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specops y = @Col_9 }
+		}
+
+		dependencies = {
+			special_forces_tech_level_scientific = 1
+		}
+
+		categories = {
+			infantry_tech_category
+			spec_force_tech_category
+			spec_force_equipment_tech_category
+			tribal_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 10
+				date > "2286.1.1"
+			}
+		}
+	}
+
+# Horses, Cavalry
+	spec_ops_horses_tech = {
+		research_cost = 2
+
+		allow = {
+			always = no
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		start_year = 2276
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specopsmiddle y = @Col_2 }
+		}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = spec_ops_cavalry
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_spec_ops_cavalry"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = spec_ops_horses_tech_2
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			horse_equipment_1
+		}
+
+		enable_subunits = {
+			spec_ops_cavalry
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	spec_ops_horses_tech_2 = {
+		research_cost = 2
+
+		allow = {
+			always = no
+		}
+
+		start_year = 2279
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specopsmiddle y = @Col_3 }
+		}
+
+		path = {
+			leads_to_tech = spec_ops_horses_tech_3
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			horse_equipment_2
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	spec_ops_horses_tech_3 = {
+		research_cost = 2
+
+		allow = {
+			always = no
+		}
+
+		start_year = 2282
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_specopsmiddle y = @Col_4 }
+		}
+
+		enable_equipments = {
+			horse_equipment_3
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

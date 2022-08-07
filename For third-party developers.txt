@@ -1,0 +1,36 @@
+To achieve simple compatibility of this mod with yours tech sub-mods, you will need to do several actions:
+1. Specify in the description.mod in the dependencies section, the name of this mod is "OWB: Tech Tree Rework".
+#	dependencies={
+#		"Old World Blues"
+#		"OWB: Tech Tree Rework"
+#	}
+
+2. To match your changes of the main mod with the changes of the current one in folder "common\technologies". 
+   Because this mod separates the technological trees so that the other mods do not overwrite each other, this was done to increase the compatibility of mods.
+
+3. If there is a rewrite of the original technology_categories in your tech submod, to add new ones, then I ask you to redo the addition of new categories 
+   into a separate file without copying the original categories.
+#   technology_categories = {
+#			power_armor_tech_category
+#   }
+
+
+If there are new technology_folders in your mod, then you will need to do the following. How is it done in the Power Armor Rework mod:
+1. Add a new file to on_actions, in which a global flag will be added at on_startup, which will allow this mod to identify your mod. 
+#	on_actions = {
+#		on_startup = {
+#			effect = {
+#				set_global_flag = PowerArmorReworked	
+#			}
+#		}
+#	}
+
+2. Create a separate file in technology_tags with your technology folder, which will have the has_global_flag condition set in the available property.
+#	fallout_power_armor_par_folder = {
+#		ledger = army
+#		available = { 
+#			has_global_flag = PowerArmorReworked 
+#		}
+#	}
+
+3. Contact the mod developers or send the mod to Github, Pull request with your changes "countrytechtreeview.gui", "countrytechtreeviewitems.gui" and technology folder file

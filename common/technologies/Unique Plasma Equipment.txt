@@ -1,0 +1,78 @@
+#-------------------------
+# Unique Plasma Equipment
+#-------------------------
+technologies = {
+	# Column Position is relative to the tree position in countrytechtree.gui
+	@Col_11 = 48
+	@Col_12 = 52
+
+	@Row_energy = 4
+
+	plasma_weaponry_1 = {
+		enable_equipments = {
+			plasma_equipment_1
+		}
+
+		path = {
+			leads_to_tech = plasma_weaponry_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			infantry_tech_level_settler = 1
+			plasma_unlock_tech = 1
+		}
+
+		research_cost = 4
+
+		start_year = 2285
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_energy y = @Col_11 }
+		}
+
+		categories = {
+			plasma_weaponry_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				date > "2285.1.1"
+			}
+		}
+	}
+
+	plasma_weaponry_2 = {
+		enable_equipments = {
+			plasma_equipment_2
+		}
+
+		dependencies = {
+			infantry_tech_level_scientific = 1
+			plasma_unlock_tech = 1
+		}
+
+		research_cost = 4
+
+		start_year = 2287
+		folder = {
+			name = fallout_infantry_folder
+			position = { x = @Row_energy y = @Col_12 }
+		}
+
+		categories = {
+			plasma_weaponry_tech_category
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				date > "2287.1.1"
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,62 @@
+#Technology trees are divided into separate files
+technologies = {
+	#-------------------------													
+	# Origins 					-> Reward Origins.txt									
+	#-------------------------							
+		
+	#-------------------------													
+	# Equipments 				-> Reward Equipments.txt									
+	#-------------------------		
+	
+	#-------------------------													
+	# BOS 						-> Reward BOS.txt									
+	#-------------------------		
+	
+	#-------------------------													
+	# Ghouls 					-> Reward Ghouls.txt									
+	#-------------------------		
+	
+	#-------------------------													
+	# Mutants 					-> Reward Mutants.txt									
+	#-------------------------		
+	
+	#-------------------------													
+	# Schematics				-> Reward Schematics.txt									
+	#-------------------------		
+	
+	#-------------------------													
+	# Tribal buffs				-> Reward Tribal buffs.txt									
+	#-------------------------		
+
+	#-------------------------													
+	# NCR buffs					-> Reward NCR buffs.txt									
+	#-------------------------		
+	
+	#-------------------------													
+	# Legion buffs				-> Reward Legion buffs.txt									
+	#-------------------------	
+		
+	#-------------------------										#-------------------------																	
+	# Mex buffs 				-> Reward Mex buffs.txt				# Coffee Tech 				-> Reward Coffee Tech.txt																
+	#-------------------------										#-------------------------		
+	
+	#-------------------------													
+	# Oregon buffs 				-> Reward Oregob buffs.txt									
+	#-------------------------	
+
+	#-------------------------													
+	# Settler buffs 			-> Reward Settler buffs.txt									
+	#-------------------------	
+
+	#-------------------------													
+	# Raiders buffs 			-> Reward Raiders buffs.txt									
+	#-------------------------	
+
+	#-------------------------													
+	# Nevada buffs 				-> Reward Nevada buffs.txt									
+	#-------------------------	
+
+	#-------------------------													
+	# Hidden Tech 				-> Reward Hidden.txt								
+	#-------------------------	
+}
