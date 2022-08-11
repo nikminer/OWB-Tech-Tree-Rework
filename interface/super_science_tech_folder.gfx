@@ -1,0 +1,8 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "GFX_fallout_tech_science_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_tab_implant.dds"
+		noOfFrames = 2
+	}
+}
