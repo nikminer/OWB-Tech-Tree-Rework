@@ -1,0 +1,6 @@
+technology_folders = {
+    fallout_tech_science_folder = {
+        ledger = army
+        available = { has_global_flag = TechExpansion }
+    }
+}
