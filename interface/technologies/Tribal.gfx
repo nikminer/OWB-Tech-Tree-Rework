@@ -1,0 +1,177 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tribal_starter_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_starter_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_enforcer_defense_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_enforcer_defense_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_enforcer_soft_attack_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_enforcer_soft_attack_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_enforcer_hard_attack_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_enforcer_hard_attack_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_enforcer_speed_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_enforcer_speed_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_enforcer_org_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_enforcer_org_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_infantry_defense_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_infantry_defense_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_infantry_soft_attack_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_infantry_soft_attack_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_infantry_hard_attack_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_infantry_hard_attack_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_infantry_recovery_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_infantry_recovery_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_infantry_org_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_infantry_org_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_coring_cost_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_coring_cost_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_bucket_o_bolts_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_bucket_o_bolts_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_construction_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_construction_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_aa_building_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_aa_building_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_production_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_production_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_occupation_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_occupation_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_political_power_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_political_power_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_bomb_protection_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_bomb_protection_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_construction_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_construction_tech_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_construction_tech_3_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_construction_tech_3.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_production_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_production_tech_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_production_tech_3_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_production_tech_3.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_production_tech_4_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_production_tech_4.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_piercing_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_piercing_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_aa_unit_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_aa_unit_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_climate_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_climate_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_resistance_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_resistance_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_command_power_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_command_power_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_recovery_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_recovery_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_reliability_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_reliability_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_attrition_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_attrition_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_recon_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_recon_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_reinforce_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_reinforce_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_tribal_hard_attack_tech_medium"
+		texturefile = "gfx/interface/technologies/tribal/tribal_hard_attack_tech.dds"
+		alwaystransparent = yes
+	}
+}

@@ -1,0 +1,509 @@
+spriteTypes = {
+
+	#------------------------------------------
+	# Origins
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_military_heritage_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/military_heritage_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+	#------------------------------------------
+	# Units
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_sentinel_unit_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/sentinel_unit_tech.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_mininuke_unlock_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/mininuke.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_artillery_ammo_unlock_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/artillery_ammo_icon.dds"
+			alwaystransparent = yes
+		}	
+	
+		spriteType = {
+			name = "GFX_forward_fire_base_unlock_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/forward_fire_base_unlock_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_gehenna_molech_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/gehenna_molech_tech.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_super_mutant_behemoth_medium"
+			textureFile = "gfx/interface/equipment/generic/behemoth_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_grunt_level_radio_unlock_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/grunt_level_radio_unlock_tech_icon.dds"
+			alwaystransparent = yes
+		}
+	
+	
+	
+	#-------------------------
+	# BOS 					
+	#-------------------------
+		spriteType = {
+			name = "GFX_knights_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/BOS/knights_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_scribes_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/BOS/scribes_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_tbh_lawkeepers_tech_1_medium"
+			texturefile = "gfx/interface/technologies/Reward/BOS/tbh_lawkeepers_tech_1.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_tbh_lawkeepers_tech_2_medium"
+			texturefile = "gfx/interface/technologies/Reward/BOS/tbh_lawkeepers_tech_2.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_tbh_lawkeepers_tech_3_medium"
+			texturefile = "gfx/interface/technologies/Reward/BOS/tbh_lawkeepers_tech_3.dds"
+			alwaystransparent = yes
+		}
+		
+	#------------------------------------------
+	# Ghouls
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_ghoul_civilization_medium"
+			texturefile = "gfx/interface/technologies/Reward/Ghouls/ghoul_civilization.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_ghoul_paratrooper_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Ghouls/ghoul_paratrooper_tech.dds"
+			alwaystransparent = yes
+		}
+	
+	#------------------------------------------
+	# Mutants
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_super_mutant_civilization_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mutants/super_mutant_civilization.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_super_mutant_aux_infantry_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mutants/super_mutant_aux_infantry_tech.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_super_mutant_nightkin_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mutants/super_mutant_nightkin_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_plant_support_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mutants/plant_support_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_reno_mastersnewarmy_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mutants/reno_mastersnewarmy.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_mutant_supremacy_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mutants/mutant_supremacy.dds"
+			alwaystransparent = yes
+		}
+	
+	
+	#------------------------------------------
+	# Schematics
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_gauss_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/gauss_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_plasma_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/plasma_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_enclave_pa_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/enclave_pa_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_high_fighter_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/high_fighter_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_vertibird_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/vertibird_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+	
+	
+		spriteType = {
+			name = "GFX_general_atomics_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/general_atomics_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_stent_security_solutions_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/stent_security_solutions_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_wattz_company_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/wattz_company_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_handhtools_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/handhtools_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_poseidon_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/poseidon_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_lockreed_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/lockreed_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_arcjetsystems_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/arcjetsystems_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_westtek_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/westtek_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_robco_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/robco_unlock_tech.dds"
+			alwaystransparent = yes
+		}
+	
+	#------------------------------------------
+	# Tribal
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_pathfinders_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/pathfinders.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_clanfightingstyles_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/clanfightingstyles.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_warriorcult_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/warriorcult.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_nomadsoul_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/nomadsoul.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_mansbestfriend_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/mansbestfriend.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_noctwarriors_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/noctwarriors.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_tribalholyorg_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/tribalholyorg.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_outsiderways_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/outsiderways.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_sacredgifts_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/sacredgifts.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_tribalwarpaint_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/tribalwarpaint.dds"
+			alwaystransparent = yes
+		}
+		
+		spriteType = {
+			name = "GFX_tribalnumbers_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/tribalnumbers.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_tribalimmortals_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/tribalimmortals.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_mountaingods_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/mountaingods.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_sungods_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/sungods.dds"
+			alwaystransparent = yes
+		}
+	
+	#------------------------------------------
+	# NCR
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_oldworldarmour_medium"
+			texturefile = "gfx/interface/technologies/Reward/NCR/oldworldarmour.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_ncr_reorgranger_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/NCR/ncr_reorgranger_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_ncr_rangercore_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/NCR/ncr_rangercore_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_ncr_jim_drills_medium"
+			texturefile = "gfx/interface/technologies/Reward/NCR/ncr_jim_drills.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_ncr_rangerlead_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/NCR/ncr_rangerlead_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_ncr_rangercanopeners_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/NCR/ncr_rangercanopeners_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_ncr_seth_medium"
+			texturefile = "gfx/interface/technologies/Reward/NCR/ncr_seth.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_ncr_privatepolice_medium"
+			texturefile = "gfx/interface/technologies/Reward/NCR/ncr_privatepolice.dds"
+			alwaystransparent = yes
+		}
+	
+	#------------------------------------------
+	# Legion
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_ces_at_tech_medium"
+			texturefile = "gfx/interface/technologies/tribal/tribal_piercing_tech.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_ces_navajo_skin_walkers_tech_medium"
+			texturefile = "gfx/interface/technologies/tribal/tribal_production_tech.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_ces_two_tech_medium"
+			texturefile = "gfx/interface/technologies/tyre_profile_icon.dds"
+			alwaystransparent = yes
+		}
+		
+		spriteType = {
+			name = "GFX_CES_mercenary_training_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/CES_mercenary_training_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_CES_horns_moroni_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/CES_horns_moroni_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_legion_centurions_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/legion_centurions_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_legion_warriors_of_mars_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/legion_warriors_of_mars_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_armored_chariots_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/armored_chariots_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_legion_frumentarii_officers_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/legion_frumentarii_officers_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_legion_frumentarii_commandoes_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/legion_frumentarii_commandoes_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_phoenix_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/phoenix_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_legion_vexillarius_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/legion_vexillarius_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_legion_training_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/legion_training_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_ces_aurelius_mercenaries_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/ces_aurelius_mercenaries_tech.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_ces_navajo_scouts_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Legion/ces_navajo_scouts_tech.dds"
+			alwaystransparent = yes
+		}
+	
+	################################################
+	#	Mexico
+	################################################
+		spriteType = {
+			name = "GFX_itz_rough_terrian_training_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mexico/itz_rough_terrian_training.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_jungle_spirits_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mexico/jungle_spirits.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_jungle_tribal_integration_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mexico/jungle_tribal_integration_tech.dds"
+			alwaystransparent = yes
+		}
+	#-------------------------
+	# Coffee Tech 				
+	#-------------------------
+		spriteType = {
+			name = "GFX_drug_technology_coffee_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mexico/drug_technology_coffee.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_drug_technology_coffee_2_medium"
+			texturefile = "gfx/interface/technologies/Reward/Mexico/drug_technology_coffee.dds"
+			alwaystransparent = yes
+		}
+	#------------------------------------------
+	# Settler
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_settler_caravanmilitia_medium"
+			texturefile = "gfx/interface/technologies/Reward/Settler/settler_caravanmilitia.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_dog_infantry_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Settler/dog_infantry_tech.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_police_infantry_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Settler/police_infantry_tech.dds"
+			alwaystransparent = yes
+		}
+	
+	#------------------------------------------
+	# Raiders
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_raider_reckless_aggression_medium"
+			texturefile = "gfx/interface/technologies/Reward/Raiders/raider_reckless_aggression.dds"
+			alwaystransparent = yes
+		}
+	}

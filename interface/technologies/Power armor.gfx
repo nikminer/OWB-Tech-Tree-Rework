@@ -1,0 +1,103 @@
+spriteTypes = {
+	# Chassie
+		spriteType = {
+			name = "GFX_wasteland_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/wasteland_power_armour_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_stripped_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/stripped_power_armour_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_scav_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/scav_power_armour_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_t45d_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/t_45_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_c_t45d_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/c_t_45_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_t51b_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/t_51_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_c_t51b_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/c_t_51_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_h_t51b_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/h_t_51_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_power_armour_enclave_1_medium"
+			texturefile = "gfx/interface/equipment/generic/apa_armour_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_power_armour_enclave_2_medium"
+			texturefile = "gfx/interface/equipment/generic/apa_mk2_armour_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_texas_brotherhood_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/vault_tec_pa_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_midwest_pa_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/midwest_pa_icon.dds"
+			alwaystransparent = yes
+		}
+		
+	# Buffs
+		spriteType = {
+			name = "GFX_simple_servo_tech_medium"
+			texturefile = "gfx/interface/technologies/simple_servo_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_advanced_servo_tech_medium"
+			texturefile = "gfx/interface/technologies/advanced_servo_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_high_pressure_hydraulics_tech_medium"
+			texturefile = "gfx/interface/technologies/high_pressure_hydraulics_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_weight_support_frame_pa_tech_1_medium"
+			textureFile = "gfx/interface/technologies/weight_support_frame_pa_tech_1.dds"
+		}
+	
+		spriteType = {
+			name = "GFX_weight_support_frame_pa_tech_2_medium"
+			textureFile = "gfx/interface/technologies/weight_support_frame_pa_tech_2.dds"
+		}	
+}

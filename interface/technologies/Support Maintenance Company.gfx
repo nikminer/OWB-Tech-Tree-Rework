@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_recon_company_tech_1_medium"
+		texturefile = "gfx/interface/technologies/recon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_3_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_4_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_5_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_6_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company6.dds"
+		alwaystransparent = yes
+	}
+}

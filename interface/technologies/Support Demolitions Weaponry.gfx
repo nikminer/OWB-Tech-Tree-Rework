@@ -1,0 +1,115 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_demolitions_weaponry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/demolitions_weaponry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/flamer_demolitions_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_sustained_pressure_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_sustained_pressure_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_high_pressure_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_high_pressure_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/flamer_demolitions_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_cooling_jacket_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_cooling_jacket_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/flamer_demolitions_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_longevity_focus_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_longevity_focus_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_temperature_focus_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_temperature_focus_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/explosive_demolitions_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_operational_security_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_operational_security_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_volatility_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_volatility_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/explosive_demolitions_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_propulsion_charge_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_propulsion_charge_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/explosive_demolitions_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_cyclic_fire_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_cyclic_fire_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_rapid_fire_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_rapid_fire_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_demolitions_elite_weaponry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/demolitions_weaponry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fireteam_elite_weaponry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/fireteam_weaponry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+}

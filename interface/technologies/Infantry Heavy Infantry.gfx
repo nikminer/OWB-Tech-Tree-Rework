@@ -1,0 +1,25 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_heavy_infantry_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_infantry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_infantry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/heavy_infantry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_infantry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/heavy_infantry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_infantry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_infantry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+}

@@ -1,0 +1,125 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_fireteam_weaponry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/fireteam_weaponry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_fireteam_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_high_caliber_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_high_caliber_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_low_caliber_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_low_caliber_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_fireteam_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_cooling_jacket_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_cooling_jacket_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_tri_barrel_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_tri_barrel_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_hepta_barrel_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_hepta_barrel_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_fireteam_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_fireteam_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_heat_lens_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_heat_lens_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_focus_lens_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_focus_lens_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_fireteam_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_cooling_jacket_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_cooling_jacket_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_fireteam_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_rapid_charge_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_rapid_charge_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_over_charge_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_over_charge_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	# AA anti air, equipments + techs
+		spriteType = {
+			name = "GFX_aa_fireteam_equipment_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/aa_fireteam_equipment_tech_icon.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_aa_fireteam_equipment_tech_2_medium"
+			texturefile = "gfx/interface/equipment/generic/aa_fireteam_equipment_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_aa_fireteam_tech_medium"
+			texturefile = "gfx/interface/technologies/aa_fireteam_tech_icon.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_aa_fireteam_tech_2_medium"
+			texturefile = "gfx/interface/technologies/aa_fireteam_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+}

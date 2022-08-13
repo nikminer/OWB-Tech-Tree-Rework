@@ -1,0 +1,84 @@
+spriteTypes = {
+	# Skates
+		spriteType = {
+			name = "GFX_skater_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/skate_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_rocket_skater_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/skate_icon_2.dds"
+			alwaystransparent = yes
+		}
+	# Military Heritage
+		spriteType = {
+			name = "GFX_military_heritage_tech_1_medium"
+			texturefile = "gfx/interface/technologies/basic_infantry_equipment_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_military_heritage_tech_2_medium"
+			texturefile = "gfx/interface/technologies/basic_infantry_equipment_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_military_heritage_tech_3_medium"
+			texturefile = "gfx/interface/technologies/basic_infantry_equipment_icon.dds"
+			alwaystransparent = yes
+		}
+	# Plasma/Gauss
+		spriteType = {
+			name = "GFX_gauss_weaponry_1_medium"
+			texturefile = "gfx/interface/equipment/generic/gauss_weaponry_icon_1.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_gauss_weaponry_2_medium"
+			texturefile = "gfx/interface/equipment/generic/gauss_weaponry_icon_2.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_plasma_weaponry_1_medium"
+			texturefile = "gfx/interface/equipment/generic/plasma_weaponry_icon_1.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_plasma_weaponry_2_medium"
+			texturefile = "gfx/interface/equipment/generic/plasma_weaponry_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+	#-----------------------------
+	# Mirelurks
+	#-----------------------------
+	spriteType = {
+		name = "GFX_mirelurk_infantry_unlock_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/mirelurk_equipment_1.dds"
+		alwaystransparent = yes
+	}
+
+	#-----------------------------
+	# Molerats
+	#-----------------------------
+	spriteType = {
+		name = "GFX_molerat_infantry_unlock_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/molerat_equipment_1.dds"
+		alwaystransparent = yes
+	}
+
+	#-----------------------------
+	# Radroaches
+	#-----------------------------
+	spriteType = {
+		name = "GFX_radroach_infantry_unlock_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/radroach_equipment_1.dds"
+		alwaystransparent = yes
+	}
+
+}

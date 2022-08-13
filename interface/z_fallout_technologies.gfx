@@ -1,0 +1,105 @@
+spriteTypes = {
+#Technology GFX are divided into separate files
+	#-------------------------										
+	#	Technologies 				-> Technologies.gfx
+	#-------------------------					
+
+	# Infantry
+		#-------------------------										
+		#	Infantry Training 			-> Infantry Training.gfx
+		#-------------------------							
+
+		#-------------------------										
+		#	Infantry Weaponry 			-> Infantry Weaponry.gfx
+		#-------------------------					
+
+		#-------------------------										
+		#	Infantry Heavy Infantry		-> Infantry Heavy Infantry.gfx
+		#-------------------------					
+		
+		#-------------------------										
+		#	Infantry Special Forces		-> Infantry Special Forces.gfx
+		#-------------------------					
+
+		#-------------------------										
+		#	Infantry Unique				-> Infantry Unique.gfx
+		#-------------------------					
+
+	#-------------------------										
+	#	Power Armor						-> Power armor.gfx
+	#-------------------------			
+		
+	# Support
+		#-------------------------										
+		#	Support Weaponry			-> Support Weaponry.gfx
+		#-------------------------	
+		
+		#-------------------------										
+		#	Support	FireTeam			-> Support FireTeam.gfx
+		#-------------------------			
+		
+		#-------------------------										
+		#	Support Demolitions Weaponry-> Support Demolitions Weaponry.gfx
+		#-------------------------			
+
+		#-------------------------										
+		#	Support Dogs				-> Support Dogs.gfx
+		#-------------------------			
+
+		#-------------------------										
+		#	Support Anti-Tank Weaponry	-> Support Anti-Tank Weaponry.gfx
+		#-------------------------			
+
+		#-------------------------										
+		#	Support Med Equipment		-> Support Med Equipment.gfx
+		#-------------------------			
+
+		#-------------------------										
+		#	Support Recon Company		-> Support Recon Company.gfx
+		#-------------------------			
+		
+		#-------------------------										
+		#	Support Logistics Company	-> Support Logistics Company.gfx
+		#-------------------------			
+
+		#-------------------------										
+		#	Support Maintenance Company	-> Support Maintenance Company.gfx
+		#-------------------------			
+	
+	#-------------------------										
+	#	Robotics						-> Robotics.gfx
+	#-------------------------		
+
+	#-------------------------										
+	#	Vehicle							-> Vehicle.gfx
+	#-------------------------			
+
+	#-------------------------										
+	#	Naval							-> Naval.gfx
+	#-------------------------			
+	
+	#-------------------------										
+	#	Air								-> Air.gfx
+	#-------------------------			
+
+	#-------------------------										
+	#	Industry						-> Industry.gfx
+	#-------------------------			
+
+	#-------------------------										
+	#	Engenering						-> Engenering.gfx
+	#-------------------------			
+
+	#-------------------------										
+	#	Tribal							-> Engenering.gfx
+	#-------------------------			
+
+	#-------------------------										
+	#	Rewards							-> Rewards.gfx
+	#-------------------------			
+
+
+	#-------------------------										
+	#	Implants/Cybernetics			-> Implants.gfx
+	#-------------------------			
+}

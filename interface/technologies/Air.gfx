@@ -1,0 +1,264 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_glider_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/glider_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/fighter_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/fighter_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/fighter_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/fighter_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_1_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_2_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_3_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_4_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_5_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_6_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_7_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_engine_tech_medium"
+		texturefile = "gfx/interface/technologies/fighter_engine_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_defence_tech_medium"
+		texturefile = "gfx/interface/technologies/cas_defence_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_offence_tech_medium"
+		texturefile = "gfx/interface/technologies/cas_offence_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_internal_tech_medium"
+		texturefile = "gfx/interface/technologies/strat_internal_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_external_tech_medium"
+		texturefile = "gfx/interface/technologies/strat_external_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_air_drop_tank_tech_medium"
+		texturefile = "gfx/interface/technologies/air_drop_tank_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_air_cabane_struts_tech_medium"
+		texturefile = "gfx/interface/technologies/decomissioned_servo_maintenence_scrap_metal_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_air_refuling_tech_medium"
+		texturefile = "gfx/interface/technologies/air_refuling_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_inert_blimp_tech_medium"
+		texturefile = "gfx/interface/technologies/inert_blimp_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamable_blimp_tech_medium"
+		texturefile = "gfx/interface/technologies/flamable_blimp_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_air_armor_tech_medium"
+		texturefile = "gfx/interface/technologies/air_armor_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_bomber_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/cas_bomber_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_bomber_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/cas_bomber_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_bomber_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/cas_bomber_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_bomber_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/cas_bomber_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_high_fighter_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/high_fighter_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_high_cas_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/high_cas_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_bomber_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/strat_bomber_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_bomber_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/strat_bomber_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_bomber_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/strat_bomber_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_bomber_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/strat_bomber_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cargo_plane_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/cargo_plane_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cargo_plane_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/cargo_plane_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cargo_plane_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/cargo_plane_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_blimp_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/blimp_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_blimp_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/blimp_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_blimp_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/blimp_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_blimp_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/blimp_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_vertibird_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/vertibird_transport_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_vertibird_cas_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/vertibird_gunship_icon.dds"
+		alwaystransparent = yes
+	}
+	#----------------------------- Single use Air
+	spriteType = {
+		name = "GFX_payload_glider_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/payload_glider_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_air_chaff_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/air_chaff_icon.dds"
+		alwaystransparent = yes
+	}
+}

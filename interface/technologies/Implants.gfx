@@ -1,0 +1,123 @@
+spriteTypes = {
+	#----------------------------- Implants/Cybernetics
+
+	spriteType = {
+		name = "GFX_implant_militia_supply_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_militia_supply_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_infantry_supply_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_infantry_supply_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_spec_ops_supply_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_spec_ops_supply_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_power_armour_supply_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_power_armour_supply_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_vehicles_supply_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_vehicles_supply_tech.dds"
+		alwaystransparent = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_implant_rejection_therapy_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_rejection_therapy_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_neural_interface_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_neural_interface_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_signal_translation_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_signal_translation_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_killswitch_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_killswitch_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_safety_regulation_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_safety_regulation_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_safety_regulation_override_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_safety_regulation_override_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_medical_maintenance_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_medical_maintenance_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_biochemical_combat_boosters_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_biochemical_combat_boosters_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_adaptive_interface_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_adaptive_interface_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_adaptive_respiratory_enhancer_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_adaptive_respiratory_enhancer_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_monocyte_breeder_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_monocyte_breeder_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_biochemical_mastery_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_biochemical_mastery_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_a_question_of_morals_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_a_question_of_morals_tech.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_cybernetic_warform_tech_medium"
+		texturefile = "gfx/interface/technologies/cybernetics/implant_cybernetic_warform_tech.dds"
+		alwaystransparent = yes
+	}
+
+	#Equipment Implants/Cybernetics
+	spriteType = {
+		name = "GFX_implant_shock_absorbers_equipment_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/implant_equipment_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_occulus_enhancers_equipment_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/implant_equipment_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_subdermal_armour_equipment_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/implant_equipment_3.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_implant_advanced_cybernetic_warfare_module_medium"
+		texturefile = "gfx/interface/equipment/generic/implant_equipment_4.dds"
+		alwaystransparent = yes
+	}
+}

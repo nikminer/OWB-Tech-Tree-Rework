@@ -1,0 +1,247 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bike_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/motorized_bicycle_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_safety_hatches_vehicle_tech_medium"
+		texturefile = "gfx/interface/technologies/tyre_profile_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_boarding_ramps_vehicle_tech_medium"
+		texturefile = "gfx/interface/technologies/rubber_refinement_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_turret_vehicle_tech_medium"
+		texturefile = "gfx/interface/technologies/custom_capacitors_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aps_vehicle_tech_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_motorized_equipment_vehicle_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/light_motorized_equipment_vehicle_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_motorized_equipment_vehicle_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/light_motorized_equipment_vehicle_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_motorized_equipment_vehicle_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/light_motorized_equipment_vehicle_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_motorized_equipment_vehicle_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/light_motorized_equipment_vehicle_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_motorized_equipment_vehicle_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_motorized_equipment_vehicle_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_motorized_equipment_vehicle_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_motorized_equipment_vehicle_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_motorized_equipment_vehicle_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_motorized_equipment_vehicle_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_motorized_equipment_vehicle_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_motorized_equipment_vehicle_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tank_equipment_vehicle_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/tank_equipment_vehicle_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tank_equipment_vehicle_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/tank_equipment_vehicle_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tank_equipment_vehicle_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/tank_equipment_vehicle_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tank_equipment_vehicle_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/tank_equipment_vehicle_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_chariot_vehicle_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/chariot_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tires_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/tyre_profile_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tires_vehicle_tech_1_medium"
+		textureFile = "gfx/interface/technologies/rubber_refinement_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bumper_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/impact_bumpers_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_storage_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/additional_storage_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_overclock_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/engine_overclocking_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_high_tech_fuel_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/advanced_fuels_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_armoured_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/armour_reinforcement_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_mrap_effort_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/cas_offence_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_mobile_weapons_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/decomissioned_armour_reinforcement_icon_old.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_Compartmentalization_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/terminal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_wet_stowage_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/explosive_demolitions_rapid_fire_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_mobile_medical_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/mobile_medical.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_mobile_maintenance_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/mobile_repair.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_mobile_logistics_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/mobile_ammo.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_mobile_recon_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/mobile_recon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_motorisation_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/motorisation.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_solar_power_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/advanced_fuels_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extra_gunports_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/extra_gunports_vehicle_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extra_plating_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/extra_plating_vehicle_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_vaccum_sealing_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/vaccum_sealing_vehicle_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fuel_booster_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/fuel_booster_vehicle_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tracks_vehicle_tech_1_medium"
+		textureFile = "gfx/interface/technologies/simple_tracks_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tracks_vehicle_tech_2_medium"
+		textureFile = "gfx/interface/technologies/return_rollers_icon.dds"
+		alwaystransparent = yes
+	}
+}

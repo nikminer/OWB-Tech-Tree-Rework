@@ -1,0 +1,687 @@
+spriteTypes = {
+	#----------------------------- Naval
+		spriteType = {
+			name = "GFX_nautics_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/nautics_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_nautics_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/nautics_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_nautics_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/nautics_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_nautics_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/nautics_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_nautics_tech_5_medium"
+			texturefile = "gfx/interface/technologies/naval/nautics_tech_5_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_light_navy_hull_tech_1_medium"
+			texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_light_navy_hull_tech_2_medium"
+			texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_light_navy_hull_tech_3_medium"
+			texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_3.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_light_navy_hull_tech_4_medium"
+			texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_4.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_light_navy_hull_tech_5_medium"
+			texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_5.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_medium_navy_hull_tech_1_medium"
+			texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_medium_navy_hull_tech_2_medium"
+			texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_medium_navy_hull_tech_3_medium"
+			texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_3.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_medium_navy_hull_tech_4_medium"
+			texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_4.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_medium_navy_hull_tech_5_medium"
+			texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_5.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_heavy_navy_hull_tech_1_medium"
+			texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_heavy_navy_hull_tech_2_medium"
+			texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_heavy_navy_hull_tech_3_medium"
+			texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_3.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_heavy_navy_hull_tech_4_medium"
+			texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_4.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_heavy_navy_hull_tech_5_medium"
+			texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_5.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_super_heavy_navy_hull_tech_1_medium"
+			texturefile = "gfx/interface/equipment/generic/super_heavy_hull_tech_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_naval_invasion_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_invasion_tech_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_naval_invasion_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_invasion_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_naval_invasion_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_invasion_tech_icon_3.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_waterproof_sealing_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/waterproof_sealing_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_multi_deck_construction_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/multi_deck_construction_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_outrigger_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/outrigger_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_proper_rigging_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/proper_rigging_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_grappling_harpoon_module_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/grappling_harpoon_module_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_metal_bows_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/metal_bows_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_naval_manuals_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_manuals_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_naval_armor_reinforcement_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_armor_reinforcement_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_naval_secondary_engines_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_secondary_engines_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_naval_emergency_sealing_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_emergency_sealing_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_naval_wonders_of_the_past_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_wonders_of_the_past_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+	#----------------------------- Naval Modules
+		spriteType = {
+			name = "GFX_naval_module_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_module_tech_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_weapons_module_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_weapons_module_tech_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_support_module_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_support_module_tech_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_hard_point_tech_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_hard_point_tech_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_subsurface_module_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_subsurface_module_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_subsurface_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_subsurface_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_subsurface_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_subsurface_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_subsurface_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_subsurface_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_special_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_special_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_special_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_special_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_special_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_special_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_light_weapon_module_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_light_weapon_module_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_light_weapon_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_light_weapon_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_light_weapon_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_light_weapon_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_light_weapon_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_light_weapon_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_light_weapon_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_light_weapon_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_light_weapon_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_light_weapon_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_light_weapon_module_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_light_weapon_module_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_medium_weapon_module_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_module_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_medium_weapon_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_medium_weapon_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_medium_weapon_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_medium_weapon_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_medium_weapon_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_medium_weapon_module_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_module_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_heavy_weapon_module_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_module_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_heavy_weapon_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_heavy_weapon_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_heavy_weapon_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_heavy_weapon_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_heavy_weapon_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_heavy_weapon_module_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_module_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_super_heavy_weapon_module_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_module_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_super_heavy_weapon_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_super_heavy_weapon_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_super_heavy_weapon_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_super_heavy_weapon_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_super_heavy_weapon_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_super_heavy_weapon_module_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_module_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_pd_module_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_pd_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_pd_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_pd_module_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_pd_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_pd_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_pd_module_tech_5_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_5_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_pd_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_pd_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_pd_module_tech_6_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_6_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_pd_module_tech_7_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_7_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_detection_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_detection_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_detection_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_detection_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_detection_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_detection_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_detection_module_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_detection_module_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_detection_module_tech_5_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_detection_module_tech_5_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_communications_module_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_communications_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_communications_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_communications_module_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_communications_module_tech_5_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_5_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_command_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_command_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_command_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_command_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_damage_protection_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_damage_protection_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_damage_protection_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_damage_protection_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_command_module_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_command_module_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_command_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_command_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_command_module_tech_5_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_command_module_tech_5_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_carrier_module_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_carrier_module_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_carrier_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_carrier_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_carrier_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_carrier_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_carrier_module_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_carrier_module_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_storage_module_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_storage_module_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_fire_protection_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_fire_protection_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_fire_protection_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_fire_protection_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_fire_protection_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_fire_protection_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_storage_module_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_storage_module_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_armour_tech_1_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_armour_tech_1_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_armour_tech_2_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_armour_tech_2_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_armour_tech_3_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_armour_tech_3_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_armour_tech_4_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_armour_tech_4_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_naval_armour_tech_5_medium"
+			texturefile = "gfx/interface/technologies/naval/naval_armour_tech_5_icon.dds"
+			alwaystransparent = yes
+		}
+}

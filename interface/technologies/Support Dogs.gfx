@@ -1,0 +1,37 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_dog_equipment_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/dog_equipment_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_tech_1_medium"
+		texturefile = "gfx/interface/technologies/dog_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_equipment_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/dog_equipment_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_tech_2_medium"
+		texturefile = "gfx/interface/technologies/dog_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_tech_3_medium"
+		texturefile = "gfx/interface/technologies/dog_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_equipment_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/dog_equipment_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+}

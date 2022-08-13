@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_support_weaponry_medium"
+		texturefile = "gfx/interface/equipment/generic/support_equipment_fallout.dds"
+		alwaystransparent = yes
+	}
+
+	# Transports, supply, trains, you know it
+	spriteType = {
+		name = "GFX_basic_supply_transport_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/basic_supply_transport_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+}

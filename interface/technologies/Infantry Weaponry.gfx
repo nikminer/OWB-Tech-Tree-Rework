@@ -1,0 +1,130 @@
+spriteTypes = {
+	# Pipe Guns
+		spriteType = {
+			name = "GFX_standard_weaponry_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/basic_ballistic_weaponry_icon.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_basic_infantry_equipment_medium"
+			texturefile = "gfx/interface/equipment/generic/basic_ballistic_weaponry_icon.dds"
+			alwaystransparent = yes
+		}
+
+	# Ballistic sub-route		
+		spriteType = {
+			name = "GFX_ballistic_weaponry_tech_1_medium"
+			texturefile = "gfx/interface/equipment/generic/ballistic_weaponry_tech_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_ballistic_weaponry_tech_2_medium"
+			texturefile = "gfx/interface/equipment/generic/ballistic_weaponry_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_ballistic_weaponry_tech_3_medium"
+			texturefile = "gfx/interface/equipment/generic/ballistic_weaponry_tech_icon_3.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_ballistic_weaponry_tech_4_medium"
+			texturefile = "gfx/interface/equipment/generic/ballistic_weaponry_tech_icon_4.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_warrior_equipment_medium"
+			texturefile = "gfx/interface/technologies/warrior_equipment_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_basic_infantry_equipment_medium"
+			texturefile = "gfx/interface/technologies/basic_infantry_equipment_icon.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_prewar_infantry_kit_medium"
+			texturefile = "gfx/interface/technologies/prewar_infantry_kit_icon.dds"
+			alwaystransparent = yes
+		}
+	
+
+	# Energy sub-route	
+		spriteType = {
+			name = "GFX_energy_weaponry_tech_1_medium"
+			texturefile = "gfx/interface/equipment/generic/energy_weaponry_tech_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_energy_weapon_emitter_tech_medium"
+			texturefile = "gfx/interface/technologies/energy_weapons_focus_arrays.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_energy_weaponry_tech_2_medium"
+			texturefile = "gfx/interface/equipment/generic/energy_weaponry_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_energy_weaponry_tech_3_medium"
+			texturefile = "gfx/interface/equipment/generic/energy_weaponry_tech_icon_3.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_energy_weaponry_tech_4_medium"
+			texturefile = "gfx/interface/equipment/generic/energy_weaponry_tech_icon_4.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_overcharged_ammunition_medium"
+			texturefile = "gfx/interface/technologies/overcharged_ammunition_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_custom_built_capacitors_medium"
+			texturefile = "gfx/interface/technologies/custom_capacitors_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		
+	# Melee sub-route		
+		spriteType = {
+			name = "GFX_melee_weaponry_tech_1_medium"
+			texturefile = "gfx/interface/equipment/generic/melee_weaponry_tech_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_melee_weaponry_tech_2_medium"
+			texturefile = "gfx/interface/equipment/generic/melee_weaponry_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_melee_weaponry_tech_3_medium"
+			texturefile = "gfx/interface/equipment/generic/melee_weaponry_tech_icon_3.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_warrior_melee_tech_medium"
+			texturefile = "gfx/interface/technologies/generic_schematic.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_melee_weaponry_tech_4_medium"
+			texturefile = "gfx/interface/equipment/generic/melee_weaponry_tech_icon_4.dds"
+			alwaystransparent = yes
+		}
+}

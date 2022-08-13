@@ -1,0 +1,49 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_unit_training_tech_1_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_2_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_3_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_4_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_5_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_6_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_7_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_8_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_8.dds"
+		alwaystransparent = yes
+	}
+}

@@ -1,0 +1,82 @@
+spriteTypes = {
+	# Armour Tech
+		spriteType = {
+			name = "GFX_spec_ops_equipment_tech_1_medium"
+			texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_1.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_spec_ops_equipment_tech_2_medium"
+			texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_spec_ops_equipment_tech_3_medium"
+			texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_3.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_spec_ops_equipment_tech_4_medium"
+			texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_4.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_spec_ops_equipment_tech_5_medium"
+			texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_5.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_hardening_armour_tech_medium"
+			texturefile = "gfx/interface/technologies/hardening_armour_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_ballistic_fibre_tech_medium"
+			texturefile = "gfx/interface/technologies/ballistic_fibre_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_stealth_boy_tech_medium"
+			texturefile = "gfx/interface/technologies/stealth_boy_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_night_vision_tech_medium"
+			texturefile = "gfx/interface/technologies/night_vision_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_thermal_vision_tech_medium"
+			texturefile = "gfx/interface/technologies/thermal_vision_icon.dds"
+			alwaystransparent = yes
+		}
+
+	# Cavalry
+		spriteType = {
+			name = "GFX_spec_ops_horses_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/cavalry_equipment_tech_icon.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_spec_ops_horses_tech_2_medium"
+			texturefile = "gfx/interface/equipment/generic/cavalry_equipment_tech_icon_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_spec_ops_horses_tech_3_medium"
+			texturefile = "gfx/interface/equipment/generic/cavalry_equipment_tech_icon_3.dds"
+			alwaystransparent = yes
+		}
+
+}

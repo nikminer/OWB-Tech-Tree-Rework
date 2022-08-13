@@ -1,0 +1,147 @@
+spriteTypes = {
+	# Infantry
+		spriteType = {
+			name = "GFX_binoculars_medium"
+			texturefile = "gfx/interface/technologies/binoculars_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_flare_guns_medium"
+			texturefile = "gfx/interface/technologies/flare_guns_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_portable_radio_medium"
+			texturefile = "gfx/interface/technologies/portable_radio_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_smoke_grenades_medium"
+			texturefile = "gfx/interface/technologies/smoke_grenades_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_automatic_distress_beacon_medium"
+			texturefile = "gfx/interface/technologies/automatic_distress_beacon_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_herbal_bandages_medium"
+			texturefile = "gfx/interface/technologies/herbal_bandages_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_sterile_medical_equipment_medium"
+			texturefile = "gfx/interface/technologies/sterile_medical_equipment_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_medic_bags_medium"
+			texturefile = "gfx/interface/technologies/medic_bags_icon.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_med_x_auto_injectors_medium"
+			texturefile = "gfx/interface/technologies/med_x_auto_injectors_icon.dds"
+			alwaystransparent = yes
+		}
+
+	# Civilization
+		spriteType = {
+			name = "GFX_political_furor1_medium"
+			texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_political_furor2_medium"
+			texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_political_furor3_medium"
+			texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_political_furor4_medium"
+			texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_political_furor5_medium"
+			texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+			alwaystransparent = yes
+		}
+	
+	# Air Doctrine
+		spriteType = {
+			name = "GFX_evasive_tactics_medium"
+			texturefile = "gfx/interface/technologies/formation_flying.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_ground_targeting_tactics_medium"
+			texturefile = "gfx/interface/technologies/direct_ground_support.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_sweeping_tactics_medium"
+			texturefile = "gfx/interface/technologies/dispersed_fighting.dds"
+			alwaystransparent = yes
+		}
+
+	#-----------------------------------------------
+	# unused Icons
+	#-----------------------------------------------
+
+		spriteType = {
+			name = "GFX_laser_tech_6_medium"
+			texturefile = "gfx/interface/technologies/precision_aiming_3.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_explosive_tech_3_medium"
+			texturefile = "gfx/interface/technologies/mortar.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_explosive_tech_5_medium"
+			texturefile = "gfx/interface/technologies/howitzer.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_flamer_tech_2_medium"
+			texturefile = "gfx/interface/technologies/potent_fuel_1.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_flamer_tech_4_medium"
+			texturefile = "gfx/interface/technologies/potent_fuel_2.dds"
+			alwaystransparent = yes
+		}
+	
+		spriteType = {
+			name = "GFX_flamer_tech_6_medium"
+			texturefile = "gfx/interface/technologies/potent_fuel_3.dds"
+			alwaystransparent = yes
+		}
+
+}

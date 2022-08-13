@@ -1,0 +1,667 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_basic_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/basic_industry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_7_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_7_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_pre_recycling_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/pre_recycling_industry_tech_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_recycling_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/recycling_industry_tech_icon_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_recycling_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/recycling_industry_tech_icon_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_recycling_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/recycling_industry_tech_icon_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_recycling_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/recycling_industry_tech_icon_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tool_engineering_medium"
+		texturefile = "gfx/interface/technologies/tool_engineering_tech_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_3_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_4_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_maketool_engineering_5_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_6_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_scavtool_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/scavtool_tech_icon_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_scavtool_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/scavtool_tech_icon_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_scavtool_engineering_3_medium"
+		texturefile = "gfx/interface/technologies/scavtool_tech_icon_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_pre_construction_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/pre_construction_industry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_pre_agriculture_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/pre_agriculture_industry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_7_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_circuitry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_circuitry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_circuitry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_circuitry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_circuitry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_circuitry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	# Unique Industry Techs
+	spriteType = {
+		name = "GFX_vault_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/vault_industry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vault_medical_tech_medium"
+		texturefile = "gfx/interface/technologies/vault_medical_tech_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vault_manufacturing_tech_medium"
+		texturefile = "gfx/interface/technologies/vault_manufacturing_tech_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_vault_efficiency_tech_medium"
+		texturefile = "gfx/interface/technologies/vault_efficiency_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_underground_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/underground_industry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_underground_hydroponics_tech_medium"
+		texturefile = "gfx/interface/technologies/underground_hydroponics_tech_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_underground_ventilation_tech_medium"
+		texturefile = "gfx/interface/technologies/underground_ventilation_tech_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_underground_security_tech_medium"
+		texturefile = "gfx/interface/technologies/underground_security_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	# Electronics/Engineering
+	SpriteType = {
+		name = "GFX_communication_engineering_medium"
+		texturefile = "gfx/interface/technologies/combat_speech_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/smoke_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/radio.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_3_medium"
+		texturefile = "gfx/interface/technologies/ham_radio.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_4_medium"
+		texturefile = "gfx/interface/technologies/radio_tower_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_5_medium"
+		texturefile = "gfx/interface/technologies/matrix_numbers.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_medium"
+		texturefile = "gfx/interface/technologies/ohm_symbol.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/resistor.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/electronic_mechanical_engineering.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_3_medium"
+		texturefile = "gfx/interface/technologies/circuit.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_4_medium"
+		texturefile = "gfx/interface/technologies/circuit_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_5_medium"
+		texturefile = "gfx/interface/technologies/terminal.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_6_medium"
+		texturefile = "gfx/interface/technologies/pip.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_7_medium"
+		texturefile = "gfx/interface/technologies/zax_engineering_research.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_1_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_2_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_3_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_4_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_1_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_2_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_3_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_4_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon_4.dds"
+	}
+
+	#resource creation
+	spriteType = {
+		name = "GFX_resource_generator_tech_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_1_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_2_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_3_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_4_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_5_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_1_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_2_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_3_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_4_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_5_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_1_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_2_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_3_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_4_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_5_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_oil_well_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_oil_well_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_oil_refinery_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_oil_refinery_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_autonomous_refinery_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_laboratory_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_laboratory_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_fabrication_centre_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_fabrication_centre_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_autonomous_fabrication_centre_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_farmstead_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_farmstead_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_hydroponics_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_hydroponics_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_autonomous_hydroponics_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+}
