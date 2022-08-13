@@ -10,7 +10,7 @@ technologies = {
 	@Col_5 = 24
 	@Col_6 = 28
 	@Col_7 = 32
-	@Col_9 = 24
+	@Col_9 = 36
 
 	@Row_specops = 10
 	@Row_specopsmiddle = 12
@@ -534,7 +534,7 @@ technologies = {
 		}
 
 		dependencies = {
-			special_forces_tech_level_settler = 1
+			special_forces_tech_level_scientific = 1
 		}
 
 		categories = {
