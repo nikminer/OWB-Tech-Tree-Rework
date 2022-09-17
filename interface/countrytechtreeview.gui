@@ -1724,7 +1724,7 @@ guiTypes = {
 				# Column Headers
 				instantTextBoxType = {
 					name = "tribal_column_header"
-					position = { x = 490 y = 20 }
+					position = { x = 500 y = 20 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0 }
 					text = "TRIBAL_HEADER"
@@ -1736,7 +1736,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "civilized_column_header"
-					position = { x = 765 y = 20 }
+					position = { x = 1175 y = 20 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0 }
 					text = "CIVILIZED_HEADER"
@@ -1748,7 +1748,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "advanced_column_header"
-					position = { x = 1595 y = 20 }
+					position = { x = 1965 y = 20 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0 }
 					text = "ADVANCED_HEADER"
@@ -1760,7 +1760,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "unique_column_header"
-					position = { x = 2425 y = 20 }
+					position = { x = 2790 y = 20 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0 }
 					text = "SPECIAL_HEADER"
