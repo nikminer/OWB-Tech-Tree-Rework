@@ -1,0 +1,19 @@
+﻿l_english:
+  fallout_robotics_rr_folder: "Robotics"
+  fallout_robotics_rr_folder_desc: ""
+#----------------------------
+# Header
+#----------------------------
+  HEADER_PRODUCTION_ROBOT: "Robot Production"
+  HEADER_ARMOR_ROBOT: "Robot Armor"
+  HEADER_HEAVY_ROBOT: "Heavy Robot"
+  HEADER_SERVO_ROBOT: "Robot Servo"
+  HEADER_MAIN_ROBOT: "Main Robot"
+  HEADER_POWER_ROBOT: "Robot Power"
+  HEADER_LIGHT_ROBOT: "Light Robot"
+  HEADER_THRUSTER_ROBOT: "Robot Thruster"
+  HEADER_CNC_ROBOT: "Command Robot"
+  HEADER_SOFTWARE_ROBOT: "Robot Software"
+  HEADER_HARDWARE_ROBOT: "Robot Hardware"
+  HEADER_TURRETS_ROBOT: "Robot Turrets"
+

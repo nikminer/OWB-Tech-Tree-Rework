@@ -48,7 +48,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -119,7 +119,7 @@ technologies = {
 			}
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -180,7 +180,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -255,7 +255,7 @@ technologies = {
 			infantry_tech_level_settler = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -293,11 +293,11 @@ technologies = {
 	basic_infantry_equipment = {
 
 		category_leg_infantry = {
-			soft_attack = 0.03
+			defense = 0.05
 		}
 
 		motorized = {
-			soft_attack = 0.03
+			defense = 0.05
 		}
 
 		path = {
@@ -309,7 +309,7 @@ technologies = {
 			infantry_tech_level_settler = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -365,7 +365,7 @@ technologies = {
 			infantry_tech_level_scientific = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -406,11 +406,11 @@ technologies = {
 	prewar_infantry_kit = {
 
 		category_leg_infantry = {
-			max_organisation = 2
+			max_organisation = 4
 		}
 
 		motorized = {
-			max_organisation = 2
+			max_organisation = 4
 		}
 
 		dependencies = {
@@ -422,7 +422,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -484,7 +484,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -556,7 +556,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -612,6 +612,10 @@ technologies = {
 				factor = 0
 				has_tech = warrior_equipment
 			}
+			modifier = {
+				factor = 0
+				has_idea = ncr_brotherhood_hegemony
+			}
 		}
 	}
 
@@ -634,7 +638,7 @@ technologies = {
 			infantry_tech_level_settler = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -658,6 +662,10 @@ technologies = {
 			modifier = {
 				factor = 10
 				date > "2280.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_idea = ncr_brotherhood_hegemony
 			}
 		}
 	}
@@ -692,7 +700,7 @@ technologies = {
 			infantry_tech_level_settler = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -717,17 +725,25 @@ technologies = {
 				factor = 10
 				date > "2281.1.1"
 			}
+			modifier = {
+				factor = 0.5
+				date < "2279.1.1"
+			}
+			modifier = {
+				factor = 0
+				has_idea = ncr_brotherhood_hegemony
+			}
 		}
 	}
 
 	overcharged_ammunition = {
 
 		category_leg_infantry = {
-			soft_attack = 0.03
+			soft_attack = 0.05
 		}
 
 		motorized = {
-			soft_attack = 0.03
+			soft_attack = 0.05
 		}
 
 		path = {
@@ -739,7 +755,7 @@ technologies = {
 			infantry_tech_level_settler = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -797,7 +813,7 @@ technologies = {
 			infantry_tech_level_scientific = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -853,7 +869,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -915,7 +931,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -984,7 +1000,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -1045,7 +1061,7 @@ technologies = {
 		dependencies = {
 			infantry_tech_level_tribal = 1
 		}
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -1122,7 +1138,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3
@@ -1242,7 +1258,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.3

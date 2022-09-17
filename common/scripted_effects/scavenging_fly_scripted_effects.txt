@@ -1,0 +1,12 @@
+scavenge_fly_start = {
+	add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = -3 }
+}
+scavenge_fly_end = {
+	if = {
+		limit = { check_variable = { resolve_rng < 0.95 } }
+		add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 3 }
+	}
+	else = {
+		add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 2 }
+	}
+}

@@ -20,3 +20,6 @@
   # Origins
   military_heritage_unlock_tech: "Military origin"
   military_heritage_unlock_tech_desc: "This faction has a military origin, which is why the entire internal hierarchy is strictly regulated, which gives more advantages in battle."
+
+  # Nevada
+  platinum_os_tech_desc: "The chip is a sophisticated, high-density data storage device. In addition to opening otherwise locked facilities controlled by the Lucky 38 casino's computers, the chip contains the Mark II operating system for Securitron robots. The Mark II operating system has numerous features that the Mark I system lacks, such as drivers for an auto-repair system as well as the correct drivers for the grenade and missile launcher weapons that all Securitrons are equipped with but unable to use."

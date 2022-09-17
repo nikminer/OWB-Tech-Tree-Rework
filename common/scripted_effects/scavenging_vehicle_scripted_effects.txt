@@ -1,0 +1,431 @@
+scavenge_vehicle_start = {
+	if = {
+		limit = {
+			has_tech = bike_tech_1
+			NOT = { has_tech = light_motorized_equipment_vehicle_tech_1 }
+			NOT = { has_tech = light_motorized_equipment_vehicle_tech_2 }
+		}
+		add_equipment_to_stockpile = { type = light_motorized_equipment_1 amount = -50 }
+		set_country_flag = scavenge_vehicle_1
+	}
+	if = {
+		limit = {
+			has_tech = light_motorized_equipment_vehicle_tech_1
+			NOT = { has_tech = light_motorized_equipment_vehicle_tech_2 }
+		}
+		add_equipment_to_stockpile = { type = heavy_motorized_equipment_1 amount = -10 }
+		set_country_flag = scavenge_vehicle_1
+	}
+	if = {
+		limit = {
+			has_tech = light_motorized_equipment_vehicle_tech_2
+		}
+		add_equipment_to_stockpile = { type = heavy_motorized_equipment_2 amount = -10 }
+		set_country_flag = scavenge_vehicle_1
+	}
+}
+scavenge_vehicle_end = {
+	if = {
+		limit = { check_variable = { resolve_rng < 0.4 } }
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_1
+			}
+			add_equipment_to_stockpile = { type = light_motorized_equipment_1 amount = 50 }
+			clr_country_flag = scavenge_vehicle_1
+		}
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_2
+			}
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_1 amount = 10 }
+			clr_country_flag = scavenge_vehicle_2
+		}
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_3
+			}
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_2 amount = 10 }
+			clr_country_flag = scavenge_vehicle_3
+		}
+	}
+	else_if = {
+		limit = { check_variable = { resolve_rng < 0.6 } }
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_1
+			}
+			add_equipment_to_stockpile = { type = light_motorized_equipment_1 amount = 42 }
+			clr_country_flag = scavenge_vehicle_1
+		}
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_2
+			}
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_1 amount = 9 }
+			clr_country_flag = scavenge_vehicle_2
+		}
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_3
+			}
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_2 amount = 9 }
+			clr_country_flag = scavenge_vehicle_3
+		}
+	}
+	else_if = {
+		limit = { check_variable = { resolve_rng < 0.8 } }
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_1
+			}
+			add_equipment_to_stockpile = { type = light_motorized_equipment_1 amount = 39 }
+			clr_country_flag = scavenge_vehicle_1
+		}
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_2
+			}
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_1 amount = 8 }
+			clr_country_flag = scavenge_vehicle_2
+		}
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_3
+			}
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_2 amount = 8 }
+			clr_country_flag = scavenge_vehicle_3
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_1
+			}
+			add_equipment_to_stockpile = { type = light_motorized_equipment_1 amount = 35 }
+			clr_country_flag = scavenge_vehicle_1
+		}
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_2
+			}
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_1 amount = 7 }
+			clr_country_flag = scavenge_vehicle_2
+		}
+		if = {
+			limit = {
+				has_country_flag = scavenge_vehicle_3
+			}
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_2 amount = 7 }
+			clr_country_flag = scavenge_vehicle_3
+		}
+	}
+}
+
+resolve_vehicle_loot = {
+	if = {
+		limit = {
+			has_variable = s_motorbike_1
+		}
+		if = {
+			limit = { has_tech = bike_tech_1 }
+			add_equipment_to_stockpile = { type = light_motorized_equipment_1 amount = 30 producer = USA }
+			subtract_from_variable = { s_motorbike_1 = 1 }
+			if = {
+				limit = { check_variable = { s_motorbike_1 = 0 } }
+				clear_variable = s_motorbike_1
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = bike_tech_1 }
+					has_country_flag = bike_tech_1
+				}
+			}
+			army_experience = 5
+			clear_variable = s_motorbike_1
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = bike_tech_1
+			}
+			set_country_flag = bike_tech_1
+			clear_variable = s_motorbike_1
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_motorbike_2
+		}
+		if = {
+			limit = { has_tech = light_motorized_equipment_vehicle_tech_1 }
+			add_equipment_to_stockpile = { type = light_motorized_equipment_2 amount = 20 producer = USA }
+			subtract_from_variable = { s_motorbike_2 = 1 }
+			if = {
+				limit = { check_variable = { s_motorbike_2 = 0 } }
+				clear_variable = s_motorbike_2
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = light_motorized_equipment_vehicle_tech_1 }
+					has_country_flag = light_motorized_equipment_vehicle_tech_1
+				}
+			}
+			army_experience = 5
+			clear_variable = s_motorbike_2
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = light_motorized_equipment_vehicle_tech_1
+			}
+			set_country_flag = light_motorized_equipment_vehicle_tech_1
+			clear_variable = s_motorbike_2
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_car_1
+		}
+		if = {
+			limit = { has_tech = light_motorized_equipment_vehicle_tech_1 }
+			add_equipment_to_stockpile = { type = light_motorized_equipment_1 amount = 15 producer = USA }
+			subtract_from_variable = { s_car_1 = 1 }
+			if = {
+				limit = { check_variable = { s_car_1 = 0 } }
+				clear_variable = s_car_1
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = light_motorized_equipment_vehicle_tech_1 }
+					has_country_flag = light_motorized_equipment_vehicle_tech_1
+				}
+			}
+			army_experience = 5
+			clear_variable = s_car_1
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = light_motorized_equipment_vehicle_tech_1
+			}
+			set_country_flag = light_motorized_equipment_vehicle_tech_1
+			clear_variable = s_car_1
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_car_2
+		}
+		if = {
+			limit = { has_tech = light_motorized_equipment_vehicle_tech_4 }
+			add_equipment_to_stockpile = { type = light_motorized_equipment_4 amount = 10 producer = USA }
+			subtract_from_variable = { s_car_2 = 1 }
+			if = {
+				limit = { check_variable = { s_car_2 = 0 } }
+				clear_variable = s_car_2
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = light_motorized_equipment_vehicle_tech_2 }
+					has_country_flag = car_tech_2
+				}
+			}
+			army_experience = 5
+			clear_variable = s_car_2
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = light_motorized_equipment_vehicle_tech_2
+			}
+			set_country_flag = light_motorized_equipment_vehicle_tech_2
+			clear_variable = s_car_2
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_car_3
+		}
+		if = {
+			limit = { has_tech = light_motorized_equipment_vehicle_tech_3 }
+			add_equipment_to_stockpile = { type = light_motorized_equipment_4 amount = 5 producer = USA }
+			subtract_from_variable = { s_car_3 = 1 }
+			if = {
+				limit = { check_variable = { s_car_3 = 0 } }
+				clear_variable = s_car_3
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = light_motorized_equipment_vehicle_tech_3 }
+					has_country_flag = light_motorized_equipment_vehicle_tech_3
+				}
+			}
+			army_experience = 5
+			clear_variable = s_car_3
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = light_motorized_equipment_vehicle_tech_3
+			}
+			set_country_flag = light_motorized_equipment_vehicle_tech_3
+			clear_variable = s_car_3
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_truck_1
+		}
+		if = {
+			limit = { has_tech = truck_tech_1 }
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_1 amount = 10 producer = USA }
+			subtract_from_variable = { s_truck_1 = 1 }
+			if = {
+				limit = { check_variable = { s_truck_1 = 0 } }
+				clear_variable = s_truck_1
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = heavy_motorized_equipment_vehicle_tech_1 }
+					has_country_flag = heavy_motorized_equipment_vehicle_tech_1
+				}
+			}
+			army_experience = 5
+			clear_variable = s_truck_1
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = heavy_motorized_equipment_vehicle_tech_1
+			}
+			set_country_flag = heavy_motorized_equipment_vehicle_tech_1
+			clear_variable = s_truck_1
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_truck_2
+		}
+		if = {
+			limit = { has_tech = truck_tech_2 }
+			add_equipment_to_stockpile = { type = heavy_motorized_equipment_2 amount = 5 producer = USA }
+			subtract_from_variable = { s_truck_2 = 1 }
+			if = {
+				limit = { check_variable = { s_truck_2 = 0 } }
+				clear_variable = s_truck_2
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = heavy_motorized_equipment_vehicle_tech_2 }
+					has_country_flag = heavy_motorized_equipment_vehicle_tech_2
+				}
+			}
+			army_experience = 5
+			clear_variable = s_truck_2
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = heavy_motorized_equipment_vehicle_tech_2
+			}
+			set_country_flag = heavy_motorized_equipment_vehicle_tech_2
+			clear_variable = s_truck_2
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_tank_1
+		}
+		if = {
+			limit = { has_tech = tracks_vehicle_tech_1 }
+			add_equipment_to_stockpile = { type = tank_equipment_1 amount = 3 producer = USA }
+			subtract_from_variable = { s_tank_1 = 1 }
+			if = {
+				limit = { check_variable = { s_tank_1 = 0 } }
+				clear_variable = s_tank_1
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = tracks_vehicle_tech_1 }
+					has_country_flag = tracks_vehicle_tech_1
+				}
+			}
+			army_experience = 5
+			clear_variable = s_tank_1
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = tracks_vehicle_tech_1
+			}
+			set_country_flag = tracks_vehicle_tech_1
+			clear_variable = s_tank_1
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_flag = reroll
+			}
+			clr_country_flag = reroll
+			resolve_vehicle_loot = yes
+		}
+		# Contingency Clearing
+		clear_variable = s_motorbike_1
+		clear_variable = s_motorbike_2
+		clear_variable = s_car_1
+		clear_variable = s_car_2
+		clear_variable = s_car_3
+		clear_variable = s_apc_1
+		clear_variable = s_apc_2
+		clear_variable = s_tank_1
+		clear_variable = s_truck_1
+		clear_variable = s_truck_2
+	}
+}

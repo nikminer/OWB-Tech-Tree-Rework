@@ -49,7 +49,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.3
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -67,14 +67,21 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.9
 			modifier = {
-				factor = 15
+				factor = 3
 				num_occupied_states > 0
 			}
 			modifier = {
-				factor = 10
+				factor = 3
 				date > "2276.1.1"
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_manpower < 2000
+					num_of_military_factories > 20
+				}
 			}
 		}
 	}
@@ -94,7 +101,7 @@ technologies = {
 			infantry_tech_level_tribal = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.3
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -129,16 +136,16 @@ technologies = {
 		heavy_infantry = {
 			suppression_factor = 0.1
 			urban = {
-				attack = 0.15
-				defence = 0.15
+				attack = 0.10
+				defence = 0.10
 			}
 			fort = {
-				attack = 0.15
-				defence = 0.15
+				attack = 0.10
+				defence = 0.10
 			}
 		}
 
-		research_cost = 1
+		research_cost = 1.3
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -167,7 +174,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 15
+				factor = 3
 				num_occupied_states > 0
 			}
 			modifier = {
@@ -187,7 +194,7 @@ technologies = {
 			infantry_tech_level_settler = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.3
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -207,7 +214,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 15
+				factor = 3
 				num_occupied_states > 0
 			}
 			modifier = {

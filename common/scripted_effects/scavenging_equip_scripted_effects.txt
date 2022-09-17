@@ -1,0 +1,1781 @@
+scavenge_equip_start = {
+	set_country_flag = is_scavenging
+	add_manpower = -50
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = melee_weaponry_tech_1
+				NOT = { has_tech = melee_weaponry_tech_2 }
+				NOT = { has_tech = standard_weaponry_tech }
+			}
+		}
+		add_equipment_to_stockpile = { type = melee_equipment_1 amount = -50 }
+		set_country_flag = melee_equipment_1
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = standard_weaponry_tech
+				NOT = { has_tech = ballistic_weaponry_tech_1 }
+				NOT = { has_tech = energy_weaponry_tech_1 }
+				NOT = { has_tech = melee_weaponry_tech_2 }
+			}
+		}
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -50 }
+		set_country_flag = infantry_equipment_1
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = melee_weaponry_tech_2
+				NOT = { has_tech = melee_weaponry_tech_3 }
+				NOT = { has_tech = ballistic_weaponry_tech_1 }
+				NOT = { has_tech = energy_weaponry_tech_1 }
+			}
+		}
+		add_equipment_to_stockpile = { type = melee_equipment_2 amount = -50 }
+		set_country_flag = melee_equipment_2
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = ballistic_weaponry_tech_1
+				NOT = { has_tech = melee_weaponry_tech_3 }
+				NOT = { has_tech = ballistic_weaponry_tech_2 }
+				NOT = { has_tech = energy_weaponry_tech_1 }
+			}
+		}
+		add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = -50 }
+		set_country_flag = ballistic_equipment_1
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = melee_weaponry_tech_3
+				NOT = { has_tech = ballistic_weaponry_tech_2 }
+				NOT = { has_tech = energy_weaponry_tech_1 }
+				NOT = { has_tech = melee_weaponry_tech_4 }
+			}
+		}
+		add_equipment_to_stockpile = { type = melee_equipment_3 amount = -50 }
+		set_country_flag = melee_equipment_3
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = energy_weaponry_tech_1
+				NOT = { has_tech = ballistic_weaponry_tech_2 }
+				NOT = { has_tech = energy_weaponry_tech_2 }
+				NOT = { has_tech = melee_weaponry_tech_4 }
+			}
+		}
+		add_equipment_to_stockpile = { type = energy_equipment_1 amount = -50 }
+		set_country_flag = energy_equipment_1
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = melee_weaponry_tech_4
+				NOT = { has_tech = ballistic_weaponry_tech_2 }
+				NOT = { has_tech = energy_weaponry_tech_2 }
+			}
+		}
+		add_equipment_to_stockpile = { type = melee_equipment_4 amount = -50 }
+		set_country_flag = melee_equipment_4
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = ballistic_weaponry_tech_2
+				NOT = { has_tech = ballistic_weaponry_tech_3 }
+				NOT = { has_tech = energy_weaponry_tech_2 }
+			}
+		}
+		add_equipment_to_stockpile = { type = ballistic_equipment_2 amount = -50 }
+		set_country_flag = ballistic_equipment_2
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = energy_weaponry_tech_2
+				NOT = { has_tech = ballistic_weaponry_tech_3 }
+				NOT = { has_tech = energy_weaponry_tech_3 }
+			}
+		}
+		add_equipment_to_stockpile = { type = energy_equipment_2 amount = -50 }
+		set_country_flag = energy_equipment_2
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = ballistic_weaponry_tech_3
+				NOT = { has_tech = ballistic_weaponry_tech_4 }
+				NOT = { has_tech = energy_weaponry_tech_3 }
+			}
+		}
+		add_equipment_to_stockpile = { type = ballistic_equipment_3 amount = -50 }
+		set_country_flag = ballistic_equipment_3
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = energy_weaponry_tech_3
+				NOT = { has_tech = ballistic_weaponry_tech_4 }
+				NOT = { has_tech = energy_weaponry_tech_4 }
+			}
+		}
+		add_equipment_to_stockpile = { type = energy_equipment_3 amount = -50 }
+		set_country_flag = energy_equipment_3
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = ballistic_weaponry_tech_4
+				NOT = { has_tech = energy_weaponry_tech_4 }
+			}
+		}
+		add_equipment_to_stockpile = { type = ballistic_equipment_4 amount = -50 }
+		set_country_flag = ballistic_equipment_4
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = energy_weaponry_tech_4
+			}
+		}
+		add_equipment_to_stockpile = { type = energy_equipment_4 amount = -50 }
+		set_country_flag = energy_equipment_4
+	}
+}
+
+scavenge_equip_end = { # Triggered with scavenge_equip_end = yes
+	clr_country_flag = is_scavenging
+	if = {
+		limit = {
+			has_country_flag = infantry_equipment_1
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = infantry_equipment_1
+	}
+	if = {
+		limit = {
+			has_country_flag = melee_equipment_1
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = melee_equipment_1 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = melee_equipment_1 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = melee_equipment_1 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = melee_equipment_1 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = melee_equipment_1 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = melee_equipment_1 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = melee_equipment_1
+	}
+	if = {
+		limit = {
+			has_country_flag = melee_equipment_2
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = melee_equipment_2 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = melee_equipment_2 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = melee_equipment_2 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = melee_equipment_2 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = melee_equipment_2 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = melee_equipment_2 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = melee_equipment_2
+	}
+	if = {
+		limit = {
+			has_country_flag = melee_equipment_3
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = melee_equipment_3 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = melee_equipment_3 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = melee_equipment_3 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = melee_equipment_3 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = melee_equipment_3 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = melee_equipment_3 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = melee_equipment_3
+	}
+	if = {
+		limit = {
+			has_country_flag = melee_equipment_4
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = melee_equipment_4 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = melee_equipment_4 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = melee_equipment_4 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = melee_equipment_4 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = melee_equipment_4 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = melee_equipment_4 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = melee_equipment_4
+  }
+	if = {
+		limit = {
+			has_country_flag = ballistic_equipment_1
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = ballistic_equipment_1
+	}
+	if = {
+		limit = {
+			has_country_flag = ballistic_equipment_2
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_2 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_2 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_2 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_2 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_2 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = ballistic_equipment_2 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = ballistic_equipment_2
+	}
+	if = {
+		limit = {
+			has_country_flag = ballistic_equipment_3
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_3 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_3 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_3 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_3 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_3 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = ballistic_equipment_3 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = ballistic_equipment_3
+	}
+	if = {
+		limit = {
+			has_country_flag = ballistic_equipment_4
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_4 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_4 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_4 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_4 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = ballistic_equipment_4 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = ballistic_equipment_4 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = ballistic_equipment_4
+	}
+	if = {
+		limit = {
+			has_country_flag = energy_equipment_1
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = energy_equipment_1
+	}
+	if = {
+		limit = {
+			has_country_flag = energy_equipment_2
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = energy_equipment_2
+	}
+	if = {
+		limit = {
+			has_country_flag = energy_equipment_3
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = energy_equipment_3 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = energy_equipment_3 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = energy_equipment_3 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = energy_equipment_3 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = energy_equipment_3 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = energy_equipment_3 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = energy_equipment_3
+	}
+	if = {
+		limit = {
+			has_country_flag = energy_equipment_4
+		}
+		if = {
+			limit = { check_variable = { resolve_rng < 0.1 } }
+			add_equipment_to_stockpile = { type = energy_equipment_4 amount = 50 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 50
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.3 } }
+			add_equipment_to_stockpile = { type = energy_equipment_4 amount = 47 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 47
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.5 } }
+			add_equipment_to_stockpile = { type = energy_equipment_4 amount = 42 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 42
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.7 } }
+			add_equipment_to_stockpile = { type = energy_equipment_4 amount = 36 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 36
+			}
+		}
+		else_if = {
+			limit = { check_variable = { resolve_rng < 0.9 } }
+			add_equipment_to_stockpile = { type = energy_equipment_4 amount = 30 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 30
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = { type = energy_equipment_4 amount = 22 }
+			if = {
+				limit = { NOT = { has_country_flag = scavenge_pa } }
+				add_manpower = 22
+			}
+		}
+		clr_country_flag = energy_equipment_4
+	}
+}
+
+resolve_equip_loot = {
+	if = {
+		limit = {
+			has_variable = s_pipe_guns
+		}
+		if = {
+			limit = { has_tech = standard_weaponry_tech }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 producer = USA amount = 200 }
+			subtract_from_variable = { s_pipe_guns = 1 }
+			if = {
+				limit = { check_variable = { s_pipe_guns = 0 } }
+				clear_variable = s_pipe_guns
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = standard_weaponry_tech }
+					has_country_flag = standard_weaponry_tech
+				}
+			}
+			army_experience = 5
+			clear_variable = s_pipe_guns
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = standard_weaponry_tech
+			}
+			set_country_flag = standard_weaponry_tech
+			clear_variable = s_pipe_guns
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_melee_e_1
+		}
+		if = {
+			limit = { has_tech = melee_weaponry_tech_1 }
+			add_equipment_to_stockpile = { type = melee_equipment_1 amount = 200 producer = USA }
+			subtract_from_variable = { s_melee_e_1 = 1 }
+			if = {
+				limit = { check_variable = { s_melee_e_1 = 0 } }
+				clear_variable = s_melee_e_1
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = melee_weaponry_tech_1 }
+					has_country_flag = melee_weaponry_tech_1
+				}
+			}
+			army_experience = 5
+			clear_variable = s_melee_e_1
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = melee_weaponry_tech_1
+			}
+			set_country_flag = melee_weaponry_tech_1
+			clear_variable = s_melee_e_1
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_ballistic_e_1
+		}
+		if = {
+			limit = { has_tech = ballistic_weaponry_tech_1 }
+			add_equipment_to_stockpile = { type = ballistic_equipment_1 amount = 200 producer = USA }
+			subtract_from_variable = { s_ballistic_e_1 = 1 }
+			if = {
+				limit = { check_variable = { s_ballistic_e_1 = 0 } }
+				clear_variable = s_ballistic_e_1
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = ballistic_weaponry_tech_1 }
+					has_country_flag = ballistic_weaponry_tech_1
+				}
+			}
+			army_experience = 5
+			clear_variable = s_ballistic_e_1
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = ballistic_weaponry_tech_1
+			}
+			set_country_flag = ballistic_weaponry_tech_1
+			clear_variable = s_ballistic_e_1
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_melee_2
+		}
+		if = {
+			limit = { has_tech = melee_weaponry_tech_2 }
+			add_equipment_to_stockpile = { type = melee_equipment_2 amount = 100 producer = USA }
+			subtract_from_variable = { s_melee_2 = 1 }
+			if = {
+				limit = { check_variable = { s_melee_2 = 0 } }
+				clear_variable = s_melee_2
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = melee_weaponry_tech_2 }
+					has_country_flag = melee_weaponry_tech_2
+				}
+			}
+			army_experience = 5
+			clear_variable = s_melee_2
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = melee_weaponry_tech_2
+			}
+			set_country_flag = melee_weaponry_tech_2
+			clear_variable = s_melee_2
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_support_e
+		}
+		if = {
+			limit = { has_tech = support_weaponry }
+			add_equipment_to_stockpile = { type = support_equipment amount = 100 producer = USA }
+			subtract_from_variable = { s_support_e = 1 }
+			if = {
+				limit = { check_variable = { s_support_e = 0 } }
+				clear_variable = s_support_e
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = support_weaponry }
+					has_country_flag = support_weaponry
+				}
+			}
+			army_experience = 5
+			clear_variable = s_support_e
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = support_weaponry
+			}
+			set_country_flag = support_weaponry
+			clear_variable = s_support_e
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_pmgs
+		}
+		if = {
+			limit = { has_tech = fireteam_weaponry_tech }
+			add_equipment_to_stockpile = { type = fireteam_equipment_1 amount = 50 producer = USA }
+			subtract_from_variable = { s_pmgs = 1 }
+			if = {
+				limit = { check_variable = { s_pmgs = 0 } }
+				clear_variable = s_pmgs
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = fireteam_weaponry_tech }
+					has_country_flag = fireteam_weaponry_tech
+				}
+			}
+			army_experience = 5
+			clear_variable = s_pmgs
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = fireteam_weaponry_tech
+			}
+			set_country_flag = fireteam_weaponry_tech
+			clear_variable = s_pmgs
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_dynamite
+		}
+		if = {
+			limit = { has_tech = demolitions_weaponry_tech }
+			add_equipment_to_stockpile = { type = demolitions_equipment_1 amount = 50 producer = USA }
+			subtract_from_variable = { s_dynamite = 1 }
+			if = {
+				limit = { check_variable = { s_dynamite = 0 } }
+				clear_variable = s_dynamite
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = demolitions_weaponry_tech }
+					has_country_flag = demolitions_weaponry_tech
+				}
+			}
+			army_experience = 5
+			clear_variable = s_dynamite
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = demolitions_weaponry_tech
+			}
+			set_country_flag = demolitions_weaponry_tech
+			clear_variable = s_dynamite
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_energy_e_1
+		}
+		if = {
+			limit = { has_tech = energy_weaponry_tech_1 }
+			add_equipment_to_stockpile = { type = energy_equipment_1 amount = 50 producer = USA }
+			subtract_from_variable = { s_energy_e_1 = 1 }
+			if = {
+				limit = { check_variable = { s_energy_e_1 = 0 } }
+				clear_variable = s_energy_e_1
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = energy_weaponry_tech_1 }
+					has_country_flag = energy_weaponry_tech_1
+				}
+			}
+			army_experience = 5
+			clear_variable = s_energy_e_1
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = energy_weaponry_tech_1
+			}
+			set_country_flag = energy_weaponry_tech_1
+			clear_variable = s_energy_e_1
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_melee_3
+		}
+		if = {
+			limit = { has_tech = melee_weaponry_tech_3 }
+			add_equipment_to_stockpile = { type = melee_equipment_3 amount = 50 producer = USA }
+			subtract_from_variable = { s_melee_3 = 1 }
+			if = {
+				limit = { check_variable = { s_melee_3 = 0 } }
+				clear_variable = s_melee_3
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = melee_weaponry_tech_3 }
+					has_country_flag = melee_weaponry_tech_3
+				}
+			}
+			army_experience = 5
+			clear_variable = s_melee_3
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = melee_weaponry_tech_3
+			}
+			set_country_flag = melee_weaponry_tech_3
+			clear_variable = s_melee_3
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_melee_4
+		}
+		if = {
+			limit = { has_tech = melee_weaponry_tech_4 }
+			add_equipment_to_stockpile = { type = melee_equipment_4 amount = 50 producer = USA }
+			subtract_from_variable = { s_melee_4 = 1 }
+			if = {
+				limit = { check_variable = { s_melee_4 = 0 } }
+				clear_variable = s_melee_4
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = melee_weaponry_tech_4 }
+					has_country_flag = melee_weaponry_tech_4
+				}
+			}
+			army_experience = 5
+			clear_variable = s_melee_4
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = melee_weaponry_tech_4
+			}
+			set_country_flag = melee_weaponry_tech_4
+			clear_variable = s_melee_4
+		}
+	}
+
+	if = {
+		limit = {
+			has_variable = s_ballistic_e_2
+		}
+		if = {
+			limit = { has_tech = ballistic_weaponry_tech_2 }
+			add_equipment_to_stockpile = { type = ballistic_equipment_2 amount = 50 producer = USA }
+			subtract_from_variable = { s_ballistic_e_2 = 1 }
+			if = {
+				limit = { check_variable = { s_ballistic_e_2 = 0 } }
+				clear_variable = s_ballistic_e_2
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = ballistic_weaponry_tech_2 }
+					has_country_flag = ballistic_weaponry_tech_2
+				}
+			}
+			army_experience = 5
+			clear_variable = s_ballistic_e_2
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = ballistic_weaponry_tech_2
+			}
+			set_country_flag = ballistic_weaponry_tech_2
+			clear_variable = s_ballistic_e_2
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_energy_e_2
+		}
+		if = {
+			limit = { has_tech = energy_weaponry_tech_2 }
+			add_equipment_to_stockpile = { type = energy_equipment_2 amount = 50 producer = USA }
+			subtract_from_variable = { s_energy_e_2 = 1 }
+			if = {
+				limit = { check_variable = { s_energy_e_2 = 0 } }
+				clear_variable = s_energy_e_2
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = energy_weaponry_tech_2 }
+					has_country_flag = energy_weaponry_tech_2
+				}
+			}
+			army_experience = 5
+			clear_variable = s_energy_e_2
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = energy_weaponry_tech_2
+			}
+			set_country_flag = energy_weaponry_tech_2
+			clear_variable = s_energy_e_2
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_flamer
+		}
+		if = {
+			limit = { has_tech = flamer_demolitions_weaponry_tech_3 }
+			add_equipment_to_stockpile = { type = flamer_demolitions_equipment_2 amount = 50 producer = USA }
+			subtract_from_variable = { s_flamer = 1 }
+			if = {
+				limit = { check_variable = { s_flamer = 0 } }
+				clear_variable = s_flamer
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = flamer_demolitions_weaponry_tech_3 }
+					has_country_flag = flamer_demolitions_weaponry_tech_3
+				}
+			}
+			army_experience = 5
+			clear_variable = s_flamer
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = flamer_demolitions_weaponry_tech_3
+			}
+			set_country_flag = flamer_demolitions_weaponry_tech_3
+			clear_variable = s_flamer
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_mortar
+		}
+		if = {
+			limit = { has_tech = explosive_demolitions_weaponry_tech_3 }
+			add_equipment_to_stockpile = { type = explosive_demolitions_equipment_3 amount = 50 producer = USA }
+			subtract_from_variable = { s_mortar = 1 }
+			if = {
+				limit = { check_variable = { s_mortar = 0 } }
+				clear_variable = s_mortar
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = explosive_demolitions_weaponry_tech_3 }
+					has_country_flag = explosive_demolitions_weaponry_tech_3
+				}
+			}
+			army_experience = 5
+			clear_variable = s_mortar
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = explosive_demolitions_weaponry_tech_3
+			}
+			set_country_flag = explosive_demolitions_weaponry_tech_3
+			clear_variable = s_mortar
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_stripped_pa
+		}
+		if = {
+			limit = { has_tech = wasteland_pa_tech }
+			add_equipment_to_stockpile = { type = power_armor_equipment_1 amount = 5 producer = USA }
+			subtract_from_variable = { s_stripped_pa = 1 }
+			if = {
+				limit = { check_variable = { s_stripped_pa = 0 } }
+				clear_variable = s_stripped_pa
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = wasteland_pa_tech }
+					has_country_flag = wasteland_pa_tech
+				}
+			}
+			army_experience = 5
+			clear_variable = s_stripped_pa
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = wasteland_pa_tech
+			}
+			set_country_flag = wasteland_pa_tech
+			clear_variable = s_stripped_pa
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_scavenged_pa
+		}
+		if = {
+			limit = { has_tech = scav_pa_tech }
+			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 5 producer = USA }
+			subtract_from_variable = { s_scavenged_pa = 1 }
+			if = {
+				limit = { check_variable = { s_scavenged_pa = 0 } }
+				clear_variable = s_scavenged_pa
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = scav_pa_tech }
+					has_country_flag = scav_pa_tech
+				}
+			}
+			army_experience = 5
+			clear_variable = s_scavenged_pa
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = scav_pa_tech
+			}
+			set_country_flag = scav_pa_tech
+			clear_variable = s_scavenged_pa
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_energy_e_3
+		}
+		if = {
+			limit = { has_tech = energy_weaponry_tech_3 }
+			add_equipment_to_stockpile = { type = energy_equipment_3 amount = 30 producer = USA }
+			subtract_from_variable = { s_energy_e_3 = 1 }
+			if = {
+				limit = { check_variable = { s_energy_e_3 = 0 } }
+				clear_variable = s_energy_e_3
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = energy_weaponry_tech_3 }
+					has_country_flag = energy_weaponry_tech_3
+				}
+			}
+			army_experience = 5
+			clear_variable = s_energy_e_3
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = energy_weaponry_tech_3
+			}
+			set_country_flag = energy_weaponry_tech_3
+			clear_variable = s_energy_e_3
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_energy_e_4
+		}
+		if = {
+			limit = { has_tech = energy_weaponry_tech_4 }
+			add_equipment_to_stockpile = { type = energy_equipment_4 amount = 30 producer = USA }
+			subtract_from_variable = { s_energy_e_4 = 1 }
+			if = {
+				limit = { check_variable = { s_energy_e_4 = 0 } }
+				clear_variable = s_energy_e_4
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = energy_weaponry_tech_4 }
+					has_country_flag = energy_weaponry_tech_4
+				}
+			}
+			army_experience = 5
+			clear_variable = s_energy_e_4
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = energy_weaponry_tech_4
+			}
+			set_country_flag = energy_weaponry_tech_4
+			clear_variable = s_energy_e_4
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_ballistic_e_3
+		}
+		if = {
+			limit = { has_tech = ballistic_weaponry_tech_3 }
+			add_equipment_to_stockpile = { type = ballistic_equipment_3 amount = 30 producer = USA }
+			subtract_from_variable = { s_ballistic_e_3 = 1 }
+			if = {
+				limit = { check_variable = { s_ballistic_e_3 = 0 } }
+				clear_variable = s_ballistic_e_3
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = ballistic_weaponry_tech_3 }
+					has_country_flag = ballistic_weaponry_tech_3
+				}
+			}
+			army_experience = 5
+			clear_variable = s_ballistic_e_3
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = ballistic_weaponry_tech_3
+			}
+			set_country_flag = ballistic_weaponry_tech_3
+			clear_variable = s_ballistic_e_3
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_ballistic_e_4
+		}
+		if = {
+			limit = { has_tech = ballistic_weaponry_tech_4 }
+			add_equipment_to_stockpile = { type = ballistic_equipment_4 amount = 30 producer = USA }
+			subtract_from_variable = { s_ballistic_e_4 = 1 }
+			if = {
+				limit = { check_variable = { s_ballistic_e_4 = 0 } }
+				clear_variable = s_ballistic_e_4
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = ballistic_weaponry_tech_4 }
+					has_country_flag = ballistic_weaponry_tech_4
+				}
+			}
+			army_experience = 5
+			clear_variable = s_ballistic_e_4
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = ballistic_weaponry_tech_4
+			}
+			set_country_flag = ballistic_weaponry_tech_4
+			clear_variable = s_ballistic_e_4
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_t45d_pa
+		}
+		if = {
+			limit = { has_tech = t45d_pa_tech }
+			add_equipment_to_stockpile = { type = power_armor_equipment_2 amount = 5 producer = USA }
+			subtract_from_variable = { s_t45d_pa = 1 }
+			if = {
+				limit = { check_variable = { s_t45d_pa = 0 } }
+				clear_variable = s_t45d_pa
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = t45d_pa_tech }
+					has_country_flag = t45d_pa_tech
+				}
+			}
+			army_experience = 5
+			clear_variable = s_t45d_pa
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = t45d_pa_tech
+			}
+			set_country_flag = t45d_pa_tech
+			clear_variable = s_t45d_pa
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_minigun
+		}
+		if = {
+			limit = { has_tech = ballistic_fireteam_weaponry_tech_3 }
+			add_equipment_to_stockpile = { type = ballistic_fireteam_equipment_3 amount = 10 producer = USA }
+			subtract_from_variable = { s_minigun = 1 }
+			if = {
+				limit = { check_variable = { s_minigun = 0 } }
+				clear_variable = s_minigun
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = ballistic_fireteam_weaponry_tech_3 }
+					has_country_flag = ballistic_fireteam_weaponry_tech_3
+				}
+			}
+			army_experience = 5
+			clear_variable = s_minigun
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = ballistic_fireteam_weaponry_tech_3
+			}
+			set_country_flag = ballistic_fireteam_weaponry_tech_3
+			clear_variable = s_minigun
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_missile_launcher
+		}
+		if = {
+			limit = { has_tech = anti_tank_equipment_tech_3 }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_3 amount = 10 producer = USA }
+			subtract_from_variable = { s_missile_launcher = 1 }
+			if = {
+				limit = { check_variable = { s_missile_launcher = 0 } }
+				clear_variable = s_missile_launcher
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = anti_tank_equipment_tech_3 }
+					has_country_flag = anti_tank_equipment_tech_3
+				}
+			}
+			army_experience = 5
+			clear_variable = s_missile_launcher
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = anti_tank_equipment_tech_3
+			}
+			set_country_flag = anti_tank_equipment_tech_3
+			clear_variable = s_missile_launcher
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_gatling
+		}
+		if = {
+			limit = { has_tech = energy_fireteam_weaponry_tech_3 }
+			add_equipment_to_stockpile = { type = energy_fireteam_equipment_3 amount = 5 producer = USA }
+			subtract_from_variable = { s_gatling = 1 }
+			if = {
+				limit = { check_variable = { s_gatling = 0 } }
+				clear_variable = s_gatling
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = energy_fireteam_weaponry_tech_3 }
+					has_country_flag = energy_fireteam_weaponry_tech_3
+				}
+			}
+			army_experience = 5
+			clear_variable = s_gatling
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = energy_fireteam_weaponry_tech_3
+			}
+			set_country_flag = energy_fireteam_weaponry_tech_3
+			clear_variable = s_gatling
+		}
+	}
+	if = {
+		limit = {
+			has_variable = s_incinerator
+		}
+		if = {
+			limit = { has_tech = flamer_demolitions_weaponry_tech_4 }
+			add_equipment_to_stockpile = { type = flamer_demolitions_equipment_4 amount = 5 producer = USA }
+			subtract_from_variable = { s_incinerator = 1 }
+			if = {
+				limit = { check_variable = { s_incinerator = 0 } }
+				clear_variable = s_incinerator
+			}
+			else = {
+				set_country_flag = reroll
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_tech_bonus = { technology = flamer_demolitions_weaponry_tech_4 }
+					has_country_flag = flamer_demolitions_weaponry_tech_4
+				}
+			}
+			army_experience = 5
+			clear_variable = s_incinerator
+		}
+		else = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				technology = flamer_demolitions_weaponry_tech_4
+			}
+			set_country_flag = flamer_demolitions_weaponry_tech_4
+			clear_variable = s_incinerator
+		}
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_flag = reroll
+			}
+			clr_country_flag = reroll
+			resolve_equip_loot = yes
+		}
+		# Contingency clearing
+		clear_variable = s_incinerator
+		clear_variable = s_gatling
+		clear_variable = s_missile_launcher
+		clear_variable = s_minigun
+		clear_variable = s_t45d_pa
+		clear_variable = s_ballistic_e_4
+		clear_variable = s_ballistic_e_3
+		clear_variable = s_ballistic_e_2
+		clear_variable = s_ballistic_e_1
+		clear_variable = s_energy_e_4
+		clear_variable = s_energy_e_3
+		clear_variable = s_energy_e_2
+		clear_variable = s_energy_e_1
+		clear_variable = s_stripped_pa
+		clear_variable = s_scavenged_pa
+		clear_variable = s_mortar
+		clear_variable = s_flamer
+		clear_variable = s_melee_4
+		clear_variable = s_melee_3
+		clear_variable = s_melee_2
+		clear_variable = s_melee_1
+		clear_variable = s_dynamite
+		clear_variable = s_pmgs
+		clear_variable = s_support_e
+		clear_variable = s_pipe_guns
+	}
+}

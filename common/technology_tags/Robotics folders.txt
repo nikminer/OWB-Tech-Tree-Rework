@@ -1,0 +1,17 @@
+technology_folders = {
+	fallout_robotics_rr_folder = {
+		ledger = army
+		available = { 
+			has_global_flag = RobotsReworked 
+		}
+	}
+
+	fallout_robotics_folder = {
+		ledger = army
+		available = {
+			not = {
+				has_global_flag = RobotsReworked 
+			}
+		}
+	}
+}

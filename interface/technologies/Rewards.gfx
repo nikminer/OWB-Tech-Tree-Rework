@@ -506,4 +506,13 @@ spriteTypes = {
 			texturefile = "gfx/interface/technologies/Reward/Raiders/raider_reckless_aggression.dds"
 			alwaystransparent = yes
 		}
-	}
+
+	#------------------------------------------
+	# Nevada
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_platinum_os_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Nevada/platinum_os.dds"
+			alwaystransparent = yes
+		}
+}

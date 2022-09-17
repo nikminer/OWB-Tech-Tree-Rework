@@ -53,7 +53,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -78,6 +78,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
+			modifier = {
+				factor = 2
+				has_country_flag = grand_infantry_doctrine_ai
+			}
 			modifier = {
 				factor = 5
 				has_country_flag = spec_ops_doctrine_ai
@@ -112,7 +116,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -138,6 +142,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				has_country_flag = grand_infantry_doctrine_ai
+			}
+			modifier = {
 				factor = 5
 				has_country_flag = spec_ops_doctrine_ai
 			}
@@ -151,7 +159,8 @@ technologies = {
 	hardening_armour_tech = {
 
 		spec_ops = {
-			armor_value = 0.05
+			armor_value = 0.2
+			defense = 0.05
 		}
 
 		path = {
@@ -163,7 +172,7 @@ technologies = {
 			special_forces_tech_level_tribal = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -184,6 +193,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
+			modifier = {
+				factor = 2
+				has_country_flag = grand_infantry_doctrine_ai
+			}
 			modifier = {
 				factor = 5
 				has_country_flag = spec_ops_doctrine_ai
@@ -218,7 +231,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -244,6 +257,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				has_country_flag = grand_infantry_doctrine_ai
+			}
+			modifier = {
 				factor = 5
 				has_country_flag = spec_ops_doctrine_ai
 			}
@@ -257,7 +274,8 @@ technologies = {
 	ballistic_fibre_tech = {
 
 		spec_ops = {
-			hardness = 0.05
+			hardness = 0.20
+			max_strength = 0.10
 		}
 
 		path = {
@@ -265,7 +283,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -290,6 +308,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
+			modifier = {
+				factor = 2
+				has_country_flag = grand_infantry_doctrine_ai
+			}
 			modifier = {
 				factor = 5
 				has_country_flag = spec_ops_doctrine_ai
@@ -329,7 +351,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -355,6 +377,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				has_country_flag = grand_infantry_doctrine_ai
+			}
+			modifier = {
 				factor = 5
 				has_country_flag = spec_ops_doctrine_ai
 			}
@@ -366,9 +392,9 @@ technologies = {
 	}	
 
 	night_vision_tech = {
-		land_night_attack = 0.1
+		land_night_attack = 0.15
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -403,10 +429,6 @@ technologies = {
 				has_country_flag = spec_ops_doctrine_ai
 			}
 			modifier = {
-				factor = 5
-				has_country_flag = power_armor_doctrine_ai
-			}
-			modifier = {
 				factor = 10
 				date > "2283.1.1"
 			}
@@ -414,9 +436,9 @@ technologies = {
 	}
 
 	thermal_vision_tech = {
-		land_night_attack = 0.1
+		land_night_attack = 0.15
 
-		research_cost = 2
+		research_cost = 1.8
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -444,10 +466,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				has_country_flag = spec_ops_doctrine_ai
-			}
-			modifier = {
-				factor = 5
-				has_country_flag = power_armor_doctrine_ai
 			}
 			modifier = {
 				factor = 10
@@ -479,7 +497,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -505,6 +523,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2
+				has_country_flag = grand_infantry_doctrine_ai
+			}
+			modifier = {
 				factor = 5
 				has_country_flag = spec_ops_doctrine_ai
 			}
@@ -519,10 +541,11 @@ technologies = {
 
 		spec_ops = {
 			recon = 0.2
-			soft_attack = 0.02
+			soft_attack = 0.05
+			breakthrough = 0.05
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -548,6 +571,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
+				factor = 2.2
+				has_country_flag = grand_infantry_doctrine_ai
+			}
+			modifier = {
 				factor = 5
 				has_country_flag = spec_ops_doctrine_ai
 			}
@@ -560,7 +587,7 @@ technologies = {
 
 # Horses, Cavalry
 	spec_ops_horses_tech = {
-		research_cost = 2
+		research_cost = 2.2
 
 		allow = {
 			always = no
@@ -606,7 +633,7 @@ technologies = {
 	}
 
 	spec_ops_horses_tech_2 = {
-		research_cost = 2
+		research_cost = 2.2
 
 		allow = {
 			always = no
@@ -633,7 +660,7 @@ technologies = {
 	}
 
 	spec_ops_horses_tech_3 = {
-		research_cost = 2
+		research_cost = 2.2
 
 		allow = {
 			always = no

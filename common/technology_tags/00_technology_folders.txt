@@ -10,9 +10,7 @@ technology_folders = {
 	fallout_vehicle_folder = {
 		ledger = army
 	}
-	fallout_robotics_folder = {
-		ledger = army
-	}
+	
 	fallout_air_folder = {
 		ledger = air
 	}

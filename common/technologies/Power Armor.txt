@@ -63,7 +63,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.1
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -110,7 +110,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -161,7 +161,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -247,7 +247,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -293,7 +293,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -348,7 +348,7 @@ technologies = {
 		}
 		
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -463,7 +463,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -521,7 +521,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -569,7 +569,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -627,7 +627,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -685,7 +685,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3
@@ -740,7 +740,7 @@ technologies = {
 				}
 			}
 		}
-		research_cost = 2
+		research_cost = 2.2
 		xp_research_type = army
 		xp_boost_cost = 35
 		xp_research_bonus = 0.3

@@ -1533,6 +1533,338 @@ guiTypes = {
 			}
 		}
 
+		containerWindowType = {
+			name = "fallout_robotics_rr_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+
+			containerWindowType = {
+				name = "techtree_stripes"
+				position = { x= 0 y= 0 }
+				size = {
+					width = 2695 height = 1918
+					min = { width = 100%% height = 100%% }
+				}
+				clipping = no
+
+				iconType = {
+					name ="robot_techtree_bg"
+					spriteType = "GFX_robotics_tech_bg"
+					position = { x=0 y=0 }
+					alwaystransparent = yes
+				}
+
+				# Row Headers
+				instantTextBoxType = {
+					name = "header_production_robot"
+					position = { x = 50 y = 130 }   # 150
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_PRODUCTION_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_armor_robot"
+					position = { x = 50 y = 270 }   # 300
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_ARMOR_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_heavy_robot"
+					position = { x = 50 y = 410 }   # 450
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_HEAVY_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_servo_robot"
+					position = { x = 50 y = 555 }   # 600
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_SERVO_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_main_robot"
+					position = { x = 50 y = 690 }   # 750
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_MAIN_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_power_robot"
+					position = { x = 50 y = 825 }   
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_POWER_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_light_robot"
+					position = { x = 50 y = 960 }   
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_LIGHT_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_thruster_robot"
+					position = { x = 50 y = 1095 }   
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_THRUSTER_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_cnc_robot"
+					position = { x = 50 y = 1230 }  
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_CNC_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_software_robot"
+					position = { x = 50 y = 1365 }   
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_SOFTWARE_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_hardware_robot"
+					position = { x = 50 y = 1500 }   
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_HARDWARE_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "header_turrets_robot"
+					position = { x = 50 y = 1635 }   
+
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "HEADER_TURRETS_ROBOT"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+
+				# Column Headers
+				instantTextBoxType = {
+					name = "tribal_column_header"
+					position = { x = 490 y = 20 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "TRIBAL_HEADER"
+					maxWidth = 200
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "civilized_column_header"
+					position = { x = 765 y = 20 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "CIVILIZED_HEADER"
+					maxWidth = 200
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "advanced_column_header"
+					position = { x = 1595 y = 20 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "ADVANCED_HEADER"
+					maxWidth = 210
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "unique_column_header"
+					position = { x = 2425 y = 20 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0 }
+					text = "SPECIAL_HEADER"
+					maxWidth = 200
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+			}
+
+			# Containers
+			# Each 'column' is 275
+			containerWindowType = {
+				name = "tribal_tiled_research_bg"
+				position = { x = 480 y=0 }
+				size = { width = 680 height = 1950 }
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_yellow_tiled_research_bg"
+				}
+			}
+
+			containerWindowType = {
+				name = "civilized_tiled_research_bg"
+				position = { x = 1155 y=0 }
+				size = { width = 795 height = 1950 }
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_green_tiled_research_bg"
+				}
+			}
+
+			containerWindowType = {
+				name = "advanced_tiled_research_bg"
+				position = { x = 1945 y=0 }
+				size = { width = 830 height = 1950 }
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_blue_tiled_research_bg"
+				}
+			}
+
+			containerWindowType = {
+				name = "unique_tiled_research_bg"
+				position = { x = 2770 y=0 }
+				size = { width = 510 height = 1950 }
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_purple_tiled_research_bg"
+				}
+			}
+
+			# Trees
+			gridboxtype = {
+				name = "robotics_notes_tech_tree"
+				position = { x = 0 y = 150 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "robot_scurry_tech_tree"
+				position = { x = 0 y = 150 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "robot_humanoid_tech_tree"
+				position = { x = 0 y = 150 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "robot_pacification_bot_tech_tree"
+				position = { x = 0 y = 150 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "robot_securitron_tech_1_tree"
+				position = { x = 0 y = 150 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "robot_synth_tech_1_tree"
+				position = { x = 0 y = 150 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+		}
+
 #------------------------------------------
 # Air Folder
 #------------------------------------------
@@ -4088,6 +4420,13 @@ guiTypes = {
 			}
 
 			gridboxtype = {
+				name = "platinum_os_tech_tree"
+				position = { x = 0 y = 150 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
 				name = "dog_infantry_tech_tree"
 				position = { x = 0 y = 150 }
 				slotsize = { width = 70 height = 70 }
@@ -5448,6 +5787,14 @@ guiTypes = {
 				name = "fallout_vehicle_folder_tab"
 				position = { x = 260 y = 0 }
 				quadTextureSprite = "GFX_fallout_armour_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "fallout_robotics_rr_folder_tab"
+				position =  { x = 345 y = 0 }
+				quadTextureSprite = "GFX_fallout_robotics_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}

@@ -19,14 +19,15 @@ technologies = {
 	# warrior class
 	unit_training_tech_1 = {
 
-		training_time_army_factor = -0.03
+		training_time_army_factor = -0.05
+		mobilization_speed = 0.05
 
 		path = {
 			leads_to_tech = unit_training_tech_2
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.4
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -47,10 +48,18 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			modifier = {
-				factor = 3
+				factor = 2.5
 				date > "2276.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2277.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2278.1.1"
 			}
 		}
 	}
@@ -58,7 +67,7 @@ technologies = {
 	# militia training
 	unit_training_tech_2 = {
 		category_infantry = {
-			defense = 0.06
+			defense = 0.05
 		}
 
 		path = {
@@ -66,7 +75,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.4
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -89,16 +98,24 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 3
+				factor = 2.5
 				date > "2278.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2279.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2280.1.1"
 			}
 		}
 	}
 
 	# Guerilla tactics
 	unit_training_tech_3 = {
-		category_infantry = {
-			breakthrough = 0.06
+		category_front_line = {
+			breakthrough = 0.05
 		}
 
 		path = {
@@ -106,7 +123,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.4
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -129,16 +146,24 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 3
+				factor = 2.5
 				date > "2280.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2281.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2282.1.1"
 			}
 		}
 	}
 
 	# Platoon Training
 	unit_training_tech_4 = {
-		category_infantry = {
-			max_organisation = 3
+		category_front_line = {
+			max_organisation = 4
 		}
 
 		path = {
@@ -150,7 +175,7 @@ technologies = {
 			infantry_tech_level_settler = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.4
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -169,16 +194,25 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 3
+				factor = 2.5
 				date > "2281.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2282.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2283.1.1"
 			}
 		}
 	}
 
 	# Basic Drill
 	unit_training_tech_5 = {
-		category_infantry = {
+		category_front_line = {
 			default_morale = 0.03
+			maximum_speed = 0.03
 		}
 
 		path = {
@@ -190,7 +224,7 @@ technologies = {
 			infantry_tech_level_settler = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.4
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -211,8 +245,16 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 3
+				factor = 2.5
 				date > "2282.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2284.1.1"
 			}
 		}
 	}
@@ -231,7 +273,7 @@ technologies = {
 			infantry_tech_level_settler = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.4
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -250,8 +292,16 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 3
+				factor = 2.5
 				date > "2283.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2284.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2285.1.1"
 			}
 		}
 	}
@@ -259,7 +309,7 @@ technologies = {
 	# Entrenchment technologies
 	unit_training_tech_7 = {
 
-		max_dig_in = 0.15
+		max_dig_in_factor = 0.15
 
 		path = {
 			leads_to_tech = unit_training_tech_8
@@ -270,7 +320,7 @@ technologies = {
 			infantry_tech_level_scientific = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.4
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -289,8 +339,16 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 3
+				factor = 2.5
 				date > "2285.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2286.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2287.1.1"
 			}
 		}
 	}
@@ -298,13 +356,14 @@ technologies = {
 	# VR-Pods
 	unit_training_tech_8 = {
 
-		training_time_factor = -0.05
+		training_time_army_factor = -0.10
+		experience_gain_army_factor = 0.10
 
 		dependencies = {
 			infantry_tech_level_scientific = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.4
 		xp_research_type = army
 		xp_boost_cost = 50
 		xp_research_bonus = 0.5
@@ -323,8 +382,16 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 3
+				factor = 2.5
 				date > "2287.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2288.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				date > "2289.1.1"
 			}
 		}
 	}

@@ -1,0 +1,276 @@
+#-------------------------
+# Doctrine Land SpecOps
+#-------------------------
+technologies = {
+
+	@Col_special_forces = 2
+	
+	@Row_1 = 0
+	@Row_2 = 2
+	@Row_3 = 4
+	@Row_4 = 6
+	@Row_5 = 8
+	@Row_6 = 10
+	@Row_7 = 12
+
+	special_forces_perk_tech_1 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 25
+
+		unit_power_armour_design_cost_factor = -0.1
+		unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+		unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+		unit_spec_ops_design_cost_factor = -0.1
+		unit_spec_ops_cavalry_design_cost_factor = -0.1
+		unit_ghoul_paratrooper_design_cost_factor = -0.1
+		unit_crusader_unit_design_cost_factor = -0.1
+		experience_gain_army_factor = 0.02
+
+		category_special_forces = {
+			supply_consumption = -0.05
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_1 y = @Col_special_forces }
+		}
+
+		path = {
+			leads_to_tech = special_forces_perk_tech_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_perk_tech_2 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 25
+
+		unit_power_armour_design_cost_factor = -0.1
+		unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+		unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+		unit_spec_ops_design_cost_factor = -0.1
+		unit_spec_ops_cavalry_design_cost_factor = -0.1
+		unit_ghoul_paratrooper_design_cost_factor = -0.1
+		unit_crusader_unit_design_cost_factor = -0.1
+		experience_gain_army_factor = 0.02
+
+		category_special_forces = {
+			supply_consumption = -0.05
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_2 y = @Col_special_forces }
+		}
+
+		path = {
+			leads_to_tech = special_forces_perk_tech_3
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_perk_tech_3 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+
+		unit_power_armour_design_cost_factor = -0.1
+		unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+		unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+		unit_spec_ops_design_cost_factor = -0.1
+		unit_spec_ops_cavalry_design_cost_factor = -0.1
+		unit_ghoul_paratrooper_design_cost_factor = -0.1
+		unit_crusader_unit_design_cost_factor = -0.1
+		experience_gain_army_factor = 0.02
+
+		category_special_forces = {
+			max_organisation = 2
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_3 y = @Col_special_forces }
+		}
+
+		path = {
+			leads_to_tech = special_forces_perk_tech_4
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_perk_tech_4 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+
+		unit_power_armour_design_cost_factor = -0.1
+		unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+		unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+		unit_spec_ops_design_cost_factor = -0.1
+		unit_spec_ops_cavalry_design_cost_factor = -0.1
+		unit_ghoul_paratrooper_design_cost_factor = -0.1
+		unit_crusader_unit_design_cost_factor = -0.1
+		experience_gain_army_factor = 0.02
+
+		category_special_forces = {
+			max_organisation = 2
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_4 y = @Col_special_forces }
+		}
+
+		path = {
+			leads_to_tech = special_forces_perk_tech_5
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_perk_tech_5 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 75
+
+		unit_power_armour_design_cost_factor = -0.2
+		unit_power_armour_demolitions_infantry_design_cost_factor = -0.2
+		unit_power_armour_fireteam_infantry_design_cost_factor = -0.2
+		unit_spec_ops_design_cost_factor = -0.2
+		unit_spec_ops_cavalry_design_cost_factor = -0.2
+		unit_ghoul_paratrooper_design_cost_factor = -0.2
+		unit_crusader_unit_design_cost_factor = -0.2
+		experience_gain_army_factor = 0.02
+
+		category_special_forces = {
+			default_morale = 0.02
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_5 y = @Col_special_forces }
+		}
+
+		path = {
+			leads_to_tech = special_forces_perk_tech_6
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_perk_tech_6 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 75
+
+		unit_power_armour_design_cost_factor = -0.2
+		unit_power_armour_demolitions_infantry_design_cost_factor = -0.2
+		unit_power_armour_fireteam_infantry_design_cost_factor = -0.2
+		unit_spec_ops_design_cost_factor = -0.2
+		unit_spec_ops_cavalry_design_cost_factor = -0.2
+		unit_ghoul_paratrooper_design_cost_factor = -0.2
+		unit_crusader_unit_design_cost_factor = -0.2
+		experience_gain_army_factor = 0.02
+
+		category_special_forces = {
+			default_morale = 0.02
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_6 y = @Col_special_forces }
+		}
+
+		path = {
+			leads_to_tech = special_forces_perk_tech_7
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_perk_tech_7 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		unit_power_armour_design_cost_factor = -0.2
+		unit_power_armour_demolitions_infantry_design_cost_factor = -0.2
+		unit_power_armour_fireteam_infantry_design_cost_factor = -0.2
+		unit_spec_ops_design_cost_factor = -0.2
+		unit_spec_ops_cavalry_design_cost_factor = -0.2
+		unit_ghoul_paratrooper_design_cost_factor = -0.2
+		unit_crusader_unit_design_cost_factor = -0.2
+		experience_gain_army_factor = 0.02
+
+		category_special_forces = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		#enable_subunits = {
+		#	elite_spec_ops
+		#	elite_power_armour
+		#}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_7 y = @Col_special_forces }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+}

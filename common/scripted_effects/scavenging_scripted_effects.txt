@@ -1,0 +1,1298 @@
+scavenge_randomiser = {
+	## Determine number of rolls
+	# Randomising base rolls between 5 and 10
+	set_variable = { rolls = 10 }
+	set_variable = { rand_int = random }
+	multiply_variable = { rand_int = 10 }
+	round_variable = rand_int
+	add_to_variable = { rolls = rand_int }
+	clear_variable = rand_int
+	# Accounting for 'bonus rolls' from scavenging efficiency
+	if = {
+		limit = { check_variable = { scavenge_efficiency = 0 } }
+		add_to_variable = { rolls = -3 }
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 10 } }
+		add_to_variable = { rolls = -1 }
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 20 } }
+		# No effect
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 30 } }
+		add_to_variable = { rolls = 1 }
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 40 } }
+		add_to_variable = { rolls = 2 }
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 50 } }
+		add_to_variable = { rolls = 2 }
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 60 } }
+		add_to_variable = { rolls = 1 }
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 70 } }
+		# No effect
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 80 } }
+		add_to_variable = { rolls = -1 }
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 90 } }
+		add_to_variable = { rolls = -3 }
+	}
+	else_if = {
+		limit = { check_variable = { scavenge_efficiency = 100 } }
+		add_to_variable = { rolls = -4 }
+	}
+	else = {
+		# No effect
+		log = "Scavenge Efficiency for [Root.tag] (currently [?Root.scavenge_efficiency]) is either over 100 or not a multiple of 10 - this should never happen. Tell Happy."
+	}
+	## Linking rolls to loot tables
+	if = {
+		limit = { has_country_flag = equip_scav }
+		equipment_loot_table = yes
+		clr_country_flag = equip_scav
+	}
+	else_if = {
+		limit = { has_country_flag = robot_scav }
+		robot_loot_table = yes
+		clr_country_flag = robot_scav
+	}
+	else_if = {
+		limit = { has_country_flag = vehicle_scav }
+		vehicle_loot_table = yes
+		clr_country_flag = vehicle_scav
+	}
+	else = {
+		# No effect
+		log = "No loot table flag has been set - this should never happen. Tell Happy."
+	}
+	clear_variable = rolls
+}
+
+equipment_loot_table = {
+	## Randomly selecting an entry from 1 to 80
+	set_variable = { rand_int = random }
+	multiply_variable = { rand_int = 80 }
+	round_variable = rand_int
+	## Linking the roll to the table
+	if = { # 0 is blank because the chance to get it is half the chance for other numbers (except 40)
+		limit = { check_variable = { rand_int = 0 } }
+		# No effect
+	}
+	else_if = { # This first one is commented to explain it - the rest aren't except where there is a marked variation from this template
+		limit = { # Occupies 5 entries
+			AND = {
+				check_variable = { rand_int > 0 }
+				check_variable = { rand_int < 6 }
+			}
+		}
+		if = { # Checks the roll meets the availability criteria
+			limit = { check_variable = { scavenge_efficiency < 90 } }
+			if = { # If this entry hasn't been rolled before, set the var to 1 - we're reaching nestled levels never seen before!
+				limit = { NOT = { has_variable = s_pipe_guns } }
+				set_variable = { s_pipe_guns = 1 }
+			}
+			else = { # Otherwise add 1 to the var
+				add_to_variable = { s_pipe_guns = 1 }
+			}
+		}
+		else_if = { # If we failed the criteria but our efficiency is 90 or 100, we regain the roll
+			limit = { check_variable = { scavenge_efficiency > 89 } }
+			add_to_variable = { rolls = 1 }
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 6 - 10
+		limit = {
+			AND = {
+				check_variable = { rand_int > 5 }
+				check_variable = { rand_int < 11 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency < 90 } }
+			if = {
+				limit = { NOT = { has_variable = s_melee_e_1 } }
+				set_variable = { s_melee_e_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_melee_e_1 = 1 }
+			}
+		}
+		else_if = {
+			limit = { check_variable = { scavenge_efficiency > 89 } }
+			add_to_variable = { rolls = 1 }
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 11 - 15
+		limit = {
+			AND = {
+				check_variable = { rand_int > 10 }
+				check_variable = { rand_int < 16 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency < 90 } }
+			if = {
+				limit = { NOT = { has_variable = s_ballistic_e_1 } }
+				set_variable = { s_ballistic_e_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_ballistic_e_1 = 1 }
+			}
+		}
+		else_if = {
+			limit = { check_variable = { scavenge_efficiency > 89 } }
+			add_to_variable = { rolls = 1 }
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 16 - 19
+		limit = {
+			AND = {
+				check_variable = { rand_int > 15 }
+				check_variable = { rand_int < 20 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency < 90 } }
+			if = {
+				limit = { NOT = { has_variable = s_melee_2 } }
+				set_variable = { s_melee_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_melee_2 = 1 }
+			}
+		}
+		else_if = {
+			limit = { check_variable = { scavenge_efficiency > 89 } }
+			add_to_variable = { rolls = 1 }
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 16 - 19
+		limit = {
+			AND = {
+				check_variable = { rand_int > 15 }
+				check_variable = { rand_int < 20 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency < 90 } }
+			if = {
+				limit = { NOT = { has_variable = s_melee_2 } }
+				set_variable = { s_melee_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_melee_2 = 1 }
+			}
+		}
+		else_if = {
+			limit = { check_variable = { scavenge_efficiency > 89 } }
+			add_to_variable = { rolls = 1 }
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 20 - 23
+		limit = {
+			AND = {
+				check_variable = { rand_int > 19 }
+				check_variable = { rand_int < 24 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_support_e } }
+				set_variable = { s_support_e = 1 }
+			}
+			else = {
+				add_to_variable = { s_support_e = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 24 - 26
+		limit = {
+			AND = {
+				check_variable = { rand_int > 23 }
+				check_variable = { rand_int < 27 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_pmgs } }
+				set_variable = { s_pmgs = 1 }
+			}
+			else = {
+				add_to_variable = { s_pmgs = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 27 - 29
+		limit = {
+			AND = {
+				check_variable = { rand_int > 26 }
+				check_variable = { rand_int < 30 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_dynamite } }
+				set_variable = { s_dynamite = 1 }
+			}
+			else = {
+				add_to_variable = { s_dynamite = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 30 - 32
+		limit = {
+			AND = {
+				check_variable = { rand_int > 29 }
+				check_variable = { rand_int < 33 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_energy_e_1 } }
+				set_variable = { s_energy_e_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_energy_e_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 33 - 34
+		limit = {
+			AND = {
+				check_variable = { rand_int > 32 }
+				check_variable = { rand_int < 35 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_melee_3 } }
+				set_variable = { s_melee_3 = 1 }
+			}
+			else = {
+				add_to_variable = { s_melee_3 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 35 - 36
+		limit = {
+			AND = {
+				check_variable = { rand_int > 34 }
+				check_variable = { rand_int < 37 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 30 } }
+			if = {
+				limit = { NOT = { has_variable = s_ballistic_e_2 } }
+				set_variable = { s_ballistic_e_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_ballistic_e_2 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 37 - 38
+		limit = {
+			AND = {
+				check_variable = { rand_int > 36 }
+				check_variable = { rand_int < 39 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 30 } }
+			if = {
+				limit = { NOT = { has_variable = s_energy_e_2 } }
+				set_variable = { s_energy_e_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_energy_e_2 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 39 - 40
+		limit = {
+			AND = {
+				check_variable = { rand_int > 38 }
+				check_variable = { rand_int < 41 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 40 } }
+			if = {
+				limit = { NOT = { has_variable = s_flamer } }
+				set_variable = { s_flamer = 1 }
+			}
+			else = {
+				add_to_variable = { s_flamer = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 41 - 42
+		limit = {
+			AND = {
+				check_variable = { rand_int > 40 }
+				check_variable = { rand_int < 43 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 40 } }
+			if = {
+				limit = { NOT = { has_variable = s_mortar } }
+				set_variable = { s_mortar = 1 }
+			}
+			else = {
+				add_to_variable = { s_mortar = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 43
+		limit = {
+			check_variable = { rand_int = 43 }
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 35 } }
+			if = {
+				limit = { NOT = { has_variable = s_stripped_pa } }
+				set_variable = { s_stripped_pa = 1 }
+			}
+			else = {
+				add_to_variable = { s_stripped_pa = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entries 44
+		limit = {
+			check_variable = { rand_int = 44 }
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 40 } }
+			if = {
+				limit = { NOT = { has_variable = s_scavenged_pa } }
+				set_variable = { s_scavenged_pa = 1 }
+			}
+			else = {
+				add_to_variable = { s_scavenged_pa = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 45
+		limit = {
+			AND = {
+				check_variable = { rand_int = 45 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 50 } }
+			if = {
+				limit = { NOT = { has_variable = s_energy_e_3 } }
+				set_variable = { s_energy_e_3 = 1 }
+			}
+			else = {
+				add_to_variable = { s_energy_e_3 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 46
+		limit = {
+			AND = {
+				check_variable = { rand_int = 46 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 50 } }
+			if = {
+				limit = { NOT = { has_variable = s_ballistic_e_3 } }
+				set_variable = { s_ballistic_e_3 = 1 }
+			}
+			else = {
+				add_to_variable = { s_ballistic_e_3 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 47
+		limit = {
+			AND = {
+				check_variable = { rand_int = 47 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 60 } }
+			if = {
+				limit = { NOT = { has_variable = s_t45d_pa } }
+				set_variable = { s_t45d_pa = 1 }
+			}
+			else = {
+				add_to_variable = { s_t45d_pa = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 48
+		limit = {
+			AND = {
+				check_variable = { rand_int = 48 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 70 } }
+			if = {
+				limit = { NOT = { has_variable = s_minigun } }
+				set_variable = { s_minigun = 1 }
+			}
+			else = {
+				add_to_variable = { s_minigun = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 49
+		limit = {
+			AND = {
+				check_variable = { rand_int = 49 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 70 } }
+			if = {
+				limit = { NOT = { has_variable = s_missile_launcher } }
+				set_variable = { s_missile_launcher = 1 }
+			}
+			else = {
+				add_to_variable = { s_missile_launcher = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 50
+		limit = {
+			AND = {
+				check_variable = { rand_int = 50 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 80 } }
+			if = {
+				limit = { NOT = { has_variable = s_gatling } }
+				set_variable = { s_gatling = 1 }
+			}
+			else = {
+				add_to_variable = { s_gatling = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 51
+		limit = {
+			AND = {
+				check_variable = { rand_int = 51 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 80 } }
+			if = {
+				limit = { NOT = { has_variable = s_incinerator } }
+				set_variable = { s_incinerator = 1 }
+			}
+			else = {
+				add_to_variable = { s_incinerator = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 52
+		limit = {
+			AND = {
+				check_variable = { rand_int = 52 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 80 } }
+			if = {
+				limit = { NOT = { has_variable = s_energy_e_4 } }
+				set_variable = { s_energy_e_4 = 1 }
+			}
+			else = {
+				add_to_variable = { s_energy_e_4 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 53
+		limit = {
+			AND = {
+				check_variable = { rand_int = 53 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 80 } }
+			if = {
+				limit = { NOT = { has_variable = s_ballistic_e_4 } }
+				set_variable = { s_ballistic_e_4 = 1 }
+			}
+			else = {
+				add_to_variable = { s_ballistic_e_4 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 54
+		limit = {
+			AND = {
+				check_variable = { rand_int = 54 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 80 } }
+			if = {
+				limit = { NOT = { has_variable = s_melee_e_4 } }
+				set_variable = { s_melee_e_4 = 1 }
+			}
+			else = {
+				add_to_variable = { s_melee_e_4 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else = {
+		# No effect
+	}
+	## Clearing variables and removing one roll
+	clear_variable = rand_int
+	subtract_from_variable = { rolls = 1 }
+	## Calling itself again if there are remaining rolls
+	if = {
+		limit = { NOT = { check_variable = { rolls = 0 } } }
+		equipment_loot_table = yes
+	}
+}
+
+robot_loot_table = {
+	## Randomly selecting an entry from 0 to 12
+	set_variable = { rand_int = random }
+	multiply_variable = { rand_int = 12 }
+	round_variable = rand_int
+	## Linking the roll to the table
+	if = { # 0 is blank because the chance to get it is half the chance for other numbers (except 40)
+		limit = { check_variable = { rand_int = 0 } }
+		# No effect
+	}
+	else_if = { # Entry 1
+		limit = {
+			AND = {
+				check_variable = { rand_int = 1 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_sr_1 } }
+				set_variable = { s_sr_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_sr_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 2
+		limit = {
+			AND = {
+				check_variable = { rand_int = 2 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_lr_1 } }
+				set_variable = { s_lr_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_lr_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 3
+		limit = {
+			AND = {
+				check_variable = { rand_int = 3 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_lr_2 } }
+				set_variable = { s_lr_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_lr_2 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 4
+		limit = {
+			AND = {
+				check_variable = { rand_int = 4 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_mr_1 } }
+				set_variable = { s_mr_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_mr_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 5
+		limit = {
+			AND = {
+				check_variable = { rand_int = 5 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 50 } }
+			if = {
+				limit = { NOT = { has_variable = s_mr_2 } }
+				set_variable = { s_mr_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_mr_2 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 6
+		limit = {
+			AND = {
+				check_variable = { rand_int = 6 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_er_1 } }
+				set_variable = { s_er_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_er_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 7
+		limit = {
+			AND = {
+				check_variable = { rand_int = 7 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 40 } }
+			if = {
+				limit = { NOT = { has_variable = s_hr_1 } }
+				set_variable = { s_hr_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_hr_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 8
+		limit = {
+			AND = {
+				check_variable = { rand_int = 8 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 60 } }
+			if = {
+				limit = { NOT = { has_variable = s_hr_2 } }
+				set_variable = { s_hr_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_hr_2 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 9
+		limit = {
+			AND = {
+				check_variable = { rand_int = 9 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 60 } }
+			if = {
+				limit = { NOT = { has_variable = s_hr_3 } }
+				set_variable = { s_hr_3 = 1 }
+			}
+			else = {
+				add_to_variable = { s_hr_3 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 10
+		limit = {
+			AND = {
+				check_variable = { rand_int = 10 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 80 } }
+			if = {
+				limit = { NOT = { has_variable = s_hr_4 } }
+				set_variable = { s_hr_4 = 1 }
+			}
+			else = {
+				add_to_variable = { s_hr_4 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 11
+		limit = {
+			AND = {
+				check_variable = { rand_int = 11 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 80 } }
+			if = {
+				limit = { NOT = { has_variable = s_ar_1 } }
+				set_variable = { s_ar_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_ar_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else = {
+		# No effect
+	}
+	## Clearing variables and removing one roll
+	clear_variable = rand_int
+	subtract_from_variable = { rolls = 1 }
+	## Calling itself again if there are remaining rolls
+	if = {
+		limit = { NOT = { check_variable = { rolls = 0 } } }
+		robot_loot_table = yes
+	}
+}
+vehicle_loot_table = {
+	## Randomly selecting an entry from 0 to 20
+	set_variable = { rand_int = random }
+	multiply_variable = { rand_int = 20 }
+	round_variable = rand_int
+	## Linking the roll to the table
+	if = { # 0 is blank because the chance to get it is half the chance for other numbers (except 40)
+		limit = { check_variable = { rand_int = 0 } }
+		# No effect
+	}
+	else_if = { # Entry 1
+		limit = {
+			AND = {
+				check_variable = { rand_int = 1 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_motorbike_1 } }
+				set_variable = { s_motorbike_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_motorbike_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 2
+		limit = {
+			AND = {
+				check_variable = { rand_int = 2 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_motorbike_2 } }
+				set_variable = { s_motorbike_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_motorbike_2 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 3
+		limit = {
+			AND = {
+				check_variable = { rand_int = 3 }
+			}
+		}
+		if = {
+			limit = { always = yes }
+			if = {
+				limit = { NOT = { has_variable = s_car_1 } }
+				set_variable = { s_car_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_car_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 4
+		limit = {
+			AND = {
+				check_variable = { rand_int = 4 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 50 } }
+			if = {
+				limit = { NOT = { has_variable = s_car_2 } }
+				set_variable = { s_car_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_car_2 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 5
+		limit = {
+			AND = {
+				check_variable = { rand_int = 5 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 60 } }
+			if = {
+				limit = { NOT = { has_variable = s_truck_1 } }
+				set_variable = { s_truck_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_truck_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 6
+		limit = {
+			AND = {
+				check_variable = { rand_int = 6 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 60 } }
+			if = {
+				limit = { NOT = { has_variable = s_car_3 } }
+				set_variable = { s_car_3 = 1 }
+			}
+			else = {
+				add_to_variable = { s_car_3 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 7
+		limit = {
+			AND = {
+				check_variable = { rand_int = 7 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 70 } }
+			if = {
+				limit = { NOT = { has_variable = s_truck_2 } }
+				set_variable = { s_truck_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_truck_2 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 8
+		limit = {
+			AND = {
+				check_variable = { rand_int = 8 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 70 } }
+			if = {
+				limit = { NOT = { has_variable = s_apc_1 } }
+				set_variable = { s_apc_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_apc_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 9
+		limit = {
+			AND = {
+				check_variable = { rand_int = 9 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 80 } }
+			if = {
+				limit = { NOT = { has_variable = s_tank_1 } }
+				set_variable = { s_tank_1 = 1 }
+			}
+			else = {
+				add_to_variable = { s_tank_1 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else_if = { # Entry 10
+		limit = {
+			AND = {
+				check_variable = { rand_int = 10 }
+			}
+		}
+		if = {
+			limit = { check_variable = { scavenge_efficiency > 89 } }
+			if = {
+				limit = { NOT = { has_variable = s_apc_2 } }
+				set_variable = { s_apc_2 = 1 }
+			}
+			else = {
+				add_to_variable = { s_apc_2 = 1 }
+			}
+		}
+		else = { # Otherwise we yield no loot from this loot
+		}
+	}
+	else = {
+		# No effect
+	}
+	## Clearing variables and removing one roll
+	clear_variable = rand_int
+	subtract_from_variable = { rolls = 1 }
+	## Calling itself again if there are remaining rolls
+	if = {
+		limit = { NOT = { check_variable = { rolls = 0 } } }
+		vehicle_loot_table = yes
+	}
+}
+
+resolve_expedition = {
+	scavenge_equip_end = yes
+	if = {
+		limit = {
+			has_country_flag = scavenge_normal
+		}
+		clr_country_flag = scavenge_normal
+	}
+	if = {
+		limit = {
+			has_country_flag = scavenge_pa
+		}
+		scavenge_pa_end = yes
+		clr_country_flag = scavenge_pa
+	}
+	if = {
+		limit = {
+			has_country_flag = scavenge_fly
+		}
+		scavenge_fly_end = yes
+		clr_country_flag = scavenge_fly
+	}
+	if = {
+		limit = {
+			has_country_flag = scavenge_vroom_vroom
+		}
+		scavenge_vehicle_end = yes
+		clr_country_flag = scavenge_vroom_vroom
+	}
+	clr_country_flag = is_scavenging
+	clear_variable = resolve_rng
+}
+
+old_world_tech_randomiser = {
+	set_variable = { rng_owt_value = random }
+	if = {
+		limit = { check_variable = { rng_owt_value < 0.1 } }
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_computer }
+			}
+			# No need for a reroll
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.2 } }
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_tactics }
+			}
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.3 } }
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_loudspeakers }
+			}
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.4 } }
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_spybook }
+			}
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.5 } }
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_weapon_schematics }
+			}
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.6 } }
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_factory_schematics }
+			}
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.7 } }
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_naval_targeting_system }
+			}
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.8 } }
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_radar_system }
+			}
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.9 } }
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_planning_system }
+			}
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				NOT = { has_idea = scavenging_old_world_political_guide }
+			}
+		}
+		else = {
+			hidden_effect = {
+				set_country_flag = scav_loop
+			}
+			custom_effect_tooltip = scavenging_will_reroll
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = scav_loop
+		}
+		clr_country_flag = scav_loop
+		set_variable = { rng_owt_value = random }
+		old_world_tech_randomiser = yes
+	}
+}
+old_world_tech = {
+	if = {
+		limit = { check_variable = { rng_owt_value < 0.1 } }
+		add_timed_idea = { idea = scavenging_old_world_computer days = 120 }
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.2 } }
+		add_timed_idea = { idea = scavenging_old_world_tactics days = 120 }
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.3 } }
+		add_timed_idea = { idea = scavenging_old_world_loudspeakers days = 120 }
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.4 } }
+		add_timed_idea = { idea = scavenging_old_world_spybook days = 120 }
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.5 } }
+		add_timed_idea = { idea = scavenging_old_world_weapon_schematics days = 120 }
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.6 } }
+		add_timed_idea = { idea = scavenging_old_world_factory_schematics days = 120 }
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.7 } }
+		add_timed_idea = { idea = scavenging_old_world_naval_targeting_system days = 120 }
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.8 } }
+		add_timed_idea = { idea = scavenging_old_world_radar_system days = 120 }
+	}
+	else_if = {
+		limit = { check_variable = { rng_owt_value < 0.9 } }
+		add_timed_idea = { idea = scavenging_old_world_planning_system days = 120 }
+	}
+	else = {
+		add_timed_idea = { idea = scavenging_old_world_political_guide days = 120 }
+	}
+	clear_variable = rng_owt_value
+}
