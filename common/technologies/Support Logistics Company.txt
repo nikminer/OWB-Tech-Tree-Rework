@@ -68,8 +68,9 @@ technologies = {
 
 	logistics_company_tech_2 = {
 
-		logistics_company = {
+		category_logistics_support = {
 			supply_consumption_factor = -0.05
+			initiative = 0.02
 		}
 
 		path = {
@@ -122,8 +123,9 @@ technologies = {
 
 	logistics_company_tech_3 = {
 
-		logistics_company = {
+		category_logistics_support = {
 			supply_consumption_factor = -0.05
+			initiative = 0.02
 		}
 
 		path = {
@@ -176,8 +178,9 @@ technologies = {
 
 	logistics_company_tech_4 = {
 
-		logistics_company = {
+		category_logistics_support = {
 			supply_consumption_factor = -0.05
+			initiative = 0.02
 		}
 
 		path = {
@@ -230,10 +233,11 @@ technologies = {
 
 	logistics_company_tech_5 = {
 
-		logistics_company = {
+		category_logistics_support = {
 			supply_consumption_factor = -0.05
+			initiative = 0.02
 		}
-
+		
 		path = {
 			leads_to_tech = logistics_company_tech_6
 			research_cost_coeff = 1
@@ -284,8 +288,9 @@ technologies = {
 
 	logistics_company_tech_6 = {
 
-		logistics_company = {
+		category_logistics_support = {
 			supply_consumption_factor = -0.05
+			initiative = 0.02
 		}
 
 		dependencies = {

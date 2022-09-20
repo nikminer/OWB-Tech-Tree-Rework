@@ -156,9 +156,10 @@ technologies = {
 	flamer_demolitions_high_pressure_tech = {
 
 		category_demolitions = {
-			hard_attack = 0.03
-			soft_attack = 0.03
-			ap_attack = 0.03
+			hard_attack = 0.05
+			soft_attack = 0.05
+			ap_attack = 0.05
+			max_strength = 0.1
 		}
 
 		XOR = {
@@ -221,6 +222,8 @@ technologies = {
 
 		category_demolitions = {
 			soft_attack = 0.05
+			breakthrough = 0.05
+			defense = 0.05
 		}
 
 		XOR = {
@@ -331,12 +334,8 @@ technologies = {
 
 	flamer_demolitions_cooling_jacket_tech = {
 
-		demolitions_support = {
+		category_demolitions = {
 			reliability = 0.05
-		}
-
-		demolitions_infantry = {
-			reliability = 0.01
 		}
 
 		path = {
@@ -498,7 +497,8 @@ technologies = {
 	flamer_demolitions_longevity_focus_tech = {
 
 		category_demolitions = {
-			soft_attack = 0.05
+			soft_attack = 0.15
+			defense = -0.10
 		}
 
 		XOR = {
@@ -628,12 +628,8 @@ technologies = {
 
 	explosive_demolitions_operational_security_tech = {
 
-		demolitions_support = {
+		category_demolitions = {
 			reliability = 0.05
-		}
-
-		demolitions_infantry = {
-			reliability = 0.01
 		}
 
 		XOR = {
@@ -696,8 +692,9 @@ technologies = {
 
 		category_demolitions = {
 			hard_attack = 0.03
-			soft_attack = 0.03
+			soft_attack = 0.1
 			ap_attack = 0.03
+			breakthrough = -0.03
 		}
 
 		XOR = {
@@ -809,8 +806,9 @@ technologies = {
 	explosive_demolitions_propulsion_charge_tech = {
 
 		category_demolitions = {
-			hard_attack = 0.04
-			soft_attack = 0.04
+			hard_attack = 0.05
+			soft_attack = 0.05
+			breakthrough = 0.05
 		}
 
 		path = {
@@ -916,6 +914,7 @@ technologies = {
 
 		category_demolitions = {
 			soft_attack = 0.05
+			defense = 0.15
 		}
 
 		XOR = {
@@ -973,8 +972,9 @@ technologies = {
 
 		category_demolitions = {
 			hard_attack = 0.1
+			breakthrough = 0.05
+			ap_attack = 0.05
 		}
-
 		XOR = {
 			explosive_demolitions_cyclic_fire_tech
 		}

@@ -77,12 +77,14 @@ technologies = {
 
 		dog_company = {
 			soft_attack = 0.05
-			suppression_factor = 0.1
+			suppression_factor = 0.2
+			recon = 0.2
 		}
 
 		dog_infantry = {
 			soft_attack = 0.025
 			suppression_factor = 0.1
+			recon = 0.1
 		}
 
 		path = {
@@ -197,12 +199,14 @@ technologies = {
 
 		dog_company = {
 			soft_attack = 0.05
-			suppression_factor = 0.1
+			suppression_factor = 0.2
+			recon = 0.2
 		}
 
 		dog_infantry = {
 			soft_attack = 0.025
 			suppression_factor = 0.1
+			recon = 0.1
 		}
 
 		path = {
@@ -260,12 +264,14 @@ technologies = {
 
 		dog_company = {
 			soft_attack = 0.05
-			suppression_factor = 0.1
+			suppression_factor = 0.2
+			recon = 0.2
 		}
 
 		dog_infantry = {
 			soft_attack = 0.025
 			suppression_factor = 0.1
+			recon = 0.1
 		}
 
 		path = {

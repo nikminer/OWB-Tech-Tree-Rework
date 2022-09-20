@@ -68,9 +68,19 @@ technologies = {
 
 	maintenance_company_tech_2 = {
 
-		maintenance_company = {
+		category_maintenance_support = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.02
+		}
+		maintenance_company = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
+		motorized_maintenance_company = {
 			urban = {
 				attack = 0.02
 			}
@@ -129,9 +139,11 @@ technologies = {
 
 	maintenance_company_tech_3 = {
 
-		maintenance_company = {
+		category_maintenance_support = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.02
+		}
+		maintenance_company = {
 			urban = {
 				attack = 0.02
 			}
@@ -139,6 +151,15 @@ technologies = {
 				attack = 0.02
 			}
 		}
+		motorized_maintenance_company = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
+
 
 		path = {
 			leads_to_tech = maintenance_company_tech_4
@@ -190,9 +211,11 @@ technologies = {
 
 	maintenance_company_tech_4 = {
 
-		maintenance_company = {
+		category_maintenance_support = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.02
+		}
+		maintenance_company = {
 			urban = {
 				attack = 0.02
 			}
@@ -200,6 +223,15 @@ technologies = {
 				attack = 0.02
 			}
 		}
+		motorized_maintenance_company = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
+
 
 		path = {
 			leads_to_tech = maintenance_company_tech_5
@@ -251,9 +283,11 @@ technologies = {
 
 	maintenance_company_tech_5 = {
 
-		maintenance_company = {
+		category_maintenance_support = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.02
+		}
+		maintenance_company = {
 			urban = {
 				attack = 0.02
 			}
@@ -261,6 +295,15 @@ technologies = {
 				attack = 0.02
 			}
 		}
+		motorized_maintenance_company = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
+
 
 		path = {
 			leads_to_tech = maintenance_company_tech_6
@@ -312,9 +355,19 @@ technologies = {
 
 	maintenance_company_tech_6 = {
 
-		maintenance_company = {
+		category_maintenance_support = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.02
+		}
+		maintenance_company = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
+		motorized_maintenance_company = {
 			urban = {
 				attack = 0.02
 			}

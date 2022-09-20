@@ -131,8 +131,8 @@ technologies = {
 	robot_armour_hardening_tech = {
 
 		category_robots = {
-			armor_value = 0.05
-			suppression_factor = 0.25
+			armor_value = 0.1
+			suppression_factor = 0.2
 		}
 
 		path = {
@@ -302,7 +302,7 @@ technologies = {
 	robot_precision_motor_tech = {
 
 		category_robots = {
-			breakthrough = 0.08
+			breakthrough = 0.1
 		}
 
 		path = {

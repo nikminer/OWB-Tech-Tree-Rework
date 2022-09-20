@@ -82,9 +82,10 @@ technologies = {
 
 	med_company_tech_2 = {
 
-		medical_chem_company = {
+		category_medical_support = {
 			casualty_trickleback = 0.05
 			experience_loss_factor = -0.05
+			default_morale = 0.02
 		}
 
 		path = {
@@ -151,9 +152,10 @@ technologies = {
 
 	med_company_tech_3 = {
 
-		medical_chem_company = {
+		category_medical_support = {
 			casualty_trickleback = 0.05
 			experience_loss_factor = -0.05
+			default_morale = 0.02
 		}
 
 		path = {
@@ -220,9 +222,10 @@ technologies = {
 
 	med_company_tech_4 = {
 
-		medical_chem_company = {
+		category_medical_support = {
 			casualty_trickleback = 0.05
 			experience_loss_factor = -0.05
+			default_morale = 0.02
 		}
 
 		path = {
@@ -289,9 +292,10 @@ technologies = {
 
 	med_company_tech_5 = {
 
-		medical_chem_company = {
+		category_medical_support = {
 			casualty_trickleback = 0.05
 			experience_loss_factor = -0.05
+			default_morale = 0.02
 		}
 
 		path = {
@@ -358,9 +362,10 @@ technologies = {
 
 	med_company_tech_6 = {
 
-		medical_chem_company = {
+		category_medical_support = {
 			casualty_trickleback = 0.05
 			experience_loss_factor = -0.05
+			default_morale = 0.02
 		}
 
 		dependencies = {

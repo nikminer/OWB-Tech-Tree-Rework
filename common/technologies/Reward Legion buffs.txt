@@ -209,7 +209,7 @@ technologies = {
 		allow = { always = no }
 
 		category_infantry = {
-			initiative = 0.07
+			initiative = 0.04
 		}
 	}
 
@@ -228,7 +228,7 @@ technologies = {
 		allow = { always = no }
 
 		infantry = {
-			combat_width = -0.25
+			combat_width = -0.3
 		}
 	}
 

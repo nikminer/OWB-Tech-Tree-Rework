@@ -19,6 +19,9 @@ technologies = {
 	# warrior class
 	unit_training_tech_1 = {
 
+		category_front_line = {
+			reliability = 0.01
+		}
 		training_time_army_factor = -0.05
 		mobilization_speed = 0.05
 
