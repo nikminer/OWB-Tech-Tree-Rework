@@ -276,7 +276,7 @@ technologies = {
 		land_reinforce_rate = 0.02
 	}
 
-	mountaingods = {
+	tribalmountaingods = {
 		research_cost = 1
 
 		dependencies = {
@@ -324,7 +324,7 @@ technologies = {
 		}
 	}
 
-	sungods = {
+	tribalsungods = {
 		research_cost = 1
 
 		dependencies = {

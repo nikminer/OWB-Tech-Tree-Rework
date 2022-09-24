@@ -292,13 +292,13 @@ spriteTypes = {
 		}
 	
 		spriteType = {
-			name = "GFX_mountaingods_medium"
+			name = "GFX_tribalmountaingods_medium"
 			texturefile = "gfx/interface/technologies/Reward/Tribal/mountaingods.dds"
 			alwaystransparent = yes
 		}
 	
 		spriteType = {
-			name = "GFX_sungods_medium"
+			name = "GFX_tribalsungods_medium"
 			texturefile = "gfx/interface/technologies/Reward/Tribal/sungods.dds"
 			alwaystransparent = yes
 		}
