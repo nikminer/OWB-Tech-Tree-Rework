@@ -302,6 +302,24 @@ spriteTypes = {
 			texturefile = "gfx/interface/technologies/Reward/Tribal/sungods.dds"
 			alwaystransparent = yes
 		}
+
+		spriteType = {
+			name = "GFX_ttm_healthy_warriors_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/ttm_healthy_warriors.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_ttm_call_of_the_wild_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/ttm_call_of_the_wild.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_ttm_jurassic_strength_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/ttm_jurassic_strength.dds"
+			alwaystransparent = yes
+		}
 	
 	#------------------------------------------
 	# NCR
@@ -480,6 +498,39 @@ spriteTypes = {
 			alwaystransparent = yes
 		}
 	#------------------------------------------
+	# Oregon
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_oregon_geckosupport_medium"
+			texturefile = "gfx/interface/technologies/Reward/Oregon/oregon_geckosupport.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_oregon_mesmetronfieldequipment_medium"
+			texturefile = "gfx/interface/technologies/Reward/Oregon/oregon_mesmetronfieldequipment.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_oregon_psyker_mental_stimulants_medium"
+			texturefile = "gfx/interface/technologies/Reward/Oregon/oregon_psyker_mental_stimulants.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_oregon_psyker_nullification_training_medium"
+			texturefile = "gfx/interface/technologies/Reward/Oregon/oregon_psyker_nullification_training.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_oregon_psyker_ancient_traditions_medium"
+			texturefile = "gfx/interface/technologies/Reward/Oregon/oregon_psyker_ancient_traditions.dds"
+			alwaystransparent = yes
+		}
+
+	#------------------------------------------
 	# Settler
 	#------------------------------------------
 		spriteType = {
@@ -513,6 +564,12 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_platinum_os_tech_medium"
 			texturefile = "gfx/interface/technologies/Reward/Nevada/platinum_os.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_exoskin_armoured_special_forces_medium"
+			texturefile = "gfx/interface/technologies/Reward/Nevada/exoskin.dds"
 			alwaystransparent = yes
 		}
 }

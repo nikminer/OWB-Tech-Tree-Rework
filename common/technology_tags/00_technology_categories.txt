@@ -111,6 +111,7 @@ technology_categories = {
 	cnc_robot_tech_category
 
 	# Other tech categories
+	tribal_tree_tech_category
 	industry
 	electronics
 	communication_category
