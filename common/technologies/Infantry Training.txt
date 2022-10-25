@@ -69,7 +69,7 @@ technologies = {
 
 	# militia training
 	unit_training_tech_2 = {
-		category_infantry = {
+		category_front_line = {
 			defense = 0.05
 		}
 
@@ -165,9 +165,7 @@ technologies = {
 
 	# Platoon Training
 	unit_training_tech_4 = {
-		category_front_line = {
-			max_organisation = 4
-		}
+		army_org_factor = 0.05
 
 		path = {
 			leads_to_tech = unit_training_tech_5
@@ -213,10 +211,8 @@ technologies = {
 
 	# Basic Drill
 	unit_training_tech_5 = {
-		category_front_line = {
-			default_morale = 0.03
-			maximum_speed = 0.03
-		}
+		army_morale_factor = 0.03	
+		army_speed_factor = 0.03
 
 		path = {
 			leads_to_tech = unit_training_tech_6

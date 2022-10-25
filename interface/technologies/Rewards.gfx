@@ -320,6 +320,12 @@ spriteTypes = {
 			texturefile = "gfx/interface/technologies/Reward/Tribal/ttm_jurassic_strength.dds"
 			alwaystransparent = yes
 		}
+
+		spriteType = {
+			name = "GFX_warden_doggos_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Tribal/warden_doggos_tech.dds"
+			alwaystransparent = yes
+		}
 	
 	#------------------------------------------
 	# NCR

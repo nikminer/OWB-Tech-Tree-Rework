@@ -442,4 +442,44 @@ technologies = {
 
 	}
 
+	warden_doggos_tech = { #This is the silliest shit I've ever done, but I love it
+		research_cost = 1.0
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_TribalsBuffs2 y = @Col_8 }
+		}
+		heavy_infantry = {
+			need = {
+				dogs_equipment = 25
+				heavy_infantry_equipment = 25
+			}
+		}
+		motorized_heavy_infantry = {
+			need = {
+				dogs_equipment = 25
+				heavy_infantry_equipment = 25
+			}
+		}
+		spec_ops = {
+			need = {
+				dogs_equipment = 25
+				spec_ops_equipment = 25
+			}
+		}
+		power_armour = {
+			need = {
+				dogs_equipment = 20
+				power_armor_equipment = 20
+			}
+		}
+		dependencies = {
+			blocked_tech = 1
+		}
+		categories = {
+			civilization_tech_category
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

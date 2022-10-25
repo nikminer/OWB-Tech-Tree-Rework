@@ -121,7 +121,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 15
+				factor = 3
 				num_occupied_states > 0
 			}
 			modifier = {
