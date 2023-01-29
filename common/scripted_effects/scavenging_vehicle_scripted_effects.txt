@@ -308,7 +308,7 @@ resolve_vehicle_loot = {
 			has_variable = s_truck_1
 		}
 		if = {
-			limit = { has_tech = truck_tech_1 }
+			limit = { has_tech = heavy_motorized_equipment_vehicle_tech_1 }
 			add_equipment_to_stockpile = { type = heavy_motorized_equipment_1 amount = 10 producer = USA }
 			subtract_from_variable = { s_truck_1 = 1 }
 			if = {
@@ -344,7 +344,7 @@ resolve_vehicle_loot = {
 			has_variable = s_truck_2
 		}
 		if = {
-			limit = { has_tech = truck_tech_2 }
+			limit = { has_tech = heavy_motorized_equipment_vehicle_tech_2 }
 			add_equipment_to_stockpile = { type = heavy_motorized_equipment_2 amount = 5 producer = USA }
 			subtract_from_variable = { s_truck_2 = 1 }
 			if = {
