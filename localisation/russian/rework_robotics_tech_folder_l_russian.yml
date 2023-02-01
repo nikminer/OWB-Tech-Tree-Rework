@@ -1,0 +1,19 @@
+﻿l_russian:
+  fallout_robotics_rr_folder: "Роботы"
+  fallout_robotics_rr_folder_desc: ""
+#----------------------------
+# Header
+#----------------------------
+  HEADER_PRODUCTION_ROBOT: "Производство робота"
+  HEADER_ARMOR_ROBOT: "Броня робота"
+  HEADER_HEAVY_ROBOT: "Тяжёлые роботы"
+  HEADER_SERVO_ROBOT: "Сервоприводы роботов"
+  HEADER_MAIN_ROBOT: "Основные роботы"
+  HEADER_POWER_ROBOT: "Силовая установка робота"
+  HEADER_LIGHT_ROBOT: "Легкие роботы"
+  HEADER_THRUSTER_ROBOT: "Двигатели робота"
+  HEADER_CNC_ROBOT: "Командные роботы"
+  HEADER_SOFTWARE_ROBOT: "ПО робота"
+  HEADER_HARDWARE_ROBOT: "Железо робота"
+  HEADER_TURRETS_ROBOT: "Роботизированные турели"
+
