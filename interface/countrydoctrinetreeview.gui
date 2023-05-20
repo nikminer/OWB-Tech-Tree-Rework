@@ -271,18 +271,31 @@ guiTypes = {
 				spriteType = "GFX_strategic_destruction_bg"
 				position = { x=80 y=33 }
 			}
+
 			iconType = {
 				name ="air_doctrine_bg"
 				spriteType = "GFX_air_doctrine_bg"
 				position = { x=80 y=33 }
 			}
 
+			iconType = {
+				name ="air_doctrine_2_bg"
+				spriteType = "GFX_air_doctrine_bg"
+				position = { x=570 y=33 }
+			}
+
+			iconType = {
+				name ="air_doctrine_3_bg"
+				spriteType = "GFX_air_doctrine_bg"
+				position = { x=1040 y=33 }
+			}
+
 			instantTextBoxType = {
-				name = "header_air_doctrine"
-				position = { x = 100 y = 35 }
+				name = "header_decisive_air_doctrine"
+				position = { x = 120 y = 35 }
 				font = "hoi_36header"
 				borderSize = { x = 0 y = 4 }
-				text = "HEADER_AIR_DOCTRINE"
+				text = "HEADER_DECISIVE_AIR_DOCTRINE"
 				maxWidth = 400
 				maxHeight = 122
 				format = center
@@ -290,21 +303,115 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "air_doctrine_desc"
-				position = { x = 100 y = 81 }
+				name = "header_decisive_air_doctrine_description"
+				position = { x = 120 y = 81 }
 				font = "hoi_20b"
 				borderSize = { x = 0 y = 4 }
-				text = "AIR_DOCTRINE_DESC"
+				text = "HEADER_DECISIVE_AIR_DOCTRINE_DESCRIPTION"
 				maxWidth = 400
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "header_pramatic_air_doctrine"
+				position = { x = 600 y = 35 }
+				font = "hoi_36header"
+				borderSize = { x = 0 y = 4 }
+				text = "HEADER_PRAGMATIC_AIR_DOCTRINE"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "header_pramatic_air_doctrine_description"
+				position = { x = 600 y = 81 }
+				font = "hoi_20b"
+				borderSize = { x = 0 y = 4 }
+				text = "HEADER_PRAGMATIC_AIR_DOCTRINE_DESCRIPTION"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "header_disruption_air_doctrine"
+				position = { x = 1075 y = 35 }
+				font = "hoi_36header"
+				borderSize = { x = 0 y = 4 }
+				text = "HEADER_DISRUPTION_AIR_DOCTRINE"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "header_disruption_air_doctrine_description"
+				position = { x = 1075 y = 81 }
+				font = "hoi_20b"
+				borderSize = { x = 0 y = 4 }
+				text = "HEADER_DISRUPTION_AIR_DOCTRINE_DESCRIPTION"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+
+			# gridboxtype = {
+			# 	#strategic_destruction_tree Needs to be named after first tech (air_superiority)
+			# 	name = "formation_flying_doctrine_tree"
+			# 	position = { x=1515 y=172 }
+			# 	# position = { x=75 y=172 }
+			# 	size = { width = 478 height = 1438 }
+			# 	slotsize = { width=60 height= 60 }
+			# 	format = "UP"
+
+			# 	background = {
+			# 		name = "Background"
+			# 		quadTextureSprite ="GFX_fullborder_tiled"
+			# 		position = { x=0 y=-150 }
+			# 	}
+			# }
+
+			gridboxtype = {
+				#strategic_destruction_tree Needs to be named after first tech (air_superiority)
+				name = "decisive_engagement_doctrine_tree"
+				position = { x=75 y=172 }
+				size = { width = 478 height = 1438 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-150 }
+				}
 			}
 
 			gridboxtype = {
 				#strategic_destruction_tree Needs to be named after first tech (air_superiority)
-				name = "formation_flying_doctrine_tree"
-				position = { x=75 y=172 }
+				name = "pragmatic_aviation_doctrine_tree"
+				position = { x=555 y=172 }
+				size = { width = 478 height = 1438 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-150 }
+				}
+			}
+
+			gridboxtype = {
+				#strategic_destruction_tree Needs to be named after first tech (air_superiority)
+				name = "elaborate_disruption_doctrine_tree"
+				position = { x=1035 y=172 }
 				size = { width = 478 height = 1438 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
