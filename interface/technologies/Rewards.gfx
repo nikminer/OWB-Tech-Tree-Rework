@@ -564,6 +564,13 @@ spriteTypes = {
 			alwaystransparent = yes
 		}
 
+		spriteType = {
+			name = "GFX_all_terrain_vehicles_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Raiders/all_terrain_vehicles_tech.dds"
+			alwaystransparent = yes
+		}
+
+
 	#------------------------------------------
 	# Nevada
 	#------------------------------------------

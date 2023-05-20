@@ -1,5 +1,3 @@
-# Do not change tags in here without changing every other reference to them.
-# If adding new technology, make sure they are uniquely named.
 technology_categories = {
 	# weapon tech categories
 	infantry_weapons_tech_category
@@ -22,6 +20,7 @@ technology_categories = {
 	support_fireteam_ballistic_tech_category
 	support_anti_tank_tech_category
 	support_anti_air_tech_category
+	support_combat_tech_category
 	support_non_combat_tech_category
 	support_medical_tech_category
 	support_maintenance_tech_category
@@ -95,6 +94,9 @@ technology_categories = {
 
 	# Air Doctrines
 	cat_air_doctrine #XP Doctrine
+	cat_decisive_engagement_doctrine
+	cat_pragmatic_aviation_doctrine
+	cat_elaborate_disruption_doctrine
 
 	# Naval Doctrines
 	cat_naval_doctrine #XP Doctrine
@@ -113,6 +115,8 @@ technology_categories = {
 	# Other tech categories
 	tribal_tree_tech_category
 	industry
+	production_and_construction_category
+	resource_and_agriculture_category
 	electronics
 	communication_category
 	encryption_tech

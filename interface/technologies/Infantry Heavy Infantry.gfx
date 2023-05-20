@@ -22,4 +22,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/equipment/generic/heavy_infantry_tech_icon_4.dds"
 		alwaystransparent = yes
 	}
+	
+	spriteType = {
+		name = "GFX_heavy_infantry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/smoke_grenades_icon.dds"
+		alwaystransparent = yes
+	}
 }
