@@ -8,5 +8,5 @@ dependencies={
 }
 picture="thumbnail.png"
 name="OWB: Tech Tree Rework"
-supported_version="1.12.*"
+supported_version="1.13.*"
 remote_file_id="2846171088"
