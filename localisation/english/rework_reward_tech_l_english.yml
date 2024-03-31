@@ -15,8 +15,7 @@
   Header_Raiders: "Raiders"
   Header_Nevada: "Nevada"
   Header_TexBos: "Texas \nBrotherhood"
-
-
+  Header_Knah: "Khans"
   # Origins
   military_heritage_unlock_tech: "Military origin"
   military_heritage_unlock_tech_desc: "This faction has a military origin, which is why the entire internal hierarchy is strictly regulated, which gives more advantages in battle."

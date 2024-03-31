@@ -17,6 +17,12 @@ spriteTypes = {
 			texturefile = "gfx/interface/technologies/Reward/sentinel_unit_tech.dds"
 			alwaystransparent = yes
 		}
+		spriteType = {
+
+			name = "GFX_faerie_unlock_tech_medium"
+			texturefile = "gfx/interface/equipment/generic/leshy_equipment_icon.dds"
+			alwaystransparent = yes
+		}
 
 		spriteType = {
 			name = "GFX_mininuke_unlock_tech_medium"
@@ -377,6 +383,12 @@ spriteTypes = {
 			texturefile = "gfx/interface/technologies/Reward/NCR/ncr_privatepolice.dds"
 			alwaystransparent = yes
 		}
+
+		spriteType = {
+			name = "GFX_ncr_shocktroopers_tech_medium"
+			texturefile = "gfx/interface/ideas/generic/power_armour_t51.dds"
+			alwaystransparent = yes
+		}
 	
 	#------------------------------------------
 	# Legion
@@ -554,7 +566,17 @@ spriteTypes = {
 			texturefile = "gfx/interface/technologies/Reward/Settler/police_infantry_tech.dds"
 			alwaystransparent = yes
 		}
-	
+		spriteType = {
+			name = "GFX_mountaineer_training_tech_medium"
+			texturefile = "gfx/interface/ideas/aztlan_warfare.dds"
+			alwaystransparent = yes
+		}
+		spriteType = {
+			name = "GFX_interwoven_support_tech_medium"
+			texturefile = "gfx/interface/ideas/idea_company_pile_of_guns.dds"
+			alwaystransparent = yes
+		}
+
 	#------------------------------------------
 	# Raiders
 	#------------------------------------------
@@ -583,6 +605,57 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_exoskin_armoured_special_forces_medium"
 			texturefile = "gfx/interface/technologies/Reward/Nevada/exoskin.dds"
+			alwaystransparent = yes
+		}
+
+	#------------------------------------------
+	# Khan
+	#------------------------------------------
+		spriteType = {
+			name = "GFX_khan_field_medics_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Khans/khan_field_medics.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_khan_antivenom_medium"
+			texturefile = "gfx/interface/technologies/Reward/Khans/khan_antivenom.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_khan_radaway_medium"
+			texturefile = "gfx/interface/technologies/Reward/Khans/khan_radaway.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_khan_fixer_medium"
+			texturefile = "gfx/interface/technologies/Reward/Khans/khan_fixer.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_khan_cateye_medium"
+			texturefile = "gfx/interface/technologies/Reward/Khans/khan_cateye.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_khan_mentats_medium"
+			texturefile = "gfx/interface/technologies/Reward/Khans/khan_mentats.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_khan_daddy_o_medium"
+			texturefile = "gfx/interface/technologies/Reward/Khans/khan_daddy_o.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_khan_buffout_medium"
+			texturefile = "gfx/interface/technologies/Reward/Khans/khan_buffout.dds"
 			alwaystransparent = yes
 		}
 }

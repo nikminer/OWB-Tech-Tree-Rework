@@ -811,6 +811,27 @@
   forward_firebase_equipment_1_short:0 "Fortifications"
   forward_firebase_equipment_1_desc:0 "Barricades that can be transported with relative ease, in conjunction with heavy weapons, a very effective means of defense."
 
+  faerie_equipment:0 "Faeries"
+  faerie_equipment_short:0 "Faeries"
+  faerie_equipment_desc:0 ""
+  faerie_equipment_1:0 "Faeries"
+  faerie_equipment_1_short:0 "Faeries"
+  faerie_equipment_1_desc:0 ""
+
+  leshy_equipment:0 "Leshy Offerings"
+  leshy_equipment_short:0 "Leshy Offerings"
+  leshy_equipment_desc:0 ""
+  leshy_equipment_1:0 "Leshy Offerings"
+  leshy_equipment_1_short:0 "Leshy Offerings"
+  leshy_equipment_1_desc:0 ""
+
+  dun_robot_equipment:0 "Steel Dame Parts"
+  dun_robot_equipment_short:0 "Steel Dame Parts"
+  dun_robot_equipment_desc:0 ""
+  dun_robot_equipment_1:0 "Steel Dame Parts"
+  dun_robot_equipment_1_short:0 "Steel Dame Parts"
+  dun_robot_equipment_1_desc:0 ""
+  
  # "Train" equipment
   #supply_equipment_1:0 "Trade Convoy Equipment"
   #supply_equipment_1_short:0 "Trade Convoys"

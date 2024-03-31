@@ -8,7 +8,7 @@ technologies = {
 	@Col_3 = 11
 	@Col_4 = 14
 	@Col_5 = 17
-
+	@Col_6 = 20
 	@Row_Equipment = 2
 	
 	# Mininuke
@@ -239,6 +239,42 @@ technologies = {
 			sentinel_command_slave_equipment_1
 		}
 
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	faerie_unlock_tech = {
+		research_cost = 1.0
+		allow = {
+			always = no
+		}
+		dependencies = {
+			blocked_tech = 1
+		}
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_Equipment y = @Col_6 }
+		}
+		enable_equipments = {
+			faerie_equipment_1
+		}
+		enable_subunits = {
+			faerie_infantry
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = faerie_infantry
+					}
+				}
+				hidden_effect = {
+					load_oob = "unlock_faerie"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}
+		}
 		ai_will_do = {
 			factor = 0
 		}

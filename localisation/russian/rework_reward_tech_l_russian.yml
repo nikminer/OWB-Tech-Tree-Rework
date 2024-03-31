@@ -15,8 +15,7 @@
   Header_Raiders: "Рейдеры"
   Header_Nevada: "Невада"
   Header_TexBos: "Техаское братство"
-
-
+  Header_Knah: "Ханы"
   # Origins
   military_heritage_unlock_tech: "Военное происхождение"
   military_heritage_unlock_tech_desc: "Эта фракция имеет военное происхождение, именно поэтому вся внутренняя иерархия строго регламентирована, что дает больше преимуществ в бою."

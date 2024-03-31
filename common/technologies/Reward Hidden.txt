@@ -275,4 +275,40 @@ technologies = {
 			factor = 0
 		}
 	}
+
+
+	leshy_baby_support_unlock_tech = {
+		allow = {
+			always = no
+		}
+		enable_subunits = {
+			leshy_baby_unit
+		}
+		enable_equipments = {
+			leshy_equipment_1
+		}
+		research_cost = 1
+	}
+	
+	leshy_unlock_tech = {
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			leshy_equipment_1
+		}
+		research_cost = 1
+	}
+	
+	gloria_robot_unlock_tech = {
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			dun_robot_equipment_1
+		}
+		research_cost = 1
+	}
+
+	
 }
