@@ -21,12 +21,12 @@ technologies = {
 # Start
 	tactics_doctrine_tech = {
 
-		experience_gain_army_factor = 0.15
-		training_time_army_factor = -0.05	
-		special_forces_cap = 0.025
+		experience_gain_army_factor = 0.1
+		special_forces_training_time_factor = -0.05
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -66,7 +66,15 @@ technologies = {
 			}
 			modifier = {
 				factor = 10
-				has_army_experience > 200
+				has_army_experience > 150
+			}
+			modifier = {
+				factor = 0
+				original_tag = TBH
+				NOT = { has_completed_focus = tbh_nf_the_long_road }
+				NOT = { has_completed_focus = tbh_nf_the_hard_road }
+				NOT = { has_completed_focus = tbh_nf_the_alamo_was_right }
+				NOT = { has_focus_tree = nf_texan_republic }
 			}
 		}
 	}
@@ -74,11 +82,12 @@ technologies = {
 # SpecOps
 	tactics_spec_ops_cap_tech = {
 
-		special_forces_min  = 30
-		special_forces_training_time_factor = -0.05
+		special_forces_min  = 20
+		special_forces_training_time_factor = -0.1
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		path = {
 			leads_to_tech = tactics_spec_ops_defense_tech
@@ -100,10 +109,17 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			base = 5
 			modifier = {
-				factor = 10
-				has_army_experience > 200
+				add = 5
+				OR = {
+					has_country_flag = power_armor_doctrine_ai
+					has_country_flag = spec_ops_doctrine_ai
+				}
+			}
+			modifier = {
+				factor = 5
+				has_army_experience > 150
 			}
 		}
 	}
@@ -113,9 +129,13 @@ technologies = {
 			defense = 0.1
 		}
 		special_forces_out_of_supply_factor = -0.25
+
+		xor = {tactics_spec_ops_offense_tech}
+
 		xp_research_type = army
 		xp_unlock_cost = 50
-		xor = {tactics_spec_ops_offense_tech}
+		doctrine = yes
+
 		path = {
 			leads_to_tech = tactics_spec_ops_cap_tech_2
 			research_cost_coeff = 1
@@ -125,11 +145,24 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = @col3 y = @row3 }
 		}
+
 		categories = {
 			caf_land_doctrine_xp
 		}
+
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				add = 5
+				OR = {
+					has_country_flag = power_armor_doctrine_ai
+					has_country_flag = spec_ops_doctrine_ai
+				}
+			}
+			modifier = {
+				factor = 5
+				has_army_experience > 150
+			}
 		}
 	}
 
@@ -139,9 +172,12 @@ technologies = {
 			hard_attack = 0.05
 			breakthrough = 0.05
 		}
+
 		xor = { tactics_spec_ops_defense_tech }
+
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		path = {
 			leads_to_tech = tactics_spec_ops_cap_tech_2
@@ -152,21 +188,35 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = @col5 y = @row3 }
 		}
+
 		categories = {
 			caf_land_doctrine_xp
 		}
+
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				add = 5
+				OR = {
+					has_country_flag = power_armor_doctrine_ai
+					has_country_flag = spec_ops_doctrine_ai
+				}
+			}
+			modifier = {
+				factor = 5
+				has_army_experience > 150
+			}
 		}
 	}
 
 	tactics_spec_ops_cap_tech_2 = {
 
-		special_forces_min  = 30
+		special_forces_min  = 25
 		special_forces_training_time_factor = -0.05
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		path = {
 			leads_to_tech = tactics_spec_ops_light_tech
@@ -190,8 +240,15 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				factor = 10
-				has_army_experience > 200
+				add = 5
+				OR = {
+					has_country_flag = power_armor_doctrine_ai
+					has_country_flag = spec_ops_doctrine_ai
+				}
+			}
+			modifier = {
+				factor = 5
+				has_army_experience > 150
 			}
 		}
 	}
@@ -203,6 +260,7 @@ technologies = {
 		xor = { tactics_spec_ops_heavy_tech }
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 		path = {
 			leads_to_tech = tactics_spec_ops_cap_tech_3
 			research_cost_coeff = 1
@@ -216,6 +274,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				add = 5
+				has_country_flag = spec_ops_doctrine_ai
+			}
+			modifier = {
+				factor = 5
+				has_army_experience > 150
+			}
 		}
 	}
 
@@ -223,32 +289,48 @@ technologies = {
 		category_power_armour = {
 			max_organisation = 5
 		}
+
 		xor = { tactics_spec_ops_light_tech }
+
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
+
 		path = {
 			leads_to_tech = tactics_spec_ops_cap_tech_3
 			research_cost_coeff = 1
 		}
+
 		folder = {
 			name = land_doctrine_folder
 			position = { x = @col3 y = @row5 }
 		}
+
 		categories = {
 			caf_land_doctrine_xp
 		}
+
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				add = 5
+				has_country_flag = power_armor_doctrine_ai
+			}
+			modifier = {
+				factor = 5
+				has_army_experience > 150
+			}
 		}
 	}
 
 	tactics_spec_ops_cap_tech_3 = {
 
-		special_forces_min  = 30
+		special_forces_min  = 25
 		special_forces_training_time_factor = -0.05
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		path = {
 			leads_to_tech = tactics_spec_ops_elite_tech
@@ -267,14 +349,22 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				factor = 10
-				has_army_experience > 200
+				add = 5
+				OR = {
+					has_country_flag = power_armor_doctrine_ai
+					has_country_flag = spec_ops_doctrine_ai
+				}
+			}
+			modifier = {
+				factor = 5
+				has_army_experience > 150
 			}
 		}
 	}
 	
 	tactics_spec_ops_elite_tech = {
-		special_forces_cap = 0.025
+
+		special_forces_cap = 0.05
 		category_special_forces = {
 			soft_attack = 0.05
 			hard_attack = 0.05
@@ -283,6 +373,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -295,6 +386,17 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				add = 5
+				OR = {
+					has_country_flag = power_armor_doctrine_ai
+					has_country_flag = spec_ops_doctrine_ai
+				}
+			}
+			modifier = {
+				factor = 5
+				has_army_experience > 300
+			}
 		}
 	}
 
@@ -302,7 +404,7 @@ technologies = {
 # Harsh
 	terrain_harsh_tech = {
 		infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -313,7 +415,7 @@ technologies = {
 			}
 		}
 		heavy_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -324,7 +426,7 @@ technologies = {
 			}
 		}
 		dog_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -335,7 +437,7 @@ technologies = {
 			}
 		}
 		ghoul_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -346,7 +448,7 @@ technologies = {
 			}
 		}
 		skate_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -357,7 +459,7 @@ technologies = {
 			}
 		}
 		super_mutant_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -368,7 +470,7 @@ technologies = {
 			}
 		}
 		super_mutant_aux_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -379,7 +481,18 @@ technologies = {
 			}
 		}
 		police_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
+			urban = {
+				attack = 0.10
+				defence = 0.10
+			}
+			marsh = {
+				attack = 0.10
+				defence = 0.10
+			}
+		}
+		militia = {
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -392,6 +505,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		XOR = { terrain_jungle_tech }
 
@@ -429,7 +543,7 @@ technologies = {
 	terrain_harsh_tech_2 = {
 
 		spec_ops = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -440,7 +554,7 @@ technologies = {
 			}
 		}
 		spec_ops_cavalry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -451,7 +565,7 @@ technologies = {
 			}
 		}
 		power_armour = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -462,7 +576,7 @@ technologies = {
 			}
 		}
 		power_armour_fireteam_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -473,7 +587,7 @@ technologies = {
 			}
 		}
 		power_armour_demolitions_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -484,7 +598,7 @@ technologies = {
 			}
 		}
 		ghoul_paratrooper = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -495,7 +609,7 @@ technologies = {
 			}
 		}
 		crusader_unit = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -506,7 +620,7 @@ technologies = {
 			}
 		}
 		super_mutant_nightkin_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -517,8 +631,10 @@ technologies = {
 			}
 		}
 
+
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		path = {
 			leads_to_tech = terrain_harsh_tech_3
@@ -536,12 +652,24 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_2
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_2
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_2
+			}
 		}
 	}
 
 	terrain_harsh_tech_3 = {
 		combat_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -552,7 +680,7 @@ technologies = {
 			}
 		}
 		support_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -563,7 +691,7 @@ technologies = {
 			}
 		}
 		security_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -574,40 +702,7 @@ technologies = {
 			}
 		}
 		super_heavy_robot = {
-			default_morale = 0.02
-			urban = {
-				attack = 0.10
-				defence = 0.10
-			}
-			marsh = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot = {
-			default_morale = 0.02
-			urban = {
-				attack = 0.10
-				defence = 0.10
-			}
-			marsh = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot_2 = {
-			default_morale = 0.02
-			urban = {
-				attack = 0.10
-				defence = 0.10
-			}
-			marsh = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot_3 = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -620,6 +715,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		path = {
 			leads_to_tech = terrain_harsh_tech_4
@@ -637,12 +733,24 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_3
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_3
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_3
+			}
 		}
 	}
 
 	terrain_harsh_tech_4 = {
 		motorized = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -653,7 +761,7 @@ technologies = {
 			}
 		}
 		motorized_heavy_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -664,7 +772,7 @@ technologies = {
 			}
 		}
 		motorized_fireteam = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -675,7 +783,7 @@ technologies = {
 			}
 		}
 		motorized_demoteam = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -686,7 +794,7 @@ technologies = {
 			}
 		}
 		tank = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -697,7 +805,7 @@ technologies = {
 			}
 		}
 		chariot_unit = {
-			default_morale = 0.02
+			default_morale = 0.01
 			urban = {
 				attack = 0.10
 				defence = 0.10
@@ -710,6 +818,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -722,13 +831,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_4
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_4
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_4
+			}
 		}
 	}
 # Jungle
 	terrain_jungle_tech = {
 
 		infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -739,7 +860,7 @@ technologies = {
 			}
 		}
 		heavy_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -750,7 +871,7 @@ technologies = {
 			}
 		}
 		dog_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -761,7 +882,7 @@ technologies = {
 			}
 		}
 		ghoul_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -772,7 +893,7 @@ technologies = {
 			}
 		}
 		skate_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -783,7 +904,7 @@ technologies = {
 			}
 		}
 		super_mutant_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -794,7 +915,7 @@ technologies = {
 			}
 		}
 		super_mutant_aux_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -805,7 +926,18 @@ technologies = {
 			}
 		}
 		police_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
+			jungle = {
+				attack = 0.10
+				defence = 0.10
+			}
+			forest = {
+				attack = 0.10
+				defence = 0.10
+			}
+		}
+		militia = {
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -818,6 +950,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		XOR = { terrain_harsh_tech }
 
@@ -855,7 +988,7 @@ technologies = {
 	terrain_jungle_tech_2 = {
 
 		spec_ops = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -866,7 +999,7 @@ technologies = {
 			}
 		}
 		spec_ops_cavalry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -877,7 +1010,7 @@ technologies = {
 			}
 		}
 		power_armour = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -888,7 +1021,7 @@ technologies = {
 			}
 		}
 		power_armour_fireteam_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -899,7 +1032,7 @@ technologies = {
 			}
 		}
 		power_armour_demolitions_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -910,7 +1043,7 @@ technologies = {
 			}
 		}
 		ghoul_paratrooper = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -921,7 +1054,7 @@ technologies = {
 			}
 		}
 		crusader_unit = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -932,7 +1065,7 @@ technologies = {
 			}
 		}
 		super_mutant_nightkin_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -945,6 +1078,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -962,13 +1096,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_2
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_2
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_2
+			}
 		}
 	}
 
 	terrain_jungle_tech_3 = {
 
 		combat_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -979,7 +1125,7 @@ technologies = {
 			}
 		}
 		support_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -990,7 +1136,7 @@ technologies = {
 			}
 		}
 		security_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -1001,40 +1147,7 @@ technologies = {
 			}
 		}
 		super_heavy_robot = {
-			default_morale = 0.02
-			jungle = {
-				attack = 0.10
-				defence = 0.10
-			}
-			forest = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot = {
-			default_morale = 0.02
-			jungle = {
-				attack = 0.10
-				defence = 0.10
-			}
-			forest = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot_2 = {
-			default_morale = 0.02
-			jungle = {
-				attack = 0.10
-				defence = 0.10
-			}
-			forest = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot_3 = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -1047,6 +1160,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -1064,13 +1178,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_3
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_3
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_3
+			}
 		}
 	}
 
 	terrain_jungle_tech_4 = {
 
 		motorized = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -1081,7 +1207,7 @@ technologies = {
 			}
 		}
 		motorized_heavy_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -1092,7 +1218,7 @@ technologies = {
 			}
 		}
 		motorized_fireteam = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -1103,7 +1229,7 @@ technologies = {
 			}
 		}
 		motorized_demoteam = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -1114,7 +1240,7 @@ technologies = {
 			}
 		}
 		tank = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -1125,7 +1251,7 @@ technologies = {
 			}
 		}
 		chariot_unit = {
-			default_morale = 0.02
+			default_morale = 0.01
 			jungle = {
 				attack = 0.10
 				defence = 0.10
@@ -1138,6 +1264,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -1150,6 +1277,18 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_4
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_4
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_4
+			}
 		}
 	}
 
@@ -1157,7 +1296,7 @@ technologies = {
 # Plains
 	terrain_plains_tech = {
 		infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1168,7 +1307,7 @@ technologies = {
 			}
 		}
 		heavy_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1179,7 +1318,7 @@ technologies = {
 			}
 		}
 		dog_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1190,7 +1329,7 @@ technologies = {
 			}
 		}
 		ghoul_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1201,7 +1340,7 @@ technologies = {
 			}
 		}
 		skate_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1212,7 +1351,7 @@ technologies = {
 			}
 		}
 		super_mutant_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1223,7 +1362,7 @@ technologies = {
 			}
 		}
 		super_mutant_aux_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1234,7 +1373,18 @@ technologies = {
 			}
 		}
 		police_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
+			plains = {
+				attack = 0.10
+				defence = 0.10
+			}
+			desert = {
+				attack = 0.10
+				defence = 0.10
+			}
+		}
+		militia = {
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1247,6 +1397,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		XOR = { terrain_mountain_tech }
 
@@ -1284,7 +1435,7 @@ technologies = {
 	terrain_plains_tech_2 = {
 
 		spec_ops = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1295,7 +1446,7 @@ technologies = {
 			}
 		}
 		spec_ops_cavalry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1306,7 +1457,7 @@ technologies = {
 			}
 		}
 		power_armour = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1317,7 +1468,7 @@ technologies = {
 			}
 		}
 		power_armour_fireteam_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1328,7 +1479,7 @@ technologies = {
 			}
 		}
 		power_armour_demolitions_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1339,7 +1490,7 @@ technologies = {
 			}
 		}
 		ghoul_paratrooper = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1350,7 +1501,7 @@ technologies = {
 			}
 		}
 		crusader_unit = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1361,7 +1512,7 @@ technologies = {
 			}
 		}
 		super_mutant_nightkin_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1374,6 +1525,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -1391,13 +1543,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_2
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_2
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_2
+			}
 		}
 	}
 
 	terrain_plains_tech_3 = {
 
 		combat_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1408,7 +1572,7 @@ technologies = {
 			}
 		}
 		support_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1419,7 +1583,7 @@ technologies = {
 			}
 		}
 		security_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1430,40 +1594,7 @@ technologies = {
 			}
 		}
 		super_heavy_robot = {
-			default_morale = 0.02
-			plains = {
-				attack = 0.10
-				defence = 0.10
-			}
-			desert = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot = {
-			default_morale = 0.02
-			plains = {
-				attack = 0.10
-				defence = 0.10
-			}
-			desert = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot_2 = {
-			default_morale = 0.02
-			plains = {
-				attack = 0.10
-				defence = 0.10
-			}
-			desert = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot_3 = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1476,6 +1607,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -1493,13 +1625,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_3
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_3
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_3
+			}
 		}
 	}
 
 	terrain_plains_tech_4 = {
 
 		motorized = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1510,7 +1654,7 @@ technologies = {
 			}
 		}
 		motorized_heavy_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1521,7 +1665,7 @@ technologies = {
 			}
 		}
 		motorized_fireteam = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1532,7 +1676,7 @@ technologies = {
 			}
 		}
 		motorized_demoteam = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1543,7 +1687,7 @@ technologies = {
 			}
 		}
 		tank = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1554,7 +1698,7 @@ technologies = {
 			}
 		}
 		chariot_unit = {
-			default_morale = 0.02
+			default_morale = 0.01
 			plains = {
 				attack = 0.10
 				defence = 0.10
@@ -1567,6 +1711,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -1579,13 +1724,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_4
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_4
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_4
+			}
 		}
 	}
 # Mountain
 	terrain_mountain_tech = {
 
 		infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1596,7 +1753,7 @@ technologies = {
 			}
 		}
 		heavy_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1607,7 +1764,7 @@ technologies = {
 			}
 		}
 		dog_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1618,7 +1775,7 @@ technologies = {
 			}
 		}
 		ghoul_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1629,7 +1786,7 @@ technologies = {
 			}
 		}
 		skate_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1640,7 +1797,7 @@ technologies = {
 			}
 		}
 		super_mutant_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1651,7 +1808,7 @@ technologies = {
 			}
 		}
 		super_mutant_aux_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1662,7 +1819,18 @@ technologies = {
 			}
 		}
 		police_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
+			mountain = {
+				attack = 0.10
+				defence = 0.10
+			}
+			hills = {
+				attack = 0.10
+				defence = 0.10
+			}
+		}
+		militia = {
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1675,6 +1843,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		XOR = { terrain_plains_tech}
 
@@ -1712,7 +1881,7 @@ technologies = {
 	terrain_mountain_tech_2 = {
 
 		spec_ops = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1723,7 +1892,7 @@ technologies = {
 			}
 		}
 		spec_ops_cavalry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1734,7 +1903,7 @@ technologies = {
 			}
 		}
 		power_armour = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1745,7 +1914,7 @@ technologies = {
 			}
 		}
 		power_armour_fireteam_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1756,7 +1925,7 @@ technologies = {
 			}
 		}
 		power_armour_demolitions_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1767,7 +1936,7 @@ technologies = {
 			}
 		}
 		ghoul_paratrooper = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1778,7 +1947,7 @@ technologies = {
 			}
 		}
 		crusader_unit = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1789,7 +1958,7 @@ technologies = {
 			}
 		}
 		super_mutant_nightkin_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1802,6 +1971,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -1819,13 +1989,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_2
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_2
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_2
+			}
 		}
 	}
 
 	terrain_mountain_tech_3 = {
 
 		combat_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1836,7 +2018,7 @@ technologies = {
 			}
 		}
 		support_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1847,7 +2029,7 @@ technologies = {
 			}
 		}
 		security_robot = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1858,40 +2040,7 @@ technologies = {
 			}
 		}
 		super_heavy_robot = {
-			default_morale = 0.02
-			mountain = {
-				attack = 0.10
-				defence = 0.10
-			}
-			hills = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot = {
-			default_morale = 0.02
-			mountain = {
-				attack = 0.10
-				defence = 0.10
-			}
-			hills = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot_2 = {
-			default_morale = 0.02
-			mountain = {
-				attack = 0.10
-				defence = 0.10
-			}
-			hills = {
-				attack = 0.10
-				defence = 0.10
-			}
-		}
-		cnc_robot_3 = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1904,6 +2053,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -1921,13 +2071,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_3
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_3
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_3
+			}
 		}
 	}
 
 	terrain_mountain_tech_4 = {
 
 		motorized = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1938,7 +2100,7 @@ technologies = {
 			}
 		}
 		motorized_heavy_infantry = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1949,7 +2111,7 @@ technologies = {
 			}
 		}
 		motorized_fireteam = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1960,7 +2122,7 @@ technologies = {
 			}
 		}
 		motorized_demoteam = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1971,7 +2133,7 @@ technologies = {
 			}
 		}
 		tank = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1982,7 +2144,7 @@ technologies = {
 			}
 		}
 		chariot_unit = {
-			default_morale = 0.02
+			default_morale = 0.01
 			mountain = {
 				attack = 0.10
 				defence = 0.10
@@ -1995,6 +2157,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
 		folder = {
 			name = land_doctrine_folder
@@ -2007,6 +2170,18 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_4
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_4
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_4
+			}
 		}
 	}
 

@@ -150,7 +150,7 @@ technologies = {
 
 		infantry = {
 			max_organisation = 0.1
-			max_strength = -0.1
+			max_strength = -1
 			soft_attack = 0.05
 		}
 
@@ -174,24 +174,13 @@ technologies = {
 
 		infantry = {
 			max_organisation = 0.1
-			max_strength = -0.1
+			max_strength = -1
 			soft_attack = 0.05
 		}
 
 		ai_will_do = {
 			factor = 0
 		}
-	}
-
-#NCR
-	ncr_railway_construction = {
-		research_cost = 1
-
-		dependencies = {
-			blocked_tech = 1
-		}
-		production_speed_infrastructure_factor = 0.10
-		industry_repair_factor = 0.05
 	}
 
 # Defunct

@@ -17,18 +17,36 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 25
+		doctrine = yes
 
-		unit_power_armour_design_cost_factor = -0.1
-		unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
-		unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
-		unit_spec_ops_design_cost_factor = -0.1
-		unit_spec_ops_cavalry_design_cost_factor = -0.1
-		unit_ghoul_paratrooper_design_cost_factor = -0.1
-		unit_crusader_unit_design_cost_factor = -0.1
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_power_armour_design_cost_factor = -0.1
+			unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+			unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+			unit_spec_ops_design_cost_factor = -0.1
+			unit_spec_ops_cavalry_design_cost_factor = -0.1
+			unit_ghoul_paratrooper_design_cost_factor = -0.1
+			unit_alamo_defenders_design_cost_factor = -0.1
+			unit_paladin_unit_design_cost_factor = -0.1
+			unit_Paladin_fireteam_unit_design_cost_factor = -0.1
+			unit_Paladin_demo_unit_design_cost_factor = -0.1
+			unit_crusader_unit_design_cost_factor = -0.1
+			experience_gain_power_armour_combat_factor = 0.03
+			experience_gain_power_armour_demolitions_infantry_combat_factor = 0.03
+			experience_gain_power_armour_fireteam_infantry_combat_factor = 0.03
+			experience_gain_spec_ops_combat_factor = 0.03
+			experience_gain_spec_ops_cavalry_combat_factor = 0.03
+			experience_gain_ghoul_paratrooper_combat_factor = 0.03
+			experience_gain_alamo_defenders_combat_factor = 0.03
+			experience_gain_paladin_unit_combat_factor = 0.03
+			experience_gain_Paladin_fireteam_unit_combat_factor = 0.03
+			experience_gain_Paladin_demo_unit_combat_factor = 0.03
+			experience_gain_crusader_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = special_forces_perk_tech_modifier_tt
 
 		category_special_forces = {
-			supply_consumption = -0.05
+			supply_consumption = -0.03
 		}
 
 		folder = {
@@ -47,6 +65,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				original_tag = TBH
+				NOT = { has_completed_focus = tbh_nf_the_long_road }
+				NOT = { has_completed_focus = tbh_nf_the_hard_road }
+				NOT = { has_completed_focus = tbh_nf_the_alamo_was_right }
+				NOT = { has_focus_tree = nf_texan_republic }
+			}
 		}
 	}
 
@@ -54,18 +80,36 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 25
+		doctrine = yes
 
-		unit_power_armour_design_cost_factor = -0.1
-		unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
-		unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
-		unit_spec_ops_design_cost_factor = -0.1
-		unit_spec_ops_cavalry_design_cost_factor = -0.1
-		unit_ghoul_paratrooper_design_cost_factor = -0.1
-		unit_crusader_unit_design_cost_factor = -0.1
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_power_armour_design_cost_factor = -0.1
+			unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+			unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+			unit_spec_ops_design_cost_factor = -0.1
+			unit_spec_ops_cavalry_design_cost_factor = -0.1
+			unit_ghoul_paratrooper_design_cost_factor = -0.1
+			unit_alamo_defenders_design_cost_factor = -0.1
+			unit_paladin_unit_design_cost_factor = -0.1
+			unit_Paladin_fireteam_unit_design_cost_factor = -0.1
+			unit_Paladin_demo_unit_design_cost_factor = -0.1
+			unit_crusader_unit_design_cost_factor = -0.1
+			experience_gain_power_armour_combat_factor = 0.03
+			experience_gain_power_armour_demolitions_infantry_combat_factor = 0.03
+			experience_gain_power_armour_fireteam_infantry_combat_factor = 0.03
+			experience_gain_spec_ops_combat_factor = 0.03
+			experience_gain_spec_ops_cavalry_combat_factor = 0.03
+			experience_gain_ghoul_paratrooper_combat_factor = 0.03
+			experience_gain_alamo_defenders_combat_factor = 0.03
+			experience_gain_paladin_unit_combat_factor = 0.03
+			experience_gain_Paladin_fireteam_unit_combat_factor = 0.03
+			experience_gain_Paladin_demo_unit_combat_factor = 0.03
+			experience_gain_crusader_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = special_forces_perk_tech_modifier_tt
 
 		category_special_forces = {
-			supply_consumption = -0.05
+			supply_consumption = -0.03
 		}
 
 		folder = {
@@ -91,15 +135,33 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
-		unit_power_armour_design_cost_factor = -0.1
-		unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
-		unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
-		unit_spec_ops_design_cost_factor = -0.1
-		unit_spec_ops_cavalry_design_cost_factor = -0.1
-		unit_ghoul_paratrooper_design_cost_factor = -0.1
-		unit_crusader_unit_design_cost_factor = -0.1
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_power_armour_design_cost_factor = -0.1
+			unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+			unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+			unit_spec_ops_design_cost_factor = -0.1
+			unit_spec_ops_cavalry_design_cost_factor = -0.1
+			unit_ghoul_paratrooper_design_cost_factor = -0.1
+			unit_alamo_defenders_design_cost_factor = -0.1
+			unit_paladin_unit_design_cost_factor = -0.1
+			unit_Paladin_fireteam_unit_design_cost_factor = -0.1
+			unit_Paladin_demo_unit_design_cost_factor = -0.1
+			unit_crusader_unit_design_cost_factor = -0.1
+			experience_gain_power_armour_combat_factor = 0.03
+			experience_gain_power_armour_demolitions_infantry_combat_factor = 0.03
+			experience_gain_power_armour_fireteam_infantry_combat_factor = 0.03
+			experience_gain_spec_ops_combat_factor = 0.03
+			experience_gain_spec_ops_cavalry_combat_factor = 0.03
+			experience_gain_ghoul_paratrooper_combat_factor = 0.03
+			experience_gain_alamo_defenders_combat_factor = 0.03
+			experience_gain_paladin_unit_combat_factor = 0.03
+			experience_gain_Paladin_fireteam_unit_combat_factor = 0.03
+			experience_gain_Paladin_demo_unit_combat_factor = 0.03
+			experience_gain_crusader_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = special_forces_perk_tech_modifier_tt
 
 		category_special_forces = {
 			max_organisation = 2
@@ -128,15 +190,33 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
-		unit_power_armour_design_cost_factor = -0.1
-		unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
-		unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
-		unit_spec_ops_design_cost_factor = -0.1
-		unit_spec_ops_cavalry_design_cost_factor = -0.1
-		unit_ghoul_paratrooper_design_cost_factor = -0.1
-		unit_crusader_unit_design_cost_factor = -0.1
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_power_armour_design_cost_factor = -0.1
+			unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+			unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+			unit_spec_ops_design_cost_factor = -0.1
+			unit_spec_ops_cavalry_design_cost_factor = -0.1
+			unit_ghoul_paratrooper_design_cost_factor = -0.1
+			unit_alamo_defenders_design_cost_factor = -0.1
+			unit_paladin_unit_design_cost_factor = -0.1
+			unit_Paladin_fireteam_unit_design_cost_factor = -0.1
+			unit_Paladin_demo_unit_design_cost_factor = -0.1
+			unit_crusader_unit_design_cost_factor = -0.1
+			experience_gain_power_armour_combat_factor = 0.03
+			experience_gain_power_armour_demolitions_infantry_combat_factor = 0.03
+			experience_gain_power_armour_fireteam_infantry_combat_factor = 0.03
+			experience_gain_spec_ops_combat_factor = 0.03
+			experience_gain_spec_ops_cavalry_combat_factor = 0.03
+			experience_gain_ghoul_paratrooper_combat_factor = 0.03
+			experience_gain_alamo_defenders_combat_factor = 0.03
+			experience_gain_paladin_unit_combat_factor = 0.03
+			experience_gain_Paladin_fireteam_unit_combat_factor = 0.03
+			experience_gain_Paladin_demo_unit_combat_factor = 0.03
+			experience_gain_crusader_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = special_forces_perk_tech_modifier_tt
 
 		category_special_forces = {
 			max_organisation = 2
@@ -165,15 +245,33 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 75
+		doctrine = yes
 
-		unit_power_armour_design_cost_factor = -0.2
-		unit_power_armour_demolitions_infantry_design_cost_factor = -0.2
-		unit_power_armour_fireteam_infantry_design_cost_factor = -0.2
-		unit_spec_ops_design_cost_factor = -0.2
-		unit_spec_ops_cavalry_design_cost_factor = -0.2
-		unit_ghoul_paratrooper_design_cost_factor = -0.2
-		unit_crusader_unit_design_cost_factor = -0.2
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_power_armour_design_cost_factor = -0.1
+			unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+			unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+			unit_spec_ops_design_cost_factor = -0.1
+			unit_spec_ops_cavalry_design_cost_factor = -0.1
+			unit_ghoul_paratrooper_design_cost_factor = -0.1
+			unit_alamo_defenders_design_cost_factor = -0.1
+			unit_paladin_unit_design_cost_factor = -0.1
+			unit_Paladin_fireteam_unit_design_cost_factor = -0.1
+			unit_Paladin_demo_unit_design_cost_factor = -0.1
+			unit_crusader_unit_design_cost_factor = -0.1
+			experience_gain_power_armour_combat_factor = 0.03
+			experience_gain_power_armour_demolitions_infantry_combat_factor = 0.03
+			experience_gain_power_armour_fireteam_infantry_combat_factor = 0.03
+			experience_gain_spec_ops_combat_factor = 0.03
+			experience_gain_spec_ops_cavalry_combat_factor = 0.03
+			experience_gain_ghoul_paratrooper_combat_factor = 0.03
+			experience_gain_alamo_defenders_combat_factor = 0.03
+			experience_gain_paladin_unit_combat_factor = 0.03
+			experience_gain_Paladin_fireteam_unit_combat_factor = 0.03
+			experience_gain_Paladin_demo_unit_combat_factor = 0.03
+			experience_gain_crusader_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = special_forces_perk_tech_modifier_tt
 
 		category_special_forces = {
 			default_morale = 0.02
@@ -202,15 +300,33 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 75
+		doctrine = yes
 
-		unit_power_armour_design_cost_factor = -0.2
-		unit_power_armour_demolitions_infantry_design_cost_factor = -0.2
-		unit_power_armour_fireteam_infantry_design_cost_factor = -0.2
-		unit_spec_ops_design_cost_factor = -0.2
-		unit_spec_ops_cavalry_design_cost_factor = -0.2
-		unit_ghoul_paratrooper_design_cost_factor = -0.2
-		unit_crusader_unit_design_cost_factor = -0.2
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_power_armour_design_cost_factor = -0.1
+			unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+			unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+			unit_spec_ops_design_cost_factor = -0.1
+			unit_spec_ops_cavalry_design_cost_factor = -0.1
+			unit_ghoul_paratrooper_design_cost_factor = -0.1
+			unit_alamo_defenders_design_cost_factor = -0.1
+			unit_paladin_unit_design_cost_factor = -0.1
+			unit_Paladin_fireteam_unit_design_cost_factor = -0.1
+			unit_Paladin_demo_unit_design_cost_factor = -0.1
+			unit_crusader_unit_design_cost_factor = -0.1
+			experience_gain_power_armour_combat_factor = 0.03
+			experience_gain_power_armour_demolitions_infantry_combat_factor = 0.03
+			experience_gain_power_armour_fireteam_infantry_combat_factor = 0.03
+			experience_gain_spec_ops_combat_factor = 0.03
+			experience_gain_spec_ops_cavalry_combat_factor = 0.03
+			experience_gain_ghoul_paratrooper_combat_factor = 0.03
+			experience_gain_alamo_defenders_combat_factor = 0.03
+			experience_gain_paladin_unit_combat_factor = 0.03
+			experience_gain_Paladin_fireteam_unit_combat_factor = 0.03
+			experience_gain_Paladin_demo_unit_combat_factor = 0.03
+			experience_gain_crusader_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = special_forces_perk_tech_modifier_tt
 
 		category_special_forces = {
 			default_morale = 0.02
@@ -239,15 +355,33 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
+		doctrine = yes
 
-		unit_power_armour_design_cost_factor = -0.2
-		unit_power_armour_demolitions_infantry_design_cost_factor = -0.2
-		unit_power_armour_fireteam_infantry_design_cost_factor = -0.2
-		unit_spec_ops_design_cost_factor = -0.2
-		unit_spec_ops_cavalry_design_cost_factor = -0.2
-		unit_ghoul_paratrooper_design_cost_factor = -0.2
-		unit_crusader_unit_design_cost_factor = -0.2
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_power_armour_design_cost_factor = -0.1
+			unit_power_armour_demolitions_infantry_design_cost_factor = -0.1
+			unit_power_armour_fireteam_infantry_design_cost_factor = -0.1
+			unit_spec_ops_design_cost_factor = -0.1
+			unit_spec_ops_cavalry_design_cost_factor = -0.1
+			unit_ghoul_paratrooper_design_cost_factor = -0.1
+			unit_alamo_defenders_design_cost_factor = -0.1
+			unit_paladin_unit_design_cost_factor = -0.1
+			unit_Paladin_fireteam_unit_design_cost_factor = -0.1
+			unit_Paladin_demo_unit_design_cost_factor = -0.1
+			unit_crusader_unit_design_cost_factor = -0.1
+			experience_gain_power_armour_combat_factor = 0.03
+			experience_gain_power_armour_demolitions_infantry_combat_factor = 0.03
+			experience_gain_power_armour_fireteam_infantry_combat_factor = 0.03
+			experience_gain_spec_ops_combat_factor = 0.03
+			experience_gain_spec_ops_cavalry_combat_factor = 0.03
+			experience_gain_ghoul_paratrooper_combat_factor = 0.03
+			experience_gain_alamo_defenders_combat_factor = 0.03
+			experience_gain_paladin_unit_combat_factor = 0.03
+			experience_gain_Paladin_fireteam_unit_combat_factor = 0.03
+			experience_gain_Paladin_demo_unit_combat_factor = 0.03
+			experience_gain_crusader_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = special_forces_perk_tech_modifier_tt
 
 		category_special_forces = {
 			soft_attack = 0.05

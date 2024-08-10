@@ -81,36 +81,44 @@ technologies = {
 		support_robot = {
 			jungle = {
 				attack = 0.3
+				defence = 0.15
 				movement = 0.3
 			}
 			marsh = {
 				attack = 0.3
+				defence = 0.15
 				movement = 0.3
 			}
 			river = {
 				attack = 0.3
+				defence = 0.15
 				movement = 0.3
 			}
 			amphibious = {
 				attack = 0.3
+				defence = 0.15
 				movement = 0.3
 			}
 		}
 		combat_robot = {
 			jungle = {
 				attack = 0.3
+				defence = 0.15
 				movement = 0.3
 			}
 			marsh = {
 				attack = 0.3
+				defence = 0.15
 				movement = 0.3
 			}
 			river = {
 				attack = 0.3
+				defence = 0.15
 				movement = 0.3
 			}
 			amphibious = {
 				attack = 0.3
+				defence = 0.15
 				movement = 0.3
 			}
 		}
@@ -129,79 +137,79 @@ technologies = {
 			always = no
 		}
 		infantry = {
-			reliability_factor = 0.01
+			reliability = 0.1
 			jungle = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			marsh = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			river = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			amphibious = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 		}
 		fireteam_infantry = {
-			reliability_factor = 0.01
+			reliability = 0.1
 			jungle = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			marsh = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			river = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			amphibious = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 		}
 		militia = {
-			reliability_factor = 0.01
+			reliability = 0.1
 			jungle = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			marsh = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			river = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			amphibious = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 		}
 		spec_ops = {
-			reliability_factor = 0.01
+			reliability = 0.1
 			jungle = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			marsh = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			river = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 			amphibious = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.15
+				defence = 0.15
 			}
 		}
 	}

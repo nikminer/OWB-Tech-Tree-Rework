@@ -8,6 +8,7 @@ technologies = {
 	@Col_3 = 8
 	@Col_4 = 10
 	@Col_5 = 12
+	@Col_6 = 14
 
 	@Row_settlerBufs = 28
 
@@ -28,6 +29,7 @@ technologies = {
 		militia = {
 			soft_attack = 0.05
 			defense = 0.05
+			max_organisation = 5
 		}
 	}
 
@@ -222,6 +224,25 @@ technologies = {
 			amphibious = {
 				movement = 0.1
 			}
+		}
+	}
+
+	skilled_medics_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_settlerBufs y = @Col_6 }
+		}
+
+		allow = { always = no }
+
+		category_medical_support = {
+			casualty_trickleback = 0.15
 		}
 	}
 }

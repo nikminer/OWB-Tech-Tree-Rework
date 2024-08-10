@@ -17,17 +17,28 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 25
+		doctrine = yes
 
-		unit_motorized_design_cost_factor = -0.1
-		unit_motorized_heavy_infantry_design_cost_factor = -0.1
-		unit_motorized_fireteam_design_cost_factor = -0.1
-		unit_motorized_demoteam_design_cost_factor = -0.1
-		unit_tank_design_cost_factor = -0.1
-		unit_chariot_unit_design_cost_factor = -0.1
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_motorized_design_cost_factor = -0.1
+			unit_motorized_heavy_infantry_design_cost_factor = -0.1
+			unit_motorized_fireteam_design_cost_factor = -0.1
+			unit_motorized_demoteam_design_cost_factor = -0.1
+			unit_cybernetic_warform_design_cost_factor = -0.1
+			unit_tank_design_cost_factor = -0.1
+			unit_chariot_unit_design_cost_factor = -0.1
+			experience_gain_motorized_combat_factor = 0.03
+			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
+			experience_gain_motorized_fireteam_combat_factor = 0.03
+			experience_gain_motorized_demoteam_combat_factor = 0.03
+			experience_gain_cybernetic_warform_combat_factor = 0.03
+			experience_gain_tank_combat_factor = 0.03
+			experience_gain_chariot_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
 		category_vehicles = {
-			supply_consumption = -0.05
+			supply_consumption = -0.03
 		}
 
 		folder = {
@@ -46,6 +57,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+			modifier = {
+				factor = 0
+				original_tag = TBH
+				NOT = { has_completed_focus = tbh_nf_the_long_road }
+				NOT = { has_completed_focus = tbh_nf_the_hard_road }
+				NOT = { has_completed_focus = tbh_nf_the_alamo_was_right }
+				NOT = { has_focus_tree = nf_texan_republic }
+			}
 		}
 	}
 
@@ -53,17 +72,28 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 25
+		doctrine = yes
 
-		unit_motorized_design_cost_factor = -0.1
-		unit_motorized_heavy_infantry_design_cost_factor = -0.1
-		unit_motorized_fireteam_design_cost_factor = -0.1
-		unit_motorized_demoteam_design_cost_factor = -0.1
-		unit_tank_design_cost_factor = -0.1
-		unit_chariot_unit_design_cost_factor = -0.1
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_motorized_design_cost_factor = -0.1
+			unit_motorized_heavy_infantry_design_cost_factor = -0.1
+			unit_motorized_fireteam_design_cost_factor = -0.1
+			unit_motorized_demoteam_design_cost_factor = -0.1
+			unit_cybernetic_warform_design_cost_factor = -0.1
+			unit_tank_design_cost_factor = -0.1
+			unit_chariot_unit_design_cost_factor = -0.1
+			experience_gain_motorized_combat_factor = 0.03
+			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
+			experience_gain_motorized_fireteam_combat_factor = 0.03
+			experience_gain_motorized_demoteam_combat_factor = 0.03
+			experience_gain_cybernetic_warform_combat_factor = 0.03
+			experience_gain_tank_combat_factor = 0.03
+			experience_gain_chariot_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
 		category_vehicles = {
-			supply_consumption = -0.05
+			supply_consumption = -0.03
 		}
 
 		folder = {
@@ -89,14 +119,25 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
-		unit_motorized_design_cost_factor = -0.1
-		unit_motorized_heavy_infantry_design_cost_factor = -0.1
-		unit_motorized_fireteam_design_cost_factor = -0.1
-		unit_motorized_demoteam_design_cost_factor = -0.1
-		unit_tank_design_cost_factor = -0.1
-		unit_chariot_unit_design_cost_factor = -0.1
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_motorized_design_cost_factor = -0.1
+			unit_motorized_heavy_infantry_design_cost_factor = -0.1
+			unit_motorized_fireteam_design_cost_factor = -0.1
+			unit_motorized_demoteam_design_cost_factor = -0.1
+			unit_cybernetic_warform_design_cost_factor = -0.1
+			unit_tank_design_cost_factor = -0.1
+			unit_chariot_unit_design_cost_factor = -0.1
+			experience_gain_motorized_combat_factor = 0.03
+			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
+			experience_gain_motorized_fireteam_combat_factor = 0.03
+			experience_gain_motorized_demoteam_combat_factor = 0.03
+			experience_gain_cybernetic_warform_combat_factor = 0.03
+			experience_gain_tank_combat_factor = 0.03
+			experience_gain_chariot_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
 		category_vehicles = {
 			max_organisation = 2
@@ -125,14 +166,25 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 50
+		doctrine = yes
 
-		unit_motorized_design_cost_factor = -0.1
-		unit_motorized_heavy_infantry_design_cost_factor = -0.1
-		unit_motorized_fireteam_design_cost_factor = -0.1
-		unit_motorized_demoteam_design_cost_factor = -0.1
-		unit_tank_design_cost_factor = -0.1
-		unit_chariot_unit_design_cost_factor = -0.1
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_motorized_design_cost_factor = -0.1
+			unit_motorized_heavy_infantry_design_cost_factor = -0.1
+			unit_motorized_fireteam_design_cost_factor = -0.1
+			unit_motorized_demoteam_design_cost_factor = -0.1
+			unit_cybernetic_warform_design_cost_factor = -0.1
+			unit_tank_design_cost_factor = -0.1
+			unit_chariot_unit_design_cost_factor = -0.1
+			experience_gain_motorized_combat_factor = 0.03
+			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
+			experience_gain_motorized_fireteam_combat_factor = 0.03
+			experience_gain_motorized_demoteam_combat_factor = 0.03
+			experience_gain_cybernetic_warform_combat_factor = 0.03
+			experience_gain_tank_combat_factor = 0.03
+			experience_gain_chariot_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
 		category_vehicles = {
 			max_organisation = 2
@@ -161,14 +213,25 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 75
+		doctrine = yes
 
-		unit_motorized_design_cost_factor = -0.2
-		unit_motorized_heavy_infantry_design_cost_factor = -0.2
-		unit_motorized_fireteam_design_cost_factor = -0.2
-		unit_motorized_demoteam_design_cost_factor = -0.2
-		unit_tank_design_cost_factor = -0.2
-		unit_chariot_unit_design_cost_factor = -0.2
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_motorized_design_cost_factor = -0.1
+			unit_motorized_heavy_infantry_design_cost_factor = -0.1
+			unit_motorized_fireteam_design_cost_factor = -0.1
+			unit_motorized_demoteam_design_cost_factor = -0.1
+			unit_cybernetic_warform_design_cost_factor = -0.1
+			unit_tank_design_cost_factor = -0.1
+			unit_chariot_unit_design_cost_factor = -0.1
+			experience_gain_motorized_combat_factor = 0.03
+			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
+			experience_gain_motorized_fireteam_combat_factor = 0.03
+			experience_gain_motorized_demoteam_combat_factor = 0.03
+			experience_gain_cybernetic_warform_combat_factor = 0.03
+			experience_gain_tank_combat_factor = 0.03
+			experience_gain_chariot_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
 		category_vehicles = {
 			default_morale = 0.02
@@ -197,14 +260,25 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 75
+		doctrine = yes
 
-		unit_motorized_design_cost_factor = -0.2
-		unit_motorized_heavy_infantry_design_cost_factor = -0.2
-		unit_motorized_fireteam_design_cost_factor = -0.2
-		unit_motorized_demoteam_design_cost_factor = -0.2
-		unit_tank_design_cost_factor = -0.2
-		unit_chariot_unit_design_cost_factor = -0.2
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_motorized_design_cost_factor = -0.1
+			unit_motorized_heavy_infantry_design_cost_factor = -0.1
+			unit_motorized_fireteam_design_cost_factor = -0.1
+			unit_motorized_demoteam_design_cost_factor = -0.1
+			unit_cybernetic_warform_design_cost_factor = -0.1
+			unit_tank_design_cost_factor = -0.1
+			unit_chariot_unit_design_cost_factor = -0.1
+			experience_gain_motorized_combat_factor = 0.03
+			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
+			experience_gain_motorized_fireteam_combat_factor = 0.03
+			experience_gain_motorized_demoteam_combat_factor = 0.03
+			experience_gain_cybernetic_warform_combat_factor = 0.03
+			experience_gain_tank_combat_factor = 0.03
+			experience_gain_chariot_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
 		category_vehicles = {
 			default_morale = 0.02
@@ -233,18 +307,29 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
+		doctrine = yes
 
 		#enable_subunits = {
 		#	elite_motorized
 		#}
 
-		unit_motorized_design_cost_factor = -0.2
-		unit_motorized_heavy_infantry_design_cost_factor = -0.2
-		unit_motorized_fireteam_design_cost_factor = -0.2
-		unit_motorized_demoteam_design_cost_factor = -0.2
-		unit_tank_design_cost_factor = -0.2
-		unit_chariot_unit_design_cost_factor = -0.2
-		experience_gain_army_factor = 0.02
+		hidden_modifier = {
+			unit_motorized_design_cost_factor = -0.1
+			unit_motorized_heavy_infantry_design_cost_factor = -0.1
+			unit_motorized_fireteam_design_cost_factor = -0.1
+			unit_motorized_demoteam_design_cost_factor = -0.1
+			unit_cybernetic_warform_design_cost_factor = -0.1
+			unit_tank_design_cost_factor = -0.1
+			unit_chariot_unit_design_cost_factor = -0.1
+			experience_gain_motorized_combat_factor = 0.03
+			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
+			experience_gain_motorized_fireteam_combat_factor = 0.03
+			experience_gain_motorized_demoteam_combat_factor = 0.03
+			experience_gain_cybernetic_warform_combat_factor = 0.03
+			experience_gain_tank_combat_factor = 0.03
+			experience_gain_chariot_unit_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
 		category_vehicles = {
 			soft_attack = 0.05

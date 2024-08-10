@@ -274,19 +274,19 @@ guiTypes = {
 
 			iconType = {
 				name ="air_doctrine_bg"
-				spriteType = "GFX_air_doctrine_bg"
+				spriteType = "GFX_air_doctrine_bg_de"
 				position = { x=80 y=33 }
 			}
 
 			iconType = {
 				name ="air_doctrine_2_bg"
-				spriteType = "GFX_air_doctrine_bg"
+				spriteType = "GFX_air_doctrine_bg_pa"
 				position = { x=570 y=33 }
 			}
 
 			iconType = {
 				name ="air_doctrine_3_bg"
-				spriteType = "GFX_air_doctrine_bg"
+				spriteType = "GFX_air_doctrine_bg_ed"
 				position = { x=1040 y=33 }
 			}
 

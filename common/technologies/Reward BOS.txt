@@ -82,11 +82,10 @@ technologies = {
 		allow = { always = no }
 
 		police_infantry = {
-			initiative = 0.02
 			recon = 0.2
-			max_organisation = 4
-			soft_attack = 0.05
-			hard_attack = 0.05
+			max_organisation = 3
+			soft_attack = 0.04
+			hard_attack = 0.04
 		}
 	}
 
@@ -110,11 +109,10 @@ technologies = {
 		allow = { always = no }
 
 		police_infantry = {
-			initiative = 0.02
 			recon = 0.2
-			max_organisation = 4
-			soft_attack = 0.05
-			hard_attack = 0.05
+			max_organisation = 3
+			soft_attack = 0.04
+			hard_attack = 0.04
 		}
 	}
 
@@ -133,11 +131,10 @@ technologies = {
 		allow = { always = no }
 
 		police_infantry = {
-			initiative = 0.02
 			recon = 0.2
-			max_organisation = 4
-			soft_attack = 0.05
-			hard_attack = 0.05
+			max_organisation = 3
+			soft_attack = 0.04
+			hard_attack = 0.04
 		}
 	}
 }

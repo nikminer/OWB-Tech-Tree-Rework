@@ -19,10 +19,6 @@ technologies = {
 			mininuke_equipment_1
 		}
 
-		allow_branch = {
-			has_dlc = "Waking the Tiger"
-		}
-
 		dependencies = {
 			blocked_tech = 1
 		}
@@ -47,10 +43,6 @@ technologies = {
 
 		enable_equipments = {
 			artillery_ammo_equipment_1
-		}
-
-		allow_branch = {
-			has_dlc = "Waking the Tiger"
 		}
 
 		dependencies = {

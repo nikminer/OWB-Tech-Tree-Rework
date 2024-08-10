@@ -389,6 +389,12 @@ spriteTypes = {
 			texturefile = "gfx/interface/ideas/generic/power_armour_t51.dds"
 			alwaystransparent = yes
 		}
+
+		spriteType = {
+			name = "GFX_ncr_railway_construction_medium"
+			texturefile = "gfx/interface/technologies/Reward/NCR/ncr_railway_construction.dds"
+			alwaystransparent = yes
+		}
 	
 	#------------------------------------------
 	# Legion
@@ -574,6 +580,12 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_interwoven_support_tech_medium"
 			texturefile = "gfx/interface/ideas/idea_company_pile_of_guns.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_skilled_medics_tech_medium"
+			texturefile = "gfx/interface/ideas/generic_medicine.dds"
 			alwaystransparent = yes
 		}
 

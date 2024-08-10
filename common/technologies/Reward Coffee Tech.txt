@@ -32,7 +32,12 @@ technologies = {
 		}
 
 		infantry = {
-			max_strength = 0.1
+			max_strength = 1
+			default_morale = 0.05
+		}
+		ghoul_infantry = {
+			max_strength = 1
+			default_morale = 0.05
 		}
 	}
 
@@ -55,7 +60,12 @@ technologies = {
 		}
 
 		infantry = {
-			max_strength = 0.1
+			max_strength = 1
+			maximum_speed = 0.05
+		}
+		ghoul_infantry = {
+			max_strength = 1
+			maximum_speed = 0.05
 		}
 	}	
 }

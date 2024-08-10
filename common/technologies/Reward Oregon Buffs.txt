@@ -28,8 +28,8 @@ technologies = {
 		training_time_factor = 0.08
 
 		category_leg_infantry = {
-			soft_attack = 0.08
-			breakthrough = 0.08
+			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 	}
 
