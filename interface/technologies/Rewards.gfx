@@ -589,6 +589,12 @@ spriteTypes = {
 			alwaystransparent = yes
 		}
 
+		spriteType = {
+			name = "GFX_railways_construction_medium"
+			texturefile = "gfx/interface/ideas/generic/vehicle_train_fo4_2.dds"
+			alwaystransparent = yes
+		}
+
 	#------------------------------------------
 	# Raiders
 	#------------------------------------------

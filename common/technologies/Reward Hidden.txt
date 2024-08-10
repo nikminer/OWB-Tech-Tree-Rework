@@ -244,28 +244,6 @@ technologies = {
 		}
 	}
 
-	railways_construction = {
-		research_cost = 1.0
-
-		allow = {
-			always = no
-		}
-
-		dependencies = {
-			blocked_tech = 1
-		}
-
-		enable_building = {
-			building = rail_way
-			level = 3
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-
 	leshy_baby_support_unlock_tech = {
 		allow = {
 			always = no

@@ -4355,6 +4355,14 @@ guiTypes = {
 			}
 
 			gridboxtype = {
+				name = "railways_construction_tree"
+				position = { x = 0 y = 150 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+
+			gridboxtype = {
 				name = "sentinel_unit_tech_tree"
 				position = { x = 0 y = 150 }
 				slotsize = { width = 70 height = 70 }

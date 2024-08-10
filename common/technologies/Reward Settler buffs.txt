@@ -9,7 +9,8 @@ technologies = {
 	@Col_4 = 10
 	@Col_5 = 12
 	@Col_6 = 14
-
+	@Col_7 = 14
+	
 	@Row_settlerBufs = 28
 
 	settler_caravanmilitia = {
@@ -243,6 +244,32 @@ technologies = {
 
 		category_medical_support = {
 			casualty_trickleback = 0.15
+		}
+	}
+
+	railways_construction = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_settlerBufs y = @Col_7 }
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		enable_building = {
+			building = rail_way
+			level = 3
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }
