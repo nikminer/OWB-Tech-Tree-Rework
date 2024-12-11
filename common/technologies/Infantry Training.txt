@@ -57,6 +57,10 @@ technologies = {
 				date > "2276.1.1"
 			}
 			modifier = {
+				factor = 5.0
+				has_war = yes
+			}
+			modifier = {
 				factor = 2.5
 				date > "2277.1.1"
 			}
@@ -100,6 +104,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
 			modifier = {
 				factor = 2.5
 				date > "2278.1.1"
@@ -148,6 +156,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
 			modifier = {
 				factor = 2.5
 				date > "2280.1.1"
@@ -211,8 +223,7 @@ technologies = {
 
 	# Basic Drill
 	unit_training_tech_5 = {
-		army_morale_factor = 0.03	
-		army_speed_factor = 0.03
+		army_morale_factor = 0.05
 
 		path = {
 			leads_to_tech = unit_training_tech_6
@@ -260,8 +271,8 @@ technologies = {
 
 	# Life fire excersises
 	unit_training_tech_6 = {
-
-		land_reinforce_rate = 0.05
+		army_speed_factor = 0.03
+		land_reinforce_rate = 0.03
 
 		path = {
 			leads_to_tech = unit_training_tech_7
@@ -307,8 +318,8 @@ technologies = {
 
 	# Entrenchment technologies
 	unit_training_tech_7 = {
-
-		max_dig_in_factor = 0.15
+		max_dig_in_factor = 0.1
+		dig_in_speed_factor = 0.05
 
 		path = {
 			leads_to_tech = unit_training_tech_8

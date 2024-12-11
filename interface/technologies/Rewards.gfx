@@ -162,6 +162,12 @@ spriteTypes = {
 			texturefile = "gfx/interface/technologies/Reward/Schematics/enclave_pa_unlock_tech.dds"
 			alwaystransparent = yes
 		}
+
+		spriteType = {
+			name = "GFX_midwest_pa_unlock_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Schematics/midwest_pa_unlock_tech.dds"
+			alwaystransparent = yes
+		}
 	
 		spriteType = {
 			name = "GFX_high_fighter_unlock_tech_medium"
@@ -592,6 +598,12 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_railways_construction_medium"
 			texturefile = "gfx/interface/ideas/generic/vehicle_train_fo4_2.dds"
+			alwaystransparent = yes
+		}
+
+		spriteType = {
+			name = "GFX_robco_security_protectrons_tech_medium"
+			texturefile = "gfx/interface/technologies/Reward/Settler/robco_security_protectrons_tech.dds"
 			alwaystransparent = yes
 		}
 

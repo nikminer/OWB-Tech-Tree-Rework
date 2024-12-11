@@ -9,7 +9,8 @@ technologies = {
 	@Col_4 = 10
 	@Col_5 = 12
 	@Col_6 = 14
-	@Col_7 = 14
+	@Col_7 = 16
+	@Col_8 = 18
 	
 	@Row_settlerBufs = 28
 
@@ -270,6 +271,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 0
+		}
+	}
+
+	robco_security_protectrons_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_settlerBufs y = @Col_8 }
+		}
+
+		allow = { always = no }
+
+		cnc_robot = {
+			max_organisation = 10
 		}
 	}
 }

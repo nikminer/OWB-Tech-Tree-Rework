@@ -130,7 +130,8 @@ technologies = {
 		}
 
 		dependencies = {
-			blocked_tech = 1
+			midwest_pa_unlock_tech = 1
+			simple_servo_tech = 1
 		}
 
 		research_cost = 2

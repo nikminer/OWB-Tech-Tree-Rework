@@ -45,7 +45,7 @@ guiTypes = {
 				name = "header_infantry_training"
 				position = { x = 260 y = 130 }
 
-				font = "hoi_36header"
+				font = "pipboy_32"
 				borderSize = { x = 0 y = 0 }
 				text = "HEADER_INFANTRY_FOCUS"
 				maxWidth = 600
@@ -58,7 +58,7 @@ guiTypes = {
 				name = "header_special_forces_training"
 				position = { x = 260 y = 250 }
 
-				font = "hoi_36header"
+				font = "pipboy_32"
 				borderSize = { x = 0 y = 0 }
 				text = "HEADER_SPECIAL_FORCES_FOCUS"
 				maxWidth = 600
@@ -71,7 +71,7 @@ guiTypes = {
 				name = "header_robot_training"
 				position = { x = 260 y = 370 }
 
-				font = "hoi_36header"
+				font = "pipboy_32"
 				borderSize = { x = 0 y = 0 }
 				text = "HEADER_ROBOT_FOCUS"
 				maxWidth = 600
@@ -84,7 +84,7 @@ guiTypes = {
 				name = "header_vehicle_training"
 				position = { x = 260 y = 490 }
 
-				font = "hoi_36header"
+				font = "pipboy_32"
 				borderSize = { x = 0 y = 0 }
 				text = "HEADER_VEHICLE_FOCUS"
 				maxWidth = 600
@@ -97,7 +97,7 @@ guiTypes = {
 				name = "header_tactics_training"
 				position = { x = 1130 y = 130 }
 
-				font = "hoi_36header"
+				font = "pipboy_32"
 				borderSize = { x = 0 y = 0 }
 				text = "HEADER_COMBAT_TACTICS"
 				maxWidth = 600
@@ -209,7 +209,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "navy_doctrine_header"
 				position = { x = 115 y = 35 }
-				font = "hoi_36header"
+				font = "pipboy_32"
 				borderSize = { x = 0 y = 4 }
 				text = "HEADER_NAVY_DOCTRINE"
 				maxWidth = 400
@@ -293,7 +293,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "header_decisive_air_doctrine"
 				position = { x = 120 y = 35 }
-				font = "hoi_36header"
+				font = "pipboy_32"
 				borderSize = { x = 0 y = 4 }
 				text = "HEADER_DECISIVE_AIR_DOCTRINE"
 				maxWidth = 400
@@ -317,7 +317,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "header_pramatic_air_doctrine"
 				position = { x = 600 y = 35 }
-				font = "hoi_36header"
+				font = "pipboy_32"
 				borderSize = { x = 0 y = 4 }
 				text = "HEADER_PRAGMATIC_AIR_DOCTRINE"
 				maxWidth = 400
@@ -341,7 +341,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "header_disruption_air_doctrine"
 				position = { x = 1075 y = 35 }
-				font = "hoi_36header"
+				font = "pipboy_32"
 				borderSize = { x = 0 y = 4 }
 				text = "HEADER_DISRUPTION_AIR_DOCTRINE"
 				maxWidth = 400

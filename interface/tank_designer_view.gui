@@ -60,7 +60,7 @@ guiTypes = {
 			name = "designer_title"
 			position = { x = 335 y = 6 }
 			textureFile = ""
-			font = "hoi_36header"
+			font = "pipboy_32"
 			borderSize = {x = 0 y = 0}
 			text = "EQUIPMENT_DESIGNER_TITLE"
 			maxWidth = 400

@@ -126,7 +126,7 @@ technologies = {
 		start_year = 2277
 		folder = {
 			name = fallout_infantry_folder
-			position = { x = @Row_ballistic y = @Col_2 }
+			position = { x = @Row_ballistic y = @Col_1 }
 		}
 
 		dependencies = {
@@ -409,13 +409,13 @@ technologies = {
 	prewar_infantry_kit = {
 
 		category_leg_infantry = {
-			max_organisation = 4
+			max_organisation = 5
 		}
 		category_super_mutant_infantry = {
-			max_organisation = 4
+			max_organisation = 5
 		}
 		motorized = {
-			max_organisation = 4
+			max_organisation = 5
 		}
 
 		dependencies = {
@@ -1037,6 +1037,14 @@ technologies = {
 			modifier = {
 				factor = 10
 				tag = CES
+			}
+			modifier = {
+				factor = 0.5
+				has_tech = standard_weaponry_tech
+			}
+			modifier = {
+				factor = 0
+				has_tech = ballistic_weaponry_tech_1
 			}
 		}
 	}
